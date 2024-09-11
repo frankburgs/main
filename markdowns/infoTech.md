@@ -1,11 +1,70 @@
 
+[Networking](#networking)<br/>
+[Cloud](#cloud)<br/>
+[Software](#software)<br/>
+[Computer](#computer)<br/>
+[Operating System](#os)<br/>
+[Basics](#basics)<br/>
 
-# Cloud
-# Software
-# Computer Parts
-# Operating System (OS)
-# IT Fundamentals
+# Networking
+- Older internet is dial up, integrated services digital network (ISDN), digital subscriber line (DSL).
+- Newer internet is cable, fiber optic, satellite, and cellular 🗼.
+- Wireless internet service providers (WISP, cellphone companies).
+- Topology defines a network's structure.
+- Logical topology describes data flow across physical connections.
+## Physical topology
+### Star
+- Features a central computer that acts as a hub.
+### ring
+- All devices are connected in a circle where data only flows clockwise 🤔
+### bus
+- Connect all devices with a single cable or transmission line.
+- Mainly suited for small networks such as lan.
+### tree
+- Combines bus & star, all devices connected in a hierarchical fashion.
+- Example is a university campus with each building has it's own star network and all central computers are linked in a campus-wide system.
+### mesh
+- Connect all devices together, using dynamic routing, used in WAN, not in LAN.
+- The internet is mesh.
 
+## Wireless Personal area network (WPAN)
+- USB, Firewire, Infrared, ZigBee, Bluetooth
+- RFID uses electromagnetic or electrostatic coupling.
+- Near field communication (NFC)
+- Infrared data association (IrDA) provides LOS connectivity.
+- Range from a few cm to m.
+
+## Wireless Local area network (WLAN)
+- Standards 802.11 a/b/g/n/ac
+- ac is Wi-Fi5 introduced in 2013.
+- Wifi6 (Standard 802.11 ax)
+- Single site or building.
+- Requires cables, switches, and routers to communicate to other LANs.
+## Wireless Metropolitan area network (WMAN)
+- Also Campus area network (CAN).
+- Spans a city, campus or small region.
+- Formed by connecting multiple LANs.
+- Cable TV, telephone, public wifi or TV.
+- Example is a vendor-specific with proprietary standards & equipment.
+- IEEE 802.16, OFDM, quality of service.
+- Worldwide interoperability for microwave access (WIMAX)
+## Wireless Wide area network (WWAN)
+- Long Term evolution (LTE) a converged 4G standard supported by GSM & CDMA network providers, theoretical max downlink of 150 Mbps.
+- Leased telecommunications circuits often.
+- Used by businesses, schools, and governments.
+- The internet is a WAN.
+## Wireless LAN (WLAN)
+- Links 2 or more devices via wireless communication.
+- Can provide connection to the wider internet through a gateway device.
+## Virtual private network (VPN)
+- Software based, control and direct communication across existing physical networks.
+- Make network administration easier, increase efficiency, and improve security.
+- A VPN is a private (or protected) network connection across a public connection.
+- VPN's encrypt traffic, disguise identity, and safeguard data.
+### VLAN 
+- Network made up of locations from other networks.
+- Separate networks into smaller groups, users can be located anywhere.
+- When you want to share data securely.
 
 # Cloud
 - On-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.
@@ -132,7 +191,7 @@ Verification & validation model, coding and testing are concurrent.
 - Proprietary grants users right to use without source code or modification or distribution.
 - Copy left is siilar to open source but it requires modified versions to be made available under same terms.
 
-# Computer parts
+# Computer
 - Processor's speed, bus types & speeds, quantity of cores, presence of cache or other onboard memory.
 - Multiple processors or cores on one platform is Symmetric Multiprocessing (SMP).
 - Hardware, OS software, App software, Peripherals, Users.
@@ -142,6 +201,71 @@ Verification & validation model, coding and testing are concurrent.
 - Popular server OS's are microsoft windows server, Linux, UNIX, macOS X, freeBSD
 - 3 types of peripherals, input, output, and storage devices.
 - SATA or PATA drives, RAM or ROM.
+## Cables
+### Hard drive 
+- Connect a CPU to the main or default storage.
+- Connect a hard drive to a motherboard or controller card.
+### Serial advanced technology attachment (SATA)
+- Next generation, carries high speed data, connects to storage devices.
+### Integrated drive electronics (IDE)
+- Older interface, 40-wire ribbon that connects motherboard to 1 or 2 drives.
+### SCSI
+- Designed to support a wide variety of devices.
+- Ribbon or standard round cables of 50, 68, or 80 wires.
+- One cable or daisy chained can connect up to 16 devices including motherboard or SCSI controller card.
+### Multipurpose
+- Connect devices and peripherals without a network connection. They transfer both data and power.
+- USB connects many peripherals, speeds from 480 Mbps - 40 Gbps.
+- Lightning, Thunderbolt (copper max length 3 m, optical 60 m) (Apple proprietary)
+### VGA
+- Older, analog
+### HDMI
+- HD, different connector types (type A most common), to display.
+### Mini-HDMI
+- Type C cable.
+### DisplayPort
+- Connects a DisplayPort interface to a display.
+### Digital visual interface (DVI)
+- DVID (digital), DVII (integrated, meaning digital and analog)
+- Single link supports 3.7 gbit/s HDTV @ 60 fps.
+- Dual link supports 7.4 gbit/s HDTV @ 85 fps.
+### Serial
+- Follows RS-232 standard (data bits must flow in line, one after the other, over the cable)
+- Used in modems, keyboards, mice, other peripherals (sometimes called peripheral cables, but video and multipurpose cables are also called that for the same reason).
+### Adapters
+- Some examples below
+- DVI to VGA, HDMI
+- USB-C to USB-A
+- USB to ethernet
+### Network
+#### Coaxial
+- Originally used to connect TV's to home antennas. Today used to send cable TV signal to cable boxes & internet to home modems.
+- Contain an inner copper wire surrounded by insulation & other shielding.
+- Highly resistant to signal interference.
+- Can support longer lengths than twisted pair ethernet cables.
+- 10 mbit/s
+- Data over cable service interface specification (DOCSIS) is a networking standard used in systems that provide internet access over TV lines.
+- Common types include RG6, RG59, & F.
+#### Fiberoptic
+- Used in WANs, work over long distances and can handle heavy volume traffic.
+- Local connector (LC), straight tipped (ST), subscriber connector (SC).
+##### Single mode
+- Lone light path typically sourced by a laser.
+- Much longer transmission distance.
+##### Multimode
+- Multiple light paths, sourced by LED. Can carry multiple signals in same line simultaneously.
+#### Ethernet
+- Twisted pair, T568A & B networking standards, 4 pairs of twisted wires to reduce interference.
+- RJ11 & RJ45 are common.
+- Hardwire a computer to a LAN, faster and more consistent than Wi-Fi.
+- Shielded (STP) are more expensive and reduce outside interference.
+- Unshielded(UTP) are cheaper and more common.
+- Category numbers, with higher numbers being newer better faster.
+### IDE
+
+### SCSI
+
+
 ## Core
 - Located in the center of the CPU.
 - Can process data together or separately.
@@ -160,13 +284,14 @@ Verification & validation model, coding and testing are concurrent.
 ## RAM
 - Helps install/edit view browser etc.
 - Errors symptoms include screen or computer stops working, runs slowly, browser tabs errors and close, out of memory or other error messages, files become corrupt, BSOD.
-## Serial Advanced Technology Attachment (SATA) drive
+## Drives
+### Serial Advanced Technology Attachment (SATA)
 - 250GB to &gt; 30 Tb
 - Most desktop motherboards have @ east 4 SATA ports.
-## Small Computer System Interface (SCSI) drive
+### Small Computer System Interface (SCSI)
 - 10k to 15k RPM.
 - Discontinued around 1994.
-## Solid State Drive (SSD)
+### Solid State (SSD)
 - Reliable nonvolatile flash memory.
 - 10 to 12 GB/s
 - 120 GB to 2 Tb.
@@ -189,11 +314,9 @@ Verification & validation model, coding and testing are concurrent.
 - Different than an OS, cant be installed/uninstalled upgraded.
 - Relies on battery for power when power is off.
 - Can update via flashing.
-
 ## Complementary Metal-Oxide Semiconductor (CMOS)
 - Coin-sized battery, powers CMOS memory chip (stores computer hardware settings (BIOS))
 - When this battery expires the system clock & hardware settings reset.
-
 ## Chip sets
 - Set of electronic components in an integrated circuit (IC).
 - Has a northbridge & a southbridge which are the core logic chip set on a motherboard & manage communications between the CPU & the motherboard.
@@ -252,7 +375,8 @@ Verification & validation model, coding and testing are concurrent.
 - ISP to modem (digitizes signal) to router to NIC.
 - Modem transforms digital information from NIC to analog signal to be transmitted to a network.
 
-# Operating Systems (OS)
+# OS
+- Operating system.
 
 ## Windows
 - Before installing, confirm base Windows OS is available on the computer's hard drive.
@@ -312,7 +436,7 @@ Symbol	Stands for:<br/>
 - Open system preferences, search "user", select "users & groups", create account.
 - Uses a lock symbol to guard unintended user CRUD actions.
 
-# IT Fundamentals
+# Basics
 
 ## Help Desk & Desktop Support Technician:
 - Diagnosing & resolving.
