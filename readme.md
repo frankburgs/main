@@ -1,13 +1,13 @@
 [To-do](#To-do)<br/>
 [Forums](#Forums)<br/>
 [About](#About)<br/>
+[History](#history)<br/>
 
 # To-do
-- 11 Sep module
-- Can nav menu include links to double hashed subsections?
-- Node scripts:
-- Converting markdown notes to web page.
-- Dynamically creating the hyperlinked menu to subsections.
+- 16 Sep quiz
+
+- 📃 Convert markdown notes to web page (thru JSON ?)
+- 📃 Dynamically create the hyperlinked menu to subsections.
 
 
 # Forums
@@ -19,5 +19,6 @@ https://stackoverflow.com/questions/22842691/what-is-the-meaning-of-the-dist-dir
 - Safety material from worksafe BC,
 - Notes collected in markdown folder.
 
-# History
-- ✅ Add nav menu to top of notes
+## History
+- ✅ Add nav menu to top of notes.
+- 🤔 nav menu can be linked to double hashed subsections.

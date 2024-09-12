@@ -7,11 +7,79 @@
 [Basics](#basics)<br/>
 
 # Networking
+- There exists traditional and cloud IT infrastructures (not in one spot).
+- Secure access service edge (SASE).
 - Older internet is dial up, integrated services digital network (ISDN), digital subscriber line (DSL).
 - Newer internet is cable, fiber optic, satellite, and cellular 🗼.
 - Wireless internet service providers (WISP, cellphone companies).
 - Topology defines a network's structure.
 - Logical topology describes data flow across physical connections.
+- A device that accesses the server is known as a client.
+- A node that accesses the server to get on the network is known as a client.
+- All devices that can send, receive, & create info on a network are nodes.
+- Packets are also called frames, blocks, cells, or segments.
+## Data transmission flow
+### Simplex
+- Unidirectional communication between two devices, one can only send and the other only receive.
+#### Half duplex
+- Both can transmit and receive asynchronously.
+## Routers
+- Connect to modems.
+- Interconnect different networks or subnetworks.
+- Manage traffic between networks by forwarding data packets.
+- Allow multiple devices to use the same internet connection.
+- Reads a packet's header to determine path.
+- Uses internal routing table which is a list of paths to various network destinations.
+- Forwards the packet to the next network in the path.
+## Modem
+- Modulator-demodulator, converts data into an easily network-transmittable format.
+- When data arrives @ destination the receiving modem converts it back to original form.
+- Cable and DSL are most common modems in use today.
+## Bridge
+- Joins two separate networks so they can work as a single network.
+- Wireless bridges can support wifi to wifi, wifi to ethernet, and bluetooth to wifi.
+## Gateway
+- Hardware or software that allows data to flow from one network to another.
+- Gateways can use multiple protocols to connect multiple networks.
+## Repeater
+- Receivs & retransmits a signal.
+- Used to extend a wireless signal (past brick, metal, or concrete).
+- Connect to wireless routers.
+## Wireless access point (WAP)
+- Allows wifi devices to connect to a wired network.
+- Usually connects to a wired router as a standalone device.
+- Acts as central wireless connection point for computers equipped with wireless network adapters.
+- Plugged into a wired network switch.
+- Reads each computers MAC address and forwards to wired switch.
+- If wired network is connected to router with internet access, the wireless network will also have internet access.
+## Network interface card (NIC)
+- Connect device to a network.
+- Can be wired or wireless, most computers have built-in wireless NICs.
+- Most include ports for network cables.
+## Firewall
+- Controls incoming and outgoing network traffic.
+- Typically forms a barrier between a trusted internal network and an untrusted external network (like the internet).
+- Can be either software or hardware.
+- Wireless routers and OS's often have built in firewalls.
+## Proxy server
+- Acts as an intermediary between a LAN and the internet.
+- Evaluates client requests and forwards them to appropriate server if they meet security requirements.
+- Hide IP addresses.
+- Save bandwidth by downloading files or updates for the first user then storing them for any future users who needs them
+## Intrusion detection system (IDS)
+- Monitors network traffic & reports malicious activity.
+## Intrusion protection system (IPS)
+- Inspects network traffic and removes, details or redirects malicious items.
+## Client-server
+- File transfer protocol (FTP) sites.
+- Web servers & web browsers.
+## Peer-to-peer
+- File sharing sites, discussion forums, media streaming, and VoIP.
+## Hub
+- When hub receives data it broadcasts it to all connected devices.
+- A switch is similar to a hub except it keeps a table of MAC addresses, and when it receives data it sends to specific address(es ?), which makes them more efficient than hubs.
+- Switches and hubs connect to modems.
+- If a switch or a hub fails it brings the entire network down.
 ## Physical topology
 ### Star
 - Features a central computer that acts as a hub.
@@ -53,6 +121,9 @@
 - Leased telecommunications circuits often.
 - Used by businesses, schools, and governments.
 - The internet is a WAN.
+- LoRaWaN is a standard network that balances low power with low-range communication requirements.
+## Cellular (4G/5G)
+- Provides consistent speeds, reliability, and efficiency.
 ## Wireless LAN (WLAN)
 - Links 2 or more devices via wireless communication.
 - Can provide connection to the wider internet through a gateway device.
@@ -262,10 +333,7 @@ Verification & validation model, coding and testing are concurrent.
 - Unshielded(UTP) are cheaper and more common.
 - Category numbers, with higher numbers being newer better faster.
 ### IDE
-
 ### SCSI
-
-
 ## Core
 - Located in the center of the CPU.
 - Can process data together or separately.
@@ -300,14 +368,12 @@ Verification & validation model, coding and testing are concurrent.
 - Allows communication between components (i.e. CPU & memory) and power distribution ❔
 - A memory slot holds a RAM stick in place on a computer's motherboard.
 - Older components use peripheral component interconnect (PCI) expansion slots, newer use PCIe (express, can add additional features i.e. peripherals (sound), memory, grafix, network interfaces).
-
 ## Disk controller
 - Enables CPU to communicate with disk drives
 - Integrated drive electronics (IDE) is a standard created for comms between CPU & hard drive.
 - IDE controller-circuit board.
 - Small chips that dictate method of communications.
 - Small circuit board on the mother board.
-
 ## Basic Input Output System (BIOS)
 - Manages i/o mostly on startup.
 - Preprogrammed into motherboard.
@@ -501,22 +567,9 @@ Symbol	Stands for:<br/>
 - Document and maintain service desk processes.
 - Perform system installations & updates.
 
-## IT Infrastructure
-
-### Hardware
-PC's, Mobile devices, servers, data centers, hubs, routers, & switches.
-
-### Software
+## Software
 CMS, CRM, ERP, collaboration, productivity, & business-specific apps, web servers, OS's.
 
-### Network
-Routers, servers, data centers, hubs, switches, security software.
-
-### Types of IT infrastructure.
-traditional and cloud (not in one spot)
-
-## Workflow
-Create a ticket, start issue, resolve, close.
 
 ## Technical tools
 VM's, VPN's, Network security, IT infrastructure monitoring software, enterprise hardware
@@ -608,7 +661,7 @@ Programming, OS's, application logs, servers, database management, passwords, su
 - Inform customer, set reasonable guidelines, avoid promises.
 
 ## Ticketing systems
-
+- The workflow is: create a ticket, start issue, resolve, close.
 - Systematically records the interaction between a customer & service representative.
 - Document, track, manage, resolve. 
 - Helpdesk software, customer support software, ticketing app, case management or customer care.
