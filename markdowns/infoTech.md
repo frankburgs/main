@@ -3,7 +3,7 @@
 [Software](#software)<br/>
 [Computer](#computer)<br/>
 [Operating System](#os)<br/>
-[Basics](#basics)<br/>
+[Bureaucracies](#bureaucracies)<br/>
 
 # Cloud
 - On-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.
@@ -16,8 +16,27 @@
 - Community cloud is used by group(s) who want to share secrets.
 - DaaS allows users to access desktops and apps from anywhere.
 - DaaS is implemented using VDI.
-
-
+## Types
+### Object
+- Supports large backups.
+- Uses metadata for fast keyword search.
+- AI scalable.
+- Stores log files.
+### Block
+- Fast, reliable, across environments.
+- Updates large data amounts frequenty and supports email servers.
+### File
+- File gateway is a file server in the cloud, S3, NFS, SMB. 
+- Familiar interface, subfolder management.
+- Supports ZIP and USB transfers, low scalability.
+## Storage area network (SAN)
+- Combines servers, storage systems, switches, software, services to provide secure, robust, data transfer.
+## Network attached storage (NAS)
+- Local file server.
+## Tape gateway
+- Tape cloud backups, S3, glacier, glacier deep archive.
+## Volume gateway
+- Data transfers between cloud and on-premises, iSCSI, cached (frequently used only) or stored (everything).
 # Software
 - Desktop, web-based, and mobile.
 - major change.minor change.path or minor bug fix.build number, date or less significant change.
@@ -140,6 +159,42 @@ Verification & validation model, coding and testing are concurrent.
 - Popular server OS's are microsoft windows server, Linux, UNIX, macOS X, freeBSD
 - 3 types of peripherals, input, output, and storage devices.
 - SATA or PATA drives, RAM or ROM.
+## Memory
+### Hybrid disk array
+- Performance concerns, complex to manage and maintain.
+- Small, fast, lower setup cost.
+- Combined multiple SSD & HDD into one array of drives.
+- Best for when high speeds and capacity are ideal.
+### Direct attached software (DAS)
+- Can contain hard, solid-state, and optical disc drives.
+- Best for small to medium networks with moderately high storage needs.
+- External drives are portable DAS that connect via USB.
+- Can configure to be ephemeral (deletes saved data on restart) or persistent.
+## Troubleshooting
+-  Disk failure symptoms include read/write failure, BSoD, bad sectors, disk thrashing, clicking & grinding noises.
+- Self monitoring, analysis, and reporting technology (SMART), can send an alert when a disk is unreliable.
+- If failure to boot, check lights, sounds, connections.
+- Correct firmware boot sequence, no removable disks, motherboard port enabled.
+- Use "setup disk" to boot into system recovery and type "C:", if invalid media type, try bootrec tool or reformat disk. If invalid drive specification, partition structure with diskpart tool.
+- Errors like invalid drive specification or OSS not found indicate boot errors (caused by corruption, incorrect OS installation, or viruses). Try antivirus boot disk option.
+- Try original startup disk, choose repair.
+- Try connecting a hard drive to another computer to salvage files.
+- Third party file recovery software may work better.
+- Defrag, add ram,  upgrade to SS or hybrid.
+
+``` bash
+$ chkdisk \r # Locates bad sectors, f attempts to fix.
+$ bootrec /fixmbr # 
+$ bootec /fixboot # Fix boot sector.
+$ bootrec /rebuild bcd # Correct missing installations in boot configurations database.
+
+
+```
+### Optical drives
+- Cleaning kits. 
+- Buffer underrun occurs when memory is too slow to write to storage.
+- Use latest writers, burn at lower speeds, write to hard drive instead, close apps during burn.
+
 ## Cables
 ### Hard drive 
 - Connect a CPU to the main or default storage.
@@ -370,182 +425,25 @@ Symbol	Stands for:<br/>
 - Open system preferences, search "user", select "users & groups", create account.
 - Uses a lock symbol to guard unintended user CRUD actions.
 
-# Basics
-
-## Help Desk & Desktop Support Technician:
-- Diagnosing & resolving.
-- Installing new technologies & training users.
-- Providing remote & on-site technical support.
-- Backing up & restoring files.
-- OS maintenance.
-
-## Troubleshooting
-1. Gather info
-2. Duplicate problem
-3. Triage problem
-4. ID symptoms
-5. Research knowledge base
-6. Establish plan
-7. Evaluate a theory and solutions
-8. Implement solution.
-9. Verify system functionality.
-
-## Common issues
-- Loose connections, power issues, damage, bootup problems, power on systems test (POST), blue or black screen, OS problems, software errors.
-
-## Determine
-- Ask questions.
-- Reproduce the problem.
-- Address individual problems separately.
-- Collect info.
-
-## Examine
-- Consider simple explanations.
-- Consider all possible causes.
-- Try different methods.
-- Test theory.
-- Escalate if needed.
-
-## Solve
-- Create plan.
-- Document the process beforehand.
-- Carry out solution.
-- Record each step.
-- Confirm the system is operational.
-- Update documentation.
-
-## Technical Support Specialists & Engineers:
-- Test & maintain equipment & software.
-- Try out new systems & programs.
-- Communicate about technology use & troubleshoot.
-- Train users on hardware & applications.
-- Document hardware & software changes & solutions.
-
-## IT Support Analyst & Specialists:
-- Provide IT support to staff & customers.
-- Develop procedures for recurring problems.
-- Evaluate & resolve complex problems.
-- Troubleshoot hardware & software issues.
-- Maintain database & ensure system security.
-
-## Service desk technician & analyst.
-- Answer IT support requests.
-- Resolve IT issues & concerns.
-- Communicate with clients on updates & solutions.
-- Document and maintain service desk processes.
-- Perform system installations & updates.
-
-## Software
-CMS, CRM, ERP, collaboration, productivity, & business-specific apps, web servers, OS's.
-
-
-## Technical tools
-VM's, VPN's, Network security, IT infrastructure monitoring software, enterprise hardware
-
-## Soft skills
-Customer service mindset, communication, organization, leadership, problem solving, flexible & adaptable.
-
-## Other tools
-Programming, OS's, application logs, servers, database management, passwords, support ticket workflow, knowledge bases.
-
-## Performance evaluation
-- Define expectation, record performance, evaluate performance, provide feedback.
-
-## Setup requirements
-- Office, home, other/multiple locations.
-- Desk/chair, electrical connections, lighting, security, accessibility.
-- Storage, RAM, connectivity, and backup.
-- Reassess environment, follow unboxing instructions, cable management, electrical, ergonomics, workstation config.
-
-## Types of support
-- Self support, knowledge base, Google.
-- Synchronous, phone, virtual chat, video chat, live chat, remote, in-person. 
-- Asynchronous, e-mail, social media.
-## Remote support
-- Connectivity, printers, apps, malware, accounts.
-- unattended, users and server maintenance, does not require permission, automated, updating, managing IT infrastructure, troubleshooting mass devices.
-- Attended, needs both machines to be connected to remote software.
-- Remote control, screen sharing, file sharing, secure devices, transfer support sessions, multiple monitors, 
-
-### Remote Desktop Protocol (RDP):
-- RDP-VPN uses secure protocol, includes encryption, & a private network.
-
-### Virtual Private Network (VPN)
-
-### Virtual Network Computer (VNC):
-- Can RC another computer, requires password, not encrypted.
-
-### Secure Shell (SSH):
-- Common access method, uses encryption and digital certificates for user auth.
-- Secure alternative to Telnet.
-
-### Remote Monitoring & Management (RMM):
-- Manage multiple systems, monitor health & performance, automate tasks, control, support, and analyze. 
-
-
-### Microsoft Remote Assistance (MSRA),
-- Uses encryption & auth, requires password.
-
-### third party tools.
-- Screen sharing, video conferencing, file transfers, and desktop management.
-
-## Connecting remotely
-- Gain confidence, ask to close confidential windows, launch connection app, educate, ask if they have more questions and inform them you are returning control.
-
-### Tiered support
-- Route technical issues, establish a timeline, handle large volume of issues, increase customer satisfaction, improve technical support training.
-#### Level 0 Self service (FAQ's, knowledge base)
-#### Level 1 Help desk
-- Phone, e-mail, social media, passwords, hardware, software.
-- Basic troubleshooting.
-#### Level 2 Product-specific
-- In-depth troubleshooting.
-- Review level 1 documentation.
-- Expensive troubleshooting & product-specific experience.
-#### Level 3 Specialists & engineers & analysts
-- Recreate the issue in a lab environment.
-- Determine roote cause.
-#### Level 4 Third party
-
-
-## SLA Service-Level Agreement
-- Support available, free or paid version, accepted contract.
-- Customer-based, service-based, multiple (premium, VIP)
-- Priority levels:
-- 1 business stops, 2 disrupts business, 3 inconvenience, 4 routine service.
-- Track, monitor, prioritize, automate, report
-
-## Escalation
-- Functional skills and knowledge.
-- Hierarchical, escalation through up.
-- Automatic, Chatbot after level 1 absent etc.
-- Trust, communication, business improvement, satisfaction
-## Steps
-- Confirm contact info in ticketing system.
-- Fully document the issue & reproducibility.
-- Document system information.
-- Get error logs/screenshots etc, then clear the system & repeat.
-- Update the ticket.
-- Inform customer, set reasonable guidelines, avoid promises.
-
-## Ticketing systems
-- The workflow is: create a ticket, start issue, resolve, close.
-- Systematically records the interaction between a customer & service representative.
-- Document, track, manage, resolve. 
-- Helpdesk software, customer support software, ticketing app, case management or customer care.
-- Automation, collaboration, integration, channels, reporting.
-- Categorization, tagging, routing, ticket status.
-- Create, triage, resolve, close.
-- Productivity, interactions, metrics, improvement.
-- Ticket #, customer name, issue description, notes, communication.
 
 ## Redundancies
 ### Data
 - The first type, same piece exists in multiple places, may cause inconsistencies.
 ### Redundant array of independent disks (RAID)
-- 0 boosts performance by striping data across multiple disks, but any disk failure results in total loss.
-- 1 Exact copy (mirror) of set of data on 2 or more disks.
-- 5 Minimum of 3 HDD's and no maximum.
+- If Raid not detected, check drivers, verify status, if config tool unavailable controller may have failed.
+#### 0 
+- boosts performance by striping data across multiple disks, but any disk failure results in total loss.
+- Not fault tolerant, fast, 100% usable disk capacity, if 1 drive fails all is lost.
+- Popular with gamers and photographers who need to save large amounts of data quickly.
+#### 1
+ - Exact copy (mirror) of set of data on 2 or more disks.
+ - 50% usable capacity, if 1 drive fails, no data is lost.
+#### 5 
+- Minimum of 3 HDD's and no maximum.
+- "striping with parity", most common.
+#### 10
+- Combines RAID 0 & 1.
+- If 3 drives fail, all data is lost.
 ### Network
 - multiple adapter cards &/or ports for individual hosts.
 - Load balancing to distribute traffic across multiple servers.
@@ -567,16 +465,16 @@ Programming, OS's, application logs, servers, database management, passwords, su
 - Select appropriate types.
 - Full, incremental (altered files only), differential (only difference in data since last full backup), daily (just files modified same day backup is done)
 
-## Bureaucracies
+# Bureaucracies
 
-### FIPS (Federal Information Processing Standard)
-### Institutions
+## FIPS (Federal Information Processing Standard)
+## Institutions
 - Fed Bureau of Labor Statistics 📑
-### CompTIA Computational Technology Industry Association 
+## CompTIA Computational Technology Industry Association 
 - IT Fundamentals (ITF+)
 - A+ (Hardware, software, networking, OS's, device & network troubleshooting, device & network security, virtualization & cloud computing, operational procedures)
 - Networks
-#### CompTIA troubleshooting model
+### CompTIA troubleshooting model
 - Identify the problem
 - Research.
 - Establish theory of probable cause.
@@ -586,34 +484,38 @@ Programming, OS's, application logs, servers, database management, passwords, su
 - Verify full system functionality & implement preventative measures.
 - Document findings, lessons learned, actions, outcomes. 
 
-### Microsoft
+## Microsoft
 - 365 Certified: Fundamentals
 - Role-based & specialty based certifications (💵 products).
 
-### Apple
+## Apple
 - Apple Certified Support Professional (ACSP), for macOS.
 
-### ITIL foundation (Information Technology Infrastructure Library)
+## ITIL foundation (Information Technology Infrastructure Library)
 - Can start at a support center courses.
 - Standardized set of detailed practices and processes.
 - Service strategy, design, transition, operation & improvement.
 
-### CCNA Cisco Certified Network Associate
+## CCNA Cisco Certified Network Associate
 
-### COBIT
+## COBIT
 - Uses parts of ITIL
 
-### Lean IT
+## Lean IT
 - Framework for lean principles.
 
-### Microsoft Office Framework
+## Microsoft Office Framework
 
-### ISO/IEC 20000
+## ISO/IEC 20000
 
-### ITSM metrics
+## ITSM metrics
 - Customer satisfaction (CSAT)
 - First-contact resolution.
 - First-level resolution.
 - Cost per ticket.
 - Mean time per resolution.
 - Consistency, efficiency, management, risk & downtime, operational costs, standardization & accountability.
+
+## International Council of E-Commerce Consultants (EC-Council)
+- Well-respected cybersecurity certification organization.
+- Certified Encryption Specialist (CES) program.

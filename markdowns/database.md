@@ -5,13 +5,14 @@
 ### Full
 - All files typically on a preset schedule.
 - May need large file support.
-
+- Fastest type because recovery is from one archive file (includes many files and metadata).
 ### Incremental
-- Saves storage.
-
+- Saves storage, fastest to perform.
+- Longest to recover from due to large number of archive files.
 ### Differential
 - Requires last full backup.
 - Includes last full and last differential backup.
+- Recovery only pulls from last full and last differential backup.
 ### Virtual
 - Uses database to track & maintain data.
 
