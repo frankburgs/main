@@ -1,7 +1,10 @@
 # Database
 - Secure, removes redundancy, program-data independence, shares data multi user transactions, adheres to ACID concept, self describing, multiple view support, allows table formation, multi-user environment.
+## Policies
+- Acceptable use, continuous monitoring, data collection, classification, ownership, & retention, password.
 ## Backups
 - Performed by Relational Database Management System (RDMS) or database manager.
+- 3 2 1 rule, 3 backups of all critical data, 1 primary and 2 more, on premises with 2 storage types, 1 offsite backup.
 ### Full
 - All files typically on a preset schedule.
 - May need large file support.

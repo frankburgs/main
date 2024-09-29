@@ -1,29 +1,24 @@
 [To-do](#To-do)<br/>
-[Forums](#Forums)<br/>
-[About](#About)<br/>
+[Informational](#informational)<br/>
 [Basics](#basics)<br/>
 
+
 # To-do
-## IT Support
-- 25 Sep quiz. 2 day increments per module
-- Current course ends Oct 20.
-## Cybersecurity
-- CS 23 sep intro week.
+- IT course 30 Sep quiz
+- SB CS 23 sep intro week.
+
 ## Dev
-- Convert markdown notes to web app (Node JS).
+- Convert markdown notes to web app (Node).
 - Images as cards from web app.
 
-# Forums
+
+# Informational
 - Folder structure
 https://stackoverflow.com/questions/22842691/what-is-the-meaning-of-the-dist-directory-in-open-source-projects
 
-# About
-- Notes for Information Technology (IT) from IBM,
-- Safety material from worksafe BC,
-- Notes collected in markdown folder.
+- Pseudocode first, evolve to comments on every line.
 
 # Basics
-
 ## Help Desk & Desktop Support Technician:
 - Diagnosing & resolving.
 - Installing new technologies & training users.
@@ -90,7 +85,6 @@ https://stackoverflow.com/questions/22842691/what-is-the-meaning-of-the-dist-dir
 ## Software
 CMS, CRM, ERP, collaboration, productivity, & business-specific apps, web servers, OS's.
 
-
 ## Technical tools
 VM's, VPN's, Network security, IT infrastructure monitoring software, enterprise hardware
 
@@ -113,6 +107,7 @@ Programming, OS's, application logs, servers, database management, passwords, su
 - Self support, knowledge base, Google.
 - Synchronous, phone, virtual chat, video chat, live chat, remote, in-person. 
 - Asynchronous, e-mail, social media.
+
 ## Remote support
 - Connectivity, printers, apps, malware, accounts.
 - unattended, users and server maintenance, does not require permission, automated, updating, managing IT infrastructure, troubleshooting mass devices.
@@ -133,7 +128,6 @@ Programming, OS's, application logs, servers, database management, passwords, su
 
 ### Remote Monitoring & Management (RMM):
 - Manage multiple systems, monitor health & performance, automate tasks, control, support, and analyze. 
-
 
 ### Microsoft Remote Assistance (MSRA),
 - Uses encryption & auth, requires password.
@@ -158,7 +152,6 @@ Programming, OS's, application logs, servers, database management, passwords, su
 - Recreate the issue in a lab environment.
 - Determine roote cause.
 #### Level 4 Third party
-
 
 ## SLA Service-Level Agreement
 - Support available, free or paid version, accepted contract.

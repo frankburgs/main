@@ -466,10 +466,9 @@ Symbol	Stands for:<br/>
 - Full, incremental (altered files only), differential (only difference in data since last full backup), daily (just files modified same day backup is done)
 
 # Bureaucracies
-
-## FIPS (Federal Information Processing Standard)
-## Institutions
-- Fed Bureau of Labor Statistics 📑
+## DEFCON
+- Annual Las Vegas meetup.
+## FIPS (Federal Information Processing Standard)📑
 ## CompTIA Computational Technology Industry Association 
 - IT Fundamentals (ITF+)
 - A+ (Hardware, software, networking, OS's, device & network troubleshooting, device & network security, virtualization & cloud computing, operational procedures)
