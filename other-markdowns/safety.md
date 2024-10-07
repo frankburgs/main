@@ -2,6 +2,10 @@
 [Vocabulary](#vocabulary)<br/>
 [Kitchen](#kitchen)<br/>
 
+# Rehab
+- Back, Dex 2 inversion product.
+
+
 # Dementia
 - 4 main types
 ## Alzheimers Dementia
@@ -96,3 +100,4 @@
 - Delusion: mechanism to avoid social interaction ❔
 - Generation: defined as 30 years.
 - Many mental state exam MMSE ❔
+

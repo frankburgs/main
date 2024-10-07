@@ -1,3 +1,8 @@
+
+
+
+
+
 # Database
 - Secure, removes redundancy, program-data independence, shares data multi user transactions, adheres to ACID concept, self describing, multiple view support, allows table formation, multi-user environment.
 ## Policies
@@ -55,56 +60,52 @@
 - A table is 1 or more columns of data.
 - Schema is a collection of tables, a db can have more than one.
 
-### Most common types of data stores 
-#### Document 
+# Most common types of data stores 
+## Document 
 - handles objects, data values,
 - Is named string fields in an entity referred to as a document.
 - Generally store data in the form of JSON documents.
 
-#### Key-value
+## Key-value
 - Uses unique key to correct hashing functions.
 - Simple lookup functions using value of a range of keys.
 
-#### Column-oriented databases
+## Column-oriented databases
 - Rows & cols divided into column families, with each set of columns consisting of logically-related entities that are generally retrieved as a unit.
-#### Graph databases
+## Graph databases
 - Edges (relationships) & nodes (the data).
 - Be able to quickly traverse looking at relationships (edges)
 
 
-
-## Permissions
+# Permissions
 - Only a DBA or object owner can provide or remove permissions.
 - Public role is automatically assigned to user.
-
-### Database
+## Database
 - Right to execute a specific SQL statement.
 - Access second persons's object.
 - Control computing resources.
 - Does not apply to DBA.
-
-### System
+## System
 - Right to perform any activity.
 - Ability to add or delete columns or rows.
-
-### Object
+## Object
 - Right to perform specific actions.
 - Allows users to UPDATE, DELETE, INSERT, or SELECT data.
 - Object's owner has permissions for that object.
 
-## Types of data
-### Structured
+# Types of data
+## Structured
 - Tabular data, rows & cols.
 - These are relational databases.
 - Formed set of data.
-### Semi-structured
+## Semi-structured
 - Like JSON, also contain graph databases.
-### Unstructured
+## Unstructured
 - Not in predefined model or data structure.
 - Text heavy files, but may contain numbers and dates.
 - Videos, images, audio, sensor data, server & website app logs, social media data, emails, and other types.
 
-## Commands
+# Commands
 
 ``` sql
 select column 1, column 2, FROM table 1, table 2, WHERE column2='value';
@@ -133,3 +134,8 @@ for i in cursor:
 
 # Misc
 - An uncompressed HD .png ~3.3 MB
+
+``` node
+
+
+```

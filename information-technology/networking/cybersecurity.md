@@ -4,6 +4,33 @@
 [Attack Vectors](#attack-vectors)  
 [Definitions](#definitions)  
 
+# Procedures
+- Setup & config, training & policy development, audits & updates.
+# Threat intelligence lifecycle
+- Determining requirements, findings dissemination, feedback, analysis, collection.
+# Server maintenance
+- Keep 18-25 deg C (65-75 F) and 40-60% humidity.
+- Create hot & cold aisles to ensure airflow.
+- Schedule fire risk assessment, implement fire suppression system, clean regularly, monitor & control room temp, inspect room & equipment regularly.
+- Electromagnetic interference (EMI) is typically caused by other electronic devices, some manufacturers provide shielding.
+- Have a backup generator.
+# Types of physical defense
+- Deterrence (signs, lighting, fencing, security cameras).
+- Denial (security guards, biometrics, door access control, mantraps)
+- Detection (alarms, cameras, ground radar, motion, ultrasonic & microwave sensors)
+- Delay (barriers, gates, roadblocks, receptionist delaying suspicious person)
+- Defense (door, cabinet & device locks)
+
+# Security meetings & training sessions policy
+- Phishing attacks, unauthrized access by former employees, ransomware, theft, etc.
+
+# Security rule of HIPAA
+- Maintain reasonable and appropriate administrative, technical, and physical controls for protecting e-PHI.
+- Ensure CIA of e PHI. (No employees taking portable hard-disks home, additionally such hard-disks are not encrypted)
+- Identify & protect against reasonably anticipated threats to the security or integrity of the information. (Not compliant)
+- Ensure workforce compliance. (compliant)
+- Protect against reasonably anticipated, impermissible uses and disclosures. (compliant)
+
 # General
 - Most security software is open source so other security professionals can quickly contribute ❔
 - Sandboxing is giving an application its own block of memory that other programs cannot access (on its own VM).
@@ -21,19 +48,30 @@
 
 - Disable unused features & ports, built-in accounts, change all default passwords, check documentation for default, backdoor, hidden accounts.
 - VPN (encrypts traffic), IDS/IPS.
+- Use whois lookup tool.
+
 
 # Hardening
 - Traffic can be approved or denied based on IP addresses, ports, domain names, and even specific words and phrases.
 - The NIST risk management framework (RMF) says to prepare, categorize, select, implement, assess, authorize, monitor.
+# Internet protocol security (IPsec) 
+- A suite of network standards & protocols that use cryptography to protect data traveling over the internet.
+- Authentication header (AH) protocol authenticates senders & IP addresses.
+- Encapsulating security payload (ESP) protocol encrypts data and authenticates data & senders.
+- In tunnel mode each packet is rewrapped in a new layer with a new header and encrypted, common in site-site VPN.
+- In transport mode the IP header of original data packet is left unencrypted, only the content is encrypted. common in host-host VPN.
+- Security associations (SA) defines which types of hashing & encryption are used.
+- Internet key exchange (IKE) secure exchange of cryptographic, keys.
+- Encryption & hashing algorithms.
+- Anti-replay protection.
+
 
 ## Security sockets layer (SSL)
 - Authenticate a website's identity and enable an encrypted connection between a browser and a server.
 - SSL certificates come from root certificate stores (Apple, Microsoft, Mozilla, Google, et al.)or CA's.
 - Provide HTTPS URL, prevent fake sites, verify ownership.
-
 ## Basic
 - Lock when not in use, use antivirus & VPN, HTTPS traffic only, proper passwords & MFA, physically secure, automatic updates enabled.
-
 ## Encryption
 - Advanced encryption standard (AES) is symmetric encryption.
 - Cipher (substitutional, columnar transposition) is an algorithm that converts plain text into ciphertext.

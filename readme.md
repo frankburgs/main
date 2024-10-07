@@ -2,13 +2,15 @@
 [Informational](#informational)<br/>
 [Basics](#basics)<br/>
 
+- Some readme's have a definitions section at the bottom.
 
-# To-do
-- IT course 30 Sep quiz
+# Deadlines
+- IT course 7, 10 Oct quiz
 - SB CS 23 sep intro week.
 
-## Dev
-- Convert markdown notes to web app (Node).
+# Development
+- Convert pdf glossary to text file.
+- Convert markdown notes to web app.
 - Images as cards from web app.
 
 

@@ -1,42 +1,9 @@
 
-[Cloud](#cloud)<br/>
-[Software](#software)<br/>
-[Computer](#computer)<br/>
-[Operating System](#os)<br/>
-[Bureaucracies](#bureaucracies)<br/>
+[Software](#software)  
+[Computer](#computer)  
+[Operating System](#os)  
+[Bureaucracies](#bureaucracies)  
 
-# Cloud
-- On-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.
-- Online web apps, business apps, or storing personal files.
-- Public (several customers), private (one), hybrid.
-- IaaS, can access networking, storage, and networking space without having to operate or manage.
-- PaaS, can access the specific tools on the platform.
-- SaaS, software licensing and delivery model on subscription basis.
-- Virtual desktop infrastructure (VDI) used to access their enterprise apps.
-- Community cloud is used by group(s) who want to share secrets.
-- DaaS allows users to access desktops and apps from anywhere.
-- DaaS is implemented using VDI.
-## Types
-### Object
-- Supports large backups.
-- Uses metadata for fast keyword search.
-- AI scalable.
-- Stores log files.
-### Block
-- Fast, reliable, across environments.
-- Updates large data amounts frequenty and supports email servers.
-### File
-- File gateway is a file server in the cloud, S3, NFS, SMB. 
-- Familiar interface, subfolder management.
-- Supports ZIP and USB transfers, low scalability.
-## Storage area network (SAN)
-- Combines servers, storage systems, switches, software, services to provide secure, robust, data transfer.
-## Network attached storage (NAS)
-- Local file server.
-## Tape gateway
-- Tape cloud backups, S3, glacier, glacier deep archive.
-## Volume gateway
-- Data transfers between cloud and on-premises, iSCSI, cached (frequently used only) or stored (everything).
 # Software
 - Desktop, web-based, and mobile.
 - major change.minor change.path or minor bug fix.build number, date or less significant change.
@@ -58,12 +25,14 @@
 - Used with Powershell or VBscript to do complex or added functionality.
 - Automation of command-line tasks.
 - Executed by Windows command prompt or PowerShell.
+
 ``` shell
 systeminfo # Processor, memory, uptime.
 ipconfig # Current network adapters config (ip addresses, subnet masks, default gateway).
 taskslist # Current processes and their memory and CPU usage.
 netstat # Current network connections, info about local & remote addresses and their state.
 ```
+
 ### Python
 - Extensive libraries.
 - Bash, PowerShell, & Batch are better suited for command-line tasks, sysAdmin, & automation.
