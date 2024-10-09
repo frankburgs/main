@@ -1,4 +1,4 @@
-
+[Procedures](#procedures)  
 [General](#General)  
 [Hardening](#hardening)   
 [Attack Vectors](#attack-vectors)  
@@ -6,14 +6,43 @@
 
 # Procedures
 - Setup & config, training & policy development, audits & updates.
+
 # Threat intelligence lifecycle
-- Determining requirements, findings dissemination, feedback, analysis, collection.
+- Determining requirements, collection, analysis, findings dissemination, feedback.
+- Scanning networks, hosts, applications, databases, and wireless assets.
+- Identify, classify, prioritize.
+- Strategic asks "what" and "who" questions.
+- Tactical asks "what" questions, identifying indicators of comprimise (IOCs)
+- Operational asks "how" and "where" questions.
+
+# Vulnerability assessment
+- Nmap, 
+- Fuzz testing (or fuzzing) : Injecting random code into software to elicit crashes.
+- Identification : manual testing or with automated vulnerability scanning tool, use an asset management system, consult threat intel sources, vulnerability databases, threat intel feeds.
+- Analysis : Identify root cause of each vulnerability.
+- Prioritization
+- Remediation : Apply patches, install security controls.
+- How easily can attackers exploit it?
+- Do any available patches address it?
+- What type of data does it expose?
+- How many systems does it impact?
+- Each question has a severity rating of 1 to 3 (lo to hi).
+- Summary, findings, recommendations, conclusion.
+
+
+# Structured Threat Information Expression (STIX)
+- An open-source programming language (OSPL) that standardizes threat intelligence sharing.
+- Each object has a type, name, description.
+
+
 # Server maintenance
 - Keep 18-25 deg C (65-75 F) and 40-60% humidity.
 - Create hot & cold aisles to ensure airflow.
 - Schedule fire risk assessment, implement fire suppression system, clean regularly, monitor & control room temp, inspect room & equipment regularly.
 - Electromagnetic interference (EMI) is typically caused by other electronic devices, some manufacturers provide shielding.
 - Have a backup generator.
+
+
 # Types of physical defense
 - Deterrence (signs, lighting, fencing, security cameras).
 - Denial (security guards, biometrics, door access control, mantraps)
@@ -50,10 +79,13 @@
 - VPN (encrypts traffic), IDS/IPS.
 - Use whois lookup tool.
 
+- In Google Cloud Platform (GCP), infrastructure primitives are any atomic unit of capacity (VM, persisten disk (PD), storage bucket, etc.)
 
 # Hardening
 - Traffic can be approved or denied based on IP addresses, ports, domain names, and even specific words and phrases.
 - The NIST risk management framework (RMF) says to prepare, categorize, select, implement, assess, authorize, monitor.
+- Lock when not in use, use antivirus & VPN, HTTPS traffic only, proper passwords & MFA, physically secure, automatic updates enabled.
+
 # Internet protocol security (IPsec) 
 - A suite of network standards & protocols that use cryptography to protect data traveling over the internet.
 - Authentication header (AH) protocol authenticates senders & IP addresses.
@@ -65,13 +97,12 @@
 - Encryption & hashing algorithms.
 - Anti-replay protection.
 
-
 ## Security sockets layer (SSL)
 - Authenticate a website's identity and enable an encrypted connection between a browser and a server.
 - SSL certificates come from root certificate stores (Apple, Microsoft, Mozilla, Google, et al.)or CA's.
 - Provide HTTPS URL, prevent fake sites, verify ownership.
-## Basic
-- Lock when not in use, use antivirus & VPN, HTTPS traffic only, proper passwords & MFA, physically secure, automatic updates enabled.
+
+
 ## Encryption
 - Advanced encryption standard (AES) is symmetric encryption.
 - Cipher (substitutional, columnar transposition) is an algorithm that converts plain text into ciphertext.
@@ -114,9 +145,6 @@
 - Buffer is a block of memory for storing data. Always test length of input before copying it into a buffer (bounds checking). Programs also randomly use memory locations so hackers dont know what memory they are writing to. Spaces in memory after password buffers that are monitored for intrusion are known as "canaries".
 - Code injections, control what characters can be accepted.
 - NAND mirroring, attaching wires to a device's memory chip and perfectly copying all its contents. Then trying passwords until the device makes you wait, and you reflash the memory with the copy you made and keep trying.
-- Data breach DNE secrecy or confidentiality.
-- Denial of service DNE availability.
-- Phishing DNE integrity.
 - Eavesdropping (packet-sniffing), occurs on wireless, wired, & phone connections. Packet sniffer can view anything sent on an unencrypted network. On an encrypted network it can only see origin and destination.
 - Man in the middle (MITM), can be physical (nearby, same wifi network) or logical (emails or texts with fake links and malware-infected websites). Also spoofing, hijacking, and theft of browser cookies. Also on-path attacks.
 - Replay attack is type of MITM which intercepts & retransmits, requires trusted entities with an access token (obtained after verification), by sniffing network traffic between trusted entities and hijack a session and get a token and impersonate an entity.

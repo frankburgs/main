@@ -1,16 +1,14 @@
 /*
-Notes from courses are taken in markdown files.
 
-It would be nice to automate the conversion of notes from markdown to presentable web apps.
+Markdown special characters: hashtag and dash.
 
-This allows for fusion with other technologies such as Mermaid for diagrams and charts and Mathjax for showing mathematical formulas.
+Copy markdown file to a string
 
-Node will be used as it is the closest programming language for web dev ❔
-Special characters (emojis) may require special care.
+Step through string:
+if char = # : encase chars before newline as <h1> element.
+if char = - : encase chars before newline as <li> element.
 
-# Markdown
-- Each header or subheader denoted with # or ##. No ### are used.
-- Each line item starts with a -
+
 
 */
 
@@ -18,6 +16,7 @@ Special characters (emojis) may require special care.
 const fs = require('fs');
 const path = require('path');
 
+// ?
 fs.readFile('./markdowns/kitchen.md', (err,data) => {
     if (err) throw err;
     console.log(data.toString());

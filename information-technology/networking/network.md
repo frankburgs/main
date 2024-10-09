@@ -227,13 +227,16 @@ tracert
 - Make network administration easier, increase efficiency, and improve security.
 - A VPN is a private (or protected) network connection across a public connection.
 - VPN's encrypt traffic, disguise identity, and safeguard data.
-### VLAN 
+## VLAN 
 - Network made up of locations from other networks.
 - Separate networks into smaller groups, users can be located anywhere.
 - When you want to share data securely.
+
 # Domain name system (DNS)
 - Phonebook of the internet.
 - DNS cache is a record of all the queries made to a DNS server by a browser.
+
+
 # Protocols
 ## IP addresses
 - Static are manually assigned.
