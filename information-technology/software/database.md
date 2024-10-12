@@ -134,8 +134,3 @@ for i in cursor:
 
 # Misc
 - An uncompressed HD .png ~3.3 MB
-
-``` node
-
-
-```

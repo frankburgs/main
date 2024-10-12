@@ -5,28 +5,15 @@
 - Stainless steel (pots for liquids, utensils, strainers, spatulas)
 - Wood (spatulas, cutting board, coasters)
 
-# Tea
-- Tamarind pods
-- Ginger root
-- Cinnamon sticks
-- Star anise
-- Cardamom
-- Other seedy things
-- Pulp from juicing
-- Garden items: 
-- lemon grass, aloe,
-- Leave 1" from brim top for boiling.
-- Add mate sticks after boils for energy drink.
-- Liquid will adhere to surfaces more while hot and drip, as well as deteriorate strainers so best wait til cool to drink.
-- Mix half mason jar with water & honey.
 
 # Safety
 - Handle raw meats last when working in kitchen.
 - Do not stir liquids in mason jars with metal utensils.
 - Knifes, fire, hot liquids, raw meats, expired foods.
+- Most items peeled if easy to do (not tomatoes).
 
 # Practices
-- Try keeping bones in frozen container for bone broth until enough to boil.
+- Try keeping bones in frozen container until enough to boil.
 
 # Recipes
 ## Guacamole
@@ -36,4 +23,23 @@
 ## Tortilla
 - Try milk instead of water.
 - Try oil on pan instead of kneading into mix.
+## Pasta
+- Add water and a chopped tomatoe, let heat (~10 mins)
+- Add pasta, ground beef, allow to boil & turn off.
 ## Pickling
+
+## Tea
+- Tamarind pods
+- Ginger root
+- Cinnamon sticks
+- Star anise
+- Apple core
+- Cardamom
+- Other seedy things
+- Pulp from juicing
+- Garden items: 
+- lemon grass, aloe,
+- Leave 1" from brim top for boiling.
+- Add mate sticks after boils for energy drink.
+- Liquid will adhere to surfaces more while hot and drip, as well as deteriorate strainers so best wait til cool to drink.
+- Mix half mason jar with water & honey.

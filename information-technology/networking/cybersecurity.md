@@ -41,6 +41,7 @@
 - Schedule fire risk assessment, implement fire suppression system, clean regularly, monitor & control room temp, inspect room & equipment regularly.
 - Electromagnetic interference (EMI) is typically caused by other electronic devices, some manufacturers provide shielding.
 - Have a backup generator.
+- Pods, racks, servers, storage, networking equipment.
 
 
 # Types of physical defense

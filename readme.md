@@ -4,7 +4,8 @@
 [Content](#content)  
 
 # Deadlines
-- IT course 10 Oct quiz
+- IT course 11,16,18 Oct quiz
+- Ends Nov 24
 - SB CS 23 sep intro week.
 
 # Development
