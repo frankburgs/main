@@ -16,12 +16,6 @@
 - DaaS is implemented using VDI.
 - Linux based containers, Kubernetes, Istio, multicluster management tools, message queues, brokers.
 
-# Thing1
-- ACL's serve as subnet-level firewall, within the subnet one creates security group.
-- VPC's can be segmented into subnets.
-- Web access (public gateway instance), application tier, and back-end database VSI's.
-
-
 # Network
 - Interfaces need IP addresses, subnets, security groups, ACL's, VLAN's, VPC's, & VPN's.
 - Firewalls, load balancers, gateways, and traffic analyzers can be virtualized.
@@ -41,15 +35,20 @@
 - Compute or memory-intensive, or high-performance I/O.
 - Dedicated hosts offer single-tenant isolation.
 
-# Types
-- Object supports large backups, uses metadata for fast keyword search, is AI scalable, & stores log files.
-- Block is fast, reliable, across environments, and updates large data amounts frequenty and supports email servers.
-- File has familiar interface, subfolder management, supports ZIP and USB transfers, low scalability. File gateway is a file server in the cloud, S3, NFS, SMB.
-
-# Storage
+# Types of storage
 - Information can consist of files, code, documents, images, videos, backups, snapshots, and databases.
 - Bare-metal servers and virtual servers are provisioned with default storage in local drives.
-
+## Object Storage
+- Object supports large backups, uses metadata for fast keyword search, is AI scalable, & stores log files.
+## Block storage
+- Block is fast, reliable, across environments, and updates large data amounts frequenty and supports email servers.
+## File Storage
+- has familiar interface, subfolder management, supports ZIP and USB transfers, low scalability.
+- File gateway is a file server in the cloud, S3, NFS, SMB.
+- File storage appliances can provide encryption in transit.
+- Is mounted to computer nodes via ethernet cables.
+- Speeds vary under load.
+- Can be mounted onto 1 or more compute nodes at a time.
 
 # Services
 - Infrastructure is the physical resources, as well as the virtualization (hypervisor) layer.
@@ -63,7 +62,7 @@
 - Business Process Management (BPM).
 
 - Cloud computing : Shared pool of computing resources (networks, servers, storage, applications, services).
-
+- Input/Output Operations per Second (IOPS) : Speed at which disks can read & write data.
 - Network attached storage (NAS) : Local file server.
 
 - Serverless computing resources are an abstraction on top of virtual machines.

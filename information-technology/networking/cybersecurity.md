@@ -4,6 +4,10 @@
 [Attack Vectors](#attack-vectors)  
 [Definitions](#definitions)  
 
+- ACL's serve as subnet-level firewall, within the subnet one creates security group.
+- VPC's can be segmented into subnets.
+- Web access (public gateway instance), application tier, and back-end database VSI's.
+
 # Procedures
 - Setup & config, training & policy development, audits & updates.
 
