@@ -1,24 +1,18 @@
-[Deadlines](#deadlines)  
-[Development](#development)  
-[Guidelines](#guidelines)  
-[Content](#content)  
+# Vite React TailwindCSS
 
-# Deadlines
-- IT course 11,16,18 Oct quiz
-- Ends Nov 24
-- SB CS 23 sep intro week.
+``` shell
+# Tailwind Vite setup & config
+npm i react-router
+```
 
-# Development
-- Convert pdf glossary to text file.
-- Consolidate notes.
-- Convert markdown notes to web app.
-- Images as cards in web app.
-- Try Rubik font.
+- Add to main.jsx
+``` js
+import { BrowserRouter } from "react-router";
+```
 
-# Guidelines
-- Bootstrap first, then a Tailwind version.
-- Pseudocode first, evolve to comments on every line.
-
-# Content
-- Use as repository from notes of information technology modules.
-- Include all other notes of trades, crafts, or sciences.
+- Encapsulate App in BrowserRouter tags.
+``` js
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+```
