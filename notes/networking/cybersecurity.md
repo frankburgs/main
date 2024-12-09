@@ -23,7 +23,7 @@
 - Nmap, 
 - Fuzz testing (or fuzzing) : Injecting random code into software to elicit crashes.
 - Identification : manual testing or with automated vulnerability scanning tool, use an asset management system, consult threat intel sources, vulnerability databases, threat intel feeds.
-- Analysis : Identify root cause of each vulnerability.
+- Analysis : Identify root cause of each vulnerability, analyze publicly available info.
 - Prioritization
 - Remediation : Apply patches, install security controls.
 - How easily can attackers exploit it?

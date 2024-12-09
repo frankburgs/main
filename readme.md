@@ -1,18 +1,17 @@
 # Vite React TailwindCSS
-
 ``` shell
-# Tailwind Vite setup & config
+# Follow Tailwind Vite setup guide
 npm i react-router
+# Follow ReactRouter guide
 ```
 
-- Add to main.jsx
-``` js
-import { BrowserRouter } from "react-router";
-```
+# Weld safety table
 
-- Encapsulate App in BrowserRouter tags.
-``` js
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-```
+- Convert observations.js to commented sample.
+- 🔎 Check if a string can be processed like an array of strings (for in ?)
+
+- Create a route with the observations table and push to pages repo.
+
+- Create doc and shedule routes and push to pages repo.
+- 🔎 Check how paged media works.
+- The doc can be WI's for making T handle T weld.
