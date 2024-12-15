@@ -9,9 +9,11 @@
 - Web access (public gateway instance), application tier, and back-end database VSI's.
 
 # Procedures
+
 - Setup & config, training & policy development, audits & updates.
 
 # Threat intelligence lifecycle
+
 - Determining requirements, collection, analysis, findings dissemination, feedback.
 - Scanning networks, hosts, applications, databases, and wireless assets.
 - Identify, classify, prioritize.
@@ -20,7 +22,8 @@
 - Operational asks "how" and "where" questions.
 
 # Vulnerability assessment
-- Nmap, 
+
+- Nmap
 - Fuzz testing (or fuzzing) : Injecting random code into software to elicit crashes.
 - Identification : manual testing or with automated vulnerability scanning tool, use an asset management system, consult threat intel sources, vulnerability databases, threat intel feeds.
 - Analysis : Identify root cause of each vulnerability, analyze publicly available info.
@@ -35,11 +38,13 @@
 
 
 # Structured Threat Information Expression (STIX)
+
 - An open-source programming language (OSPL) that standardizes threat intelligence sharing.
 - Each object has a type, name, description.
 
 
 # Server maintenance
+
 - Keep 18-25 deg C (65-75 F) and 40-60% humidity.
 - Create hot & cold aisles to ensure airflow.
 - Schedule fire risk assessment, implement fire suppression system, clean regularly, monitor & control room temp, inspect room & equipment regularly.
@@ -49,6 +54,7 @@
 
 
 # Types of physical defense
+
 - Deterrence (signs, lighting, fencing, security cameras).
 - Denial (security guards, biometrics, door access control, mantraps)
 - Detection (alarms, cameras, ground radar, motion, ultrasonic & microwave sensors)
@@ -56,9 +62,11 @@
 - Defense (door, cabinet & device locks)
 
 # Security meetings & training sessions policy
-- Phishing attacks, unauthrized access by former employees, ransomware, theft, etc.
+
+- Phishing attacks, unauthorized access by former employees, ransomware, theft, etc.
 
 # Security rule of HIPAA
+
 - Maintain reasonable and appropriate administrative, technical, and physical controls for protecting e-PHI.
 - Ensure CIA of e PHI. (No employees taking portable hard-disks home, additionally such hard-disks are not encrypted)
 - Identify & protect against reasonably anticipated threats to the security or integrity of the information. (Not compliant)
@@ -66,6 +74,7 @@
 - Protect against reasonably anticipated, impermissible uses and disclosures. (compliant)
 
 # General
+
 - Most security software is open source so other security professionals can quickly contribute ❔
 - Sandboxing is giving an application its own block of memory that other programs cannot access (on its own VM).
 - Non-malicious threats include hardware failures, software downtime, network bandwidth issues.
@@ -87,11 +96,13 @@
 - In Google Cloud Platform (GCP), infrastructure primitives are any atomic unit of capacity (VM, persisten disk (PD), storage bucket, etc.)
 
 # Hardening
+
 - Traffic can be approved or denied based on IP addresses, ports, domain names, and even specific words and phrases.
 - The NIST risk management framework (RMF) says to prepare, categorize, select, implement, assess, authorize, monitor.
 - Lock when not in use, use antivirus & VPN, HTTPS traffic only, proper passwords & MFA, physically secure, automatic updates enabled.
 
 # Internet protocol security (IPsec) 
+
 - A suite of network standards & protocols that use cryptography to protect data traveling over the internet.
 - Authentication header (AH) protocol authenticates senders & IP addresses.
 - Encapsulating security payload (ESP) protocol encrypts data and authenticates data & senders.
@@ -107,7 +118,6 @@
 - SSL certificates come from root certificate stores (Apple, Microsoft, Mozilla, Google, et al.)or CA's.
 - Provide HTTPS URL, prevent fake sites, verify ownership.
 
-
 ## Encryption
 - Advanced encryption standard (AES) is symmetric encryption.
 - Cipher (substitutional, columnar transposition) is an algorithm that converts plain text into ciphertext.
@@ -115,7 +125,6 @@
 - Key unlocks the cipher.
 - Rivest–Shamir–Adleman (RSA) encryption is a public-key cryptographic algorithm (asymmetric encryption).
 - Modern encryption standards replaced Data Encryption Standard (DES), they authenticate a message to verify origin, options are digital certificates, passwords, or biometrics. They check integrity (Message Authentication Codes (MAC)). They confirm non-repudiation, where sender sends proof of delivery and receiver receives proof of sender's identity.
-
 
 ## Authentication
 - What you know (security key, etc.)
@@ -145,8 +154,8 @@
 - Minimum length 12 characters, mix of letters, numbers, special characters, unique password for every account & device, mandatory change every 6 - 12 months, employee training for cyber attacks and training including notification that the company will never ask for passwords.
 - Avoid names, places, dictionary words, PII, use upper & lower case, avoid 'leet', add a passphrase (12 or more random words).
 
-
 # Attack vectors
+
 - Buffer is a block of memory for storing data. Always test length of input before copying it into a buffer (bounds checking). Programs also randomly use memory locations so hackers dont know what memory they are writing to. Spaces in memory after password buffers that are monitored for intrusion are known as "canaries".
 - Code injections, control what characters can be accepted.
 - NAND mirroring, attaching wires to a device's memory chip and perfectly copying all its contents. Then trying passwords until the device makes you wait, and you reflash the memory with the copy you made and keep trying.
@@ -157,8 +166,8 @@
 - SQLi (injection) to bypass security protections, returns syntax error if doesn't work. Parameterize queries, use an allowlist, store procedures ❔, escape user input.
 - Buffer overflow, a site gets more internet traffic than it can handle, ICMP flood, diagnostic pings are sent to every computer on a network causing a crash, SYN flood, rapid series of incomplete connection requests floods a site until server crash.
 
-
 # Definitions
+
 - AICPA : American Institute of Certified Public Accountants.
 
 - CCI : Company confidential information, plans, employee knowledge, etc.

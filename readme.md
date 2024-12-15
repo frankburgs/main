@@ -1,17 +1,29 @@
-# Vite React TailwindCSS
+# Setup
+
+- Vite, React, Tailwind
+
 ``` shell
-# Follow Tailwind Vite setup guide
-npm i react-router
-# Follow ReactRouter guide
+# 1. Follow Tailwind Vite setup guide.
+npm i react-router # This is for routes for portfolio projects on Pages.
+# Follow ReactRouter guide.
 ```
 
 # Weld safety table
 
-- Convert observations.js to commented sample.
-- 🔎 Check if a string can be processed like an array of strings (for in ?)
+- Create obs route
 
-- Create a route with the observations table and push to pages repo.
+- Incorporate AWS ANSI
 
-- Create doc and shedule routes and push to pages repo.
+- Create msds/part manual
+
+- Create doc route
+
+- Create shedule route
+
 - 🔎 Check how paged media works.
+
 - The doc can be WI's for making T handle T weld.
+
+# Thoughts
+
+- It is important to develop a set of skills that the general public would pay you for. Another approach is having a skill that a niche segment of the population would pay for but having the monopoly (market-dominance) in that field.

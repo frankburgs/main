@@ -60,7 +60,7 @@
 - Trying to leave.
 - Hoarding.
 - Person's best attempt to say what they need in the context of a broken brain.
-- Fuel, trigger analogy.
+- Fuel, trigger, explosive analogy.
 - Pain, constipation, infection, depression, psychosocial, cultural, emotional, physiological etc.
 - Urinating in garbage cans, think of environment and ease of finding a bathroom.
 
