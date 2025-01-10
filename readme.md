@@ -1,29 +1,27 @@
 # Setup
-
-- Vite, React, Tailwind
-
 ``` shell
-# 1. Follow Tailwind Vite setup guide.
-npm i react-router # This is for routes for portfolio projects on Pages.
-# Follow ReactRouter guide.
+$ npm i vite react react-dom/client react-router
 ```
+- Follow Tailwind CSS Vite framework install guide.
 
 # Weld safety table
+- Backup images
+- Format observations content to HTML only (remove Bootstrap classes).
 
-- Create obs route
+# Routes
+- schedule
+- mousetrap
+- inventory (msds, manuals, etc.)
+- wi (work instruction, T-handle)
 
-- Incorporate AWS ANSI
 
-- Create msds/part manual
+# Tips n tricks
+- Join lines using Ctrl + Shift + P and searching.
+- On Windows, Shift + Alt + F to autoformat the indentation of a code block.
 
-- Create doc route
-
-- Create shedule route
-
-- 🔎 Check how paged media works.
-
-- The doc can be WI's for making T handle T weld.
 
 # Thoughts
 
-- It is important to develop a set of skills that the general public would pay you for. Another approach is having a skill that a niche segment of the population would pay for but having the monopoly (market-dominance) in that field.
+- Flashing, field maintenance, power crimping, battery monitoring, continuity testing, resistance measurements.
+
+- Pipetting, cold-shipping & storage, reagent manufacturing, inventory management, SOP writing, pH meter, fume hood.

@@ -100,4 +100,3 @@
 - Delusion: mechanism to avoid social interaction ❔
 - Generation: defined as 30 years.
 - Many mental state exam MMSE ❔
-
