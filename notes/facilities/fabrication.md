@@ -12,6 +12,7 @@
 - Roof repair
 - 3x patio cover redo
 - Shed move
+- Juicer with big gears & a handle
 
 
 # Finding height

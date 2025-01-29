@@ -10,12 +10,40 @@
 - Move to Vite/React/Tailwind development.
 - 3-line hamberger menu icon rotate 90 on hover.
 
+# Notes
+- ANSI bg color #1974bb
+
 # Implementation
 
-``` js
-// Use to open external reference links
+
+``` js Use to style anchor tags from observations
+import React from 'react';
+import './styles.css'; // Import your CSS file
+
+const MyComponent = () => {
+  return (
+    <div
+      className="custom-html"
+      dangerouslySetInnerHTML={{
+        __html: '<a href="https://example.com">Link</a>',
+      }}
+    />
+  );
+};
+
+export default MyComponent;
+```
+
+``` css
+.custom-html a {
+  @apply text-blue-500 hover:underline;
+}
+```
+
+``` js Use to open reference links
 window.open("https://www.google.com", "_blank", "location=no,menubar=no,toolbar=no,status=no,scrollbars=no,resizable=no");
 ```
+
 
 # Shortcuts
 - Shift + Alt + F : auto-indent code-block
