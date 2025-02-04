@@ -7,5 +7,5 @@
 
 # Docs
 - Always include callouts in diagrams.
-- Never use handwritten to communicate.
-- Include temporary bracing.
+- Never use handwritten to communicate, printed or virtual only.
+- Always include temporary bracing.

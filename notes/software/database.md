@@ -1,12 +1,39 @@
 
+``` sql msql
+CREATE DATABASE mydb; -- Create db.
 
+USE mydb; -- Semicolon optional on USE.
+
+CREATE TABLE Fasteners(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    desc1 VARCHAR(255) NOT_NULL UNIQUE, -- TEXT.
+    desc2 VARCHAR(255) NOT_NULL,
+    desc3 DECIMAL(5,2), NOT_NULL, --5 digits tota, 2 after the period.
+    qty INT
+);
+
+SHOW DATABASES; -- Show
+
+INSERT INTO Fasteners(desc1, desc2, qty)
+VALUES("1/4-20", "HH", 3.5, 100)
+
+SELECT desc1, qty FROM Fasteners
+ORDER BY id ASC; -- Ascending.
+WHERE desc1 = '1/4-20'
+AND desc2 LIKE 'f%' -- Starts with an f.
+LIMIT 2;
+
+```
 
 
 
 # Database
+
 - Secure, removes redundancy, program-data independence, shares data multi user transactions, adheres to ACID concept, self describing, multiple view support, allows table formation, multi-user environment.
+
 ## Policies
 - Acceptable use, continuous monitoring, data collection, classification, ownership, & retention, password.
+
 ## Backups
 - Performed by Relational Database Management System (RDMS) or database manager.
 - 3 2 1 rule, 3 backups of all critical data, 1 primary and 2 more, on premises with 2 storage types, 1 offsite backup.
@@ -23,7 +50,6 @@
 - Recovery only pulls from last full and last differential backup.
 ### Virtual
 - Uses database to track & maintain data.
-
 
 ## Commands
 ### Data Definition Language (DDL)
@@ -60,7 +86,9 @@
 - A table is 1 or more columns of data.
 - Schema is a collection of tables, a db can have more than one.
 
-# Most common types of data stores 
+
+# Most common types of data stores
+
 ## Document 
 - handles objects, data values,
 - Is named string fields in an entity referred to as a document.
@@ -78,6 +106,7 @@
 
 
 # Permissions
+
 - Only a DBA or object owner can provide or remove permissions.
 - Public role is automatically assigned to user.
 ## Database
@@ -104,33 +133,3 @@
 - Not in predefined model or data structure.
 - Text heavy files, but may contain numbers and dates.
 - Videos, images, audio, sensor data, server & website app logs, social media data, emails, and other types.
-
-# Commands
-
-``` sql
-select column 1, column 2, FROM table 1, table 2, WHERE column2='value';
-
-GRANT SELECT, INSERT, UPDATE, DELETE ON employees TO smithj;
-
-REVOKE DELETE ON employees FROM anderson;
-
-DENY DELETE ON employees TO jack;
-
-```
-
-``` python
-import pyodbc
-
-conn = pyodbc.connect('Driver={SQL Server};'
-    'Server = server_name;'
-    'Database = database_name;'
-    'Trusted_Connection = yes;')
-cursor = conn.cursor()
-cursor.execute('SELECT * FROM table_name')
-
-for i in cursor:
-    print(i)
-```
-
-# Misc
-- An uncompressed HD .png ~3.3 MB
