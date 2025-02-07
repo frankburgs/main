@@ -3,28 +3,34 @@ import obs from './weld_safety/observations'
 
 function App() {
   
-  const obsWithIds = obs.map((item, index) => ({
+  const obsWithIds = obs.map((item, index) => ({// Adds a counter to each observation.
     id: index + 1,
     ...item,
   }));
-  
 
   return (
 
-    <table className="bg-black text-white">
-      <thead></thead>
+    <table className="border-collapse border border-gray-400 w-full">
+      <thead>
+        <tr>
+          <th>Menu</th>
+          <th>Type</th>
+          <th>Observation</th>
+          <th>Recommendation</th>
+        </tr>
+      </thead>
       
       <tbody>
-      {obsWithIds.map((obs) => (
+        {obsWithIds.map((obs) => (
           <tr key={obs.id}>
-            <td>{obs.id}</td>
-            <td>{obs.type}</td>
-            <td dangerouslySetInnerHTML={{ __html: obs.observation }} />
-            <td dangerouslySetInnerHTML={{ __html: obs.recommendation }} />
+            <td className="border border-gray-300">{obs.id}</td>
+            <td className="border border-gray-300">{obs.type}</td>
+            <td className="border border-gray-300 p-3" dangerouslySetInnerHTML={{ __html: obs.observation }} />
+            <td className="border border-gray-300" dangerouslySetInnerHTML={{ __html: obs.recommendation }} />
           </tr>
-      ))}
+        ))}
       </tbody>
     </table>
   )
 }
-export default App
+export default App;
