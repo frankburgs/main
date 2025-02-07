@@ -29,6 +29,8 @@ LIMIT 2;
 
 # Database
 
+- 1 KB = 1024 bytes, 1 MB = 1024 KB, 1 GB = 1024 mb, 1 TB = 1024 GB
+
 - Secure, removes redundancy, program-data independence, shares data multi user transactions, adheres to ACID concept, self describing, multiple view support, allows table formation, multi-user environment.
 
 ## Policies

@@ -1,6 +1,6 @@
 // 35 observations, html elements used (a, br, ...)
 
-var observations = [
+const observations = [
 
   {
     type: "fed",
@@ -269,3 +269,5 @@ var observations = [
     reference: "Anecdote",
   },
 ]
+
+export default observations;
