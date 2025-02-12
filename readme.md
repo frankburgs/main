@@ -1,9 +1,9 @@
 - This repository is for front-end development that is then pushed to pages publication repo.
 
 
-# Current task breakdown- Convert welding safety list to React
+# Current task breakdown - Convert welding safety list to React
 - Add buttons that show images.
-- Currently using index.html to contain stuff.
+- Currently using index.html to contain modal code.
 
 # To-do
 - Push React build to GH pages.

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import obs from './weld_safety/observations';
 import MyComponent from './MyComponent.jsx';
+import { CameraIcon } from './svg.jsx';
+import { FullScreenIcon } from './svg.jsx';
 
 // This is the safety list compiled from welding school.
 
@@ -27,14 +29,18 @@ function App() {
           <th>Recommendation</th>
         </tr>
       </thead>
-
+      
       <tbody>
         {obsWithIds.map((obs) => (
-          <tr key={obs.id} className={obs.id % 2 === 0 ? 'bg-black' : 'bg-gray-900'}>
+          <tr key={ obs.id } className={obs.id % 2 === 0 ? 'bg-black' : 'bg-gray-900'}>
+            
+            <td className="text-center flex p-5">
+              <span>{ obs.id }&nbsp;</span>
+              {obs.id < 10 && <span>&nbsp;</span>}
+              {obs.media && <CameraIcon/>}
+            </td>
 
-            <td className="text-center">{obs.id}</td>
-
-            <td dangerouslySetInnerHTML={{ __html: obs.reference }} />
+            <td className="p-2" dangerouslySetInnerHTML={{ __html: obs.reference }} />
 
             <MyComponent obs={obs.observation}/>
 
