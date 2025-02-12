@@ -3,7 +3,7 @@
 
 # Current task breakdown- Convert welding safety list to React
 - Add buttons that show images.
-
+- Currently using index.html to contain stuff.
 
 # To-do
 - Push React build to GH pages.

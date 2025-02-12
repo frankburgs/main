@@ -18,7 +18,6 @@ function App() {
   }));
 
   return (<>
-
     <table className="w-full border-separate">
       <thead>
         <tr className="text-left">
