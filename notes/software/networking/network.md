@@ -1,3 +1,5 @@
+- Pinging an IP address with no port specified defaults to port 80 ❔
+
 Obtain an IP address automatically: When a device is configured to obtain an IP address automatically, it will use the Dynamic Host Configuration Protocol (DHCP) to obtain an IP address from a DHCP server on the network.  
 
 The DHCP server will assign an IP address to the device, along with other network settings, such as the subnet mask and default gateway. This can simplify network management and reduce the likelihood of address conflicts.  

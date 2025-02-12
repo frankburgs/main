@@ -1,36 +1,50 @@
-import { useState } from 'react'
-import obs from './weld_safety/observations'
+import React, { useEffect } from 'react';
+import obs from './weld_safety/observations';
+import MyComponent from './MyComponent.jsx';
+
+// This is the safety list compiled from welding school.
 
 function App() {
-  
-  const obsWithIds = obs.map((item, index) => ({// Adds a counter to each observation.
+
+  const sortedObs = obs.sort((a, b) => { // Sorting the observations alphabetically by type.
+    if (a.type < b.type) return -1;
+    if (a.type > b.type) return 1;
+    return 0;
+  });
+
+  const obsWithIds = sortedObs.map((item, index) => ({// Adds a counter to each observation.
     id: index + 1,
     ...item,
   }));
 
-  return (
+  return (<>
 
-    <table className="border-collapse border border-gray-400 w-full">
+    <table className="w-full border-separate">
       <thead>
-        <tr>
+        <tr className="text-left">
           <th>Menu</th>
-          <th>Type</th>
+          <th>Reference</th>
           <th>Observation</th>
           <th>Recommendation</th>
         </tr>
       </thead>
-      
+
       <tbody>
         {obsWithIds.map((obs) => (
-          <tr key={obs.id}>
-            <td className="border border-gray-300">{obs.id}</td>
-            <td className="border border-gray-300">{obs.type}</td>
-            <td className="border border-gray-300 p-3" dangerouslySetInnerHTML={{ __html: obs.observation }} />
-            <td className="border border-gray-300" dangerouslySetInnerHTML={{ __html: obs.recommendation }} />
+          <tr key={obs.id} className={obs.id % 2 === 0 ? 'bg-black' : 'bg-gray-900'}>
+
+            <td className="text-center">{obs.id}</td>
+
+            <td dangerouslySetInnerHTML={{ __html: obs.reference }} />
+
+            <MyComponent obs={obs.observation}/>
+
+            <td  className="p-3" dangerouslySetInnerHTML={{ __html: obs.recommendation }} />
           </tr>
         ))}
       </tbody>
     </table>
+    </>
   )
 }
 export default App;

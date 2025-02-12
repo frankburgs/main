@@ -1,4 +1,5 @@
 // 35 observations, html elements used (a, br, ...)
+// types include fed, observation, textbook, ANSI, anecdote
 
 const observations = [
 

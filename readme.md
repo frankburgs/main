@@ -1,18 +1,25 @@
-- This repository is for front-end development.
-- When complete, create a dist or build which is then pushed to the pages repo for publication.
+- This repository is for front-end development that is then pushed to pages publication repo.
+
+
+# Current task breakdown- Convert welding safety list to React
+- Add buttons that show images.
+
 
 # To-do
-- Convert welding safety list to React.
 - Push React build to GH pages.
-- Upload images backup elsewhere.
-- Add corner menu with nav to a main menu.
+- Add SVG icons.
+- Add a sort & filter option.
+- Build a main menu.
+- Add corner menu in weld list with nav to a main menu.
+- Print option for weld list.
 - Populate main menu route with hex & avatar.
 
+
 # Notes
-- To syle links, add a CSS style element below html element in index.
+- To syle links, add a CSS style element below html element in index ❔
+
 
 # Setup from "scratch"
-
 ``` shell
 $ npm create vite # Follow cmd instructions for React option.
 $ npm i react-router
@@ -35,15 +42,14 @@ export default defineConfig({
 ```
 
 ## Setup from repo
-
 ``` shell
 $ git clone repoUrl.git
 $ npm i # package.json must be present
+$ npm run dev
 ```
 
 
 # Routes
-
 - shelver
 - schedule
 - mousetrap
@@ -56,3 +62,8 @@ $ npm i # package.json must be present
 - auto
 - road
 - wheelbarrow
+- infantry
+
+
+# History
+- ✅ Create React sandbox (Use repo Fabrication)
