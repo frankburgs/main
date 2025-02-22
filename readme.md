@@ -2,10 +2,33 @@
 
 
 # Current task breakdown - Convert welding safety list to React
-- Add buttons that show images.
-- Currently using index.html to contain modal code.
+- Convert array of observations to arrays/objects.
+``` js
+// Function myFun receives something, either observations, recommendations, or references.
+// Returns a cell 
+function myFun(something){
+    let newArray = [];
+    for (let obj of something) {
+        if (obj.link){ // If there is a link...
+            let newAnchor = document.createElement("a"); // Create anchr tag.
+            newAnchor.href = obj.link; // Set href attribute.
+            newAnchor.innerHTML = obj.text; // Set inner text.
+            let anchorStr = newAnchor.outerHTML; // Convert to string.
+            newArray.push(anchorStr); // Add to array.
+        }
+        else{
+            newArray.push(obj.text); // Just add the text element.
+        }
+    }
+    let newStr = newArray.join("<br/>");
+    let newCell = document.createElement("td");
+    newCell.innerHTML = newStr;
+    return newCell;
+};
+```
 
 # To-do
+- Add buttons that show images (Currently using weld readme to contain modal code)
 - Push React build to GH pages.
 - Add SVG icons.
 - Add a sort & filter option.

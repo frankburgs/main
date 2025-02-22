@@ -1,13 +1,32 @@
-// 35 observations, html elements used (a, br, ...)
+// 35 observations
 // types include fed, observation, textbook, ANSI, anecdote
 
 const observations = [
-
   {
+    observations: {
+      text: "Sling is frayed",
+      text: "Manufacturer's label is illegible",
+    },
+    recommendations: [
+      {
+        text: "Tag & isolate sling",
+      },
+      {
+        text: "Replace sling",
+        link: "https://www.uline.com/BL_4023/Slings"
+      }
+    ],
+    references: [
+      {
+        text: "29 CFR 1910.184(c)(1)",
+        link: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(1)"
+      },
+      {
+        text: "29 CFR 1910.184(c)(14)",
+        link: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(14)"
+      }
+    ],
     type: "fed",
-    observation: "Sling is frayed<br>Manufacturer's label is illegible",
-    recommendation: '<a href="https://www.uline.com/BL_4023/Slings">Replace sling</a><br/>Tag & isolate sling',
-    reference: '<a href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(1)">29 CFR 1910.184(c)(1)</a><br><a href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(14)">29 CFR 1910.184(c)(14)</a>',
     media: "frayedSling",
   },
 
