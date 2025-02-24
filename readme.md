@@ -1,25 +1,55 @@
-- This repository is for front-end development that is then pushed to pages publication repo.
+- This repo holds general /notes and is a work in progress for converting the safety observations list to React.
 
 
 # Current task breakdown - Convert welding safety list to React
 - Convert array of observations to arrays/objects.
+``` jsx
+return (
+  <li className="item">
+    {isPacked ? name + ' ✅' : name}
+  </li>
+);
+```
+
 ``` js
-// Function myFun receives something, either observations, recommendations, or references.
-// Returns a cell 
+const root = document.getElementById("root");
+let newRow = document.createElement("tr");
+
+let counter = 1; // Begin counter.
+let counterCell = document.createElement("td");
+counterCell.innerHTML = counter;
+newRow.appendChild(counterCell); // End counter.
+
+newRow.appendChild(myFun(thing.references));
+
+newRow.appendChild(myFun(thing.observations));
+
+newRow.appendChild(myFun(thing.recommendations));
+
+root.appendChild(newRow);
+```
+
+``` js Receives either observations, recommendations, or references, and returns a td element.
+
 function myFun(something){
+
     let newArray = [];
-    for (let obj of something) {
-        if (obj.link){ // If there is a link...
-            let newAnchor = document.createElement("a"); // Create anchr tag.
+
+    for ( let obj of something ) {
+
+        if ( obj.link ){
+            let newAnchor = document.createElement("a");
+
             newAnchor.href = obj.link; // Set href attribute.
             newAnchor.innerHTML = obj.text; // Set inner text.
+
             let anchorStr = newAnchor.outerHTML; // Convert to string.
             newArray.push(anchorStr); // Add to array.
         }
-        else{
-            newArray.push(obj.text); // Just add the text element.
-        }
+
+        else newArray.push(obj.text); // Just add the text element
     }
+
     let newStr = newArray.join("<br/>");
     let newCell = document.createElement("td");
     newCell.innerHTML = newStr;
@@ -88,5 +118,8 @@ $ npm run dev
 - infantry
 
 
-# History
-- ✅ Create React sandbox (Use repo Fabrication)
+# Stretch
+- PC
+- Mv Shd
+- Cld shwr
+- 90 day no wheat.

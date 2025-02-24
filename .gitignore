@@ -1,4 +1,6 @@
 node_modules
 dist
-practice.html 
+practice
+practice.html
+practice.js
 package-lock.json
