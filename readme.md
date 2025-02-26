@@ -1,8 +1,10 @@
-- This repo holds general /notes and is a work in progress for converting the safety observations list to React.
+- This repo holds general 📁/notes and is a work in progress for Reactifying & Tailwinding the weld pages repo.
 
 
 # Current task breakdown - Convert welding safety list to React
+
 - Convert array of observations to arrays/objects.
+
 ``` jsx
 return (
   <li className="item">
@@ -10,6 +12,7 @@ return (
   </li>
 );
 ```
+
 
 ``` js
 const root = document.getElementById("root");
@@ -29,7 +32,8 @@ newRow.appendChild(myFun(thing.recommendations));
 root.appendChild(newRow);
 ```
 
-``` js Receives either observations, recommendations, or references, and returns a td element.
+
+``` js function receives observations, recommendations, or references, and returns a td element.
 
 function myFun(something){
 
@@ -47,7 +51,7 @@ function myFun(something){
             newArray.push(anchorStr); // Add to array.
         }
 
-        else newArray.push(obj.text); // Just add the text element
+        else newArray.push(obj.text); // Just add text element
     }
 
     let newStr = newArray.join("<br/>");
@@ -68,10 +72,6 @@ function myFun(something){
 - Populate main menu route with hex & avatar.
 
 
-# Notes
-- To syle links, add a CSS style element below html element in index ❔
-
-
 # Setup from "scratch"
 ``` shell
 $ npm create vite # Follow cmd instructions for React option.
@@ -90,7 +90,7 @@ export default defineConfig({
 })
 ```
 
-``` css add to css file and ensure it's referenced in app.
+``` css add to css file and ensure it's hreferenced in app.
 @import "tailwindcss";
 ```
 
@@ -103,6 +103,7 @@ $ npm run dev
 
 
 # Routes
+- ui (rubric is next, tailwind homepage layouts with avatar BR)
 - shelver
 - schedule
 - mousetrap
