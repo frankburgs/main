@@ -1,6 +1,10 @@
 node_modules
 dist
+public
+
 practice
 practice.html
 practice.js
+practice.css
+
 package-lock.json

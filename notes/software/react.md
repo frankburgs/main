@@ -1,14 +1,32 @@
+
+# Table of contents
+- Setup from repo
+- Setup from 'scratch'
+- if else
+
 How to to use React with babel and webpack.
 
-- /dist contains an index.html with a script to bundle.js
+- /dist contains an index.html with a script to bundle.js, which is generated on build.
 - I don't know why the index.js is in there also.
 - Try using server.js to avoid downloading server programs.
+- React app is stored in /src
+
+# Setup from repo
+``` shell
+$ git clone repoName
+$ npm i
+$ npm run build
+$ node server
+```
+
+# Setup from 'scratch'
 ``` shell
 $ npm i react react-dom
 $ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/cli
-npm install --save-dev webpack webpack-cli
-npm install --save-dev babel-loader
+$ npm install --save-dev webpack webpack-cli
+$ npm install --save-dev babel-loader
 ```
+
 
 ``` json
 {
@@ -33,14 +51,15 @@ npm install --save-dev babel-loader
 }
 ```
 
-``` js Create .babelrc in root directory.
+### Create .babelrc in root directory.
+``` js
 {
     "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
 
-
-``` js Create webpack.config.js in root directory.
+### Create webpack.config.js in root directory.
+``` js 
 const path = require('path');
 
 module.exports = {
@@ -64,7 +83,8 @@ module.exports = {
 };
 ```
 
-``` js Create server.js in root and open with node to avoid having to download server programs.
+### Create server.js in root and open with node to avoid downloading server programs.
+``` js
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -112,4 +132,13 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+```
+# if else
+
+``` jsx
+return (
+  <li className="item">
+    {isPacked ? name + ' ✅' : name}
+  </li>
+);
 ```
