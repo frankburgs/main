@@ -5,24 +5,24 @@
 - Stainless steel (pots for liquids, utensils, strainers, spatulas)
 - Wood (spatulas, cutting board, coasters)
 
-# Supply chain
-- Tortillas, casero, whole flour, flavored ?
-- Crackers ?
-- Pepper tree for pepper. Shell ?
+# Garden
+- Pepper tree
+- Leafy weed
 
 
 # Safety
-- Handle raw meats last when working in kitchen.
+- Handle raw meats last.
 - Do not stir liquids in mason jars with metal utensils.
-- Fire, hot liquids, raw meats, expired foods.
-- Most items peeled if easy to do (tomatoes is difficult, strawberries impossible).
+- Fire, hot liquids, raw meats, expired foods, sharps.
+- Most items peeled if easy to do, or carrot-scratched.
+
 
 ## Knives
 - Use back of knife to scrape surfaces 🦺
 
 
 # Practices
-- Try keeping bones in frozen container until enough to boil.
+- Keep bones in frozen container until enough to boil.
 
 
 # Recipes
