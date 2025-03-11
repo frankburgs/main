@@ -4,10 +4,7 @@ import MyComponent from './MyComponent.jsx';
 import { CameraIcon } from './svg.jsx';
 import { FullScreenIcon } from './svg.jsx';
 
-// This is the safety list compiled from welding school.
-
 function App() {
-
   const sortedObs = obs.sort((a, b) => { // Sorting the observations alphabetically by type.
     if (a.type < b.type) return -1;
     if (a.type > b.type) return 1;
@@ -31,7 +28,9 @@ function App() {
       </thead>
       
       <tbody>
+        
         {obsWithIds.map((obs) => (
+
           <tr key={ obs.id } className={obs.id % 2 === 0 ? 'bg-black' : 'bg-gray-900'}>
             
             <td className="text-center flex p-5">

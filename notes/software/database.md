@@ -1,5 +1,4 @@
-
-``` sql msql
+``` sql
 CREATE DATABASE mydb; -- Create db.
 
 USE mydb; -- Semicolon optional on USE.
@@ -8,7 +7,7 @@ CREATE TABLE Fasteners(
     id INT PRIMARY KEY AUTO_INCREMENT,
     desc1 VARCHAR(255) NOT_NULL UNIQUE, -- TEXT.
     desc2 VARCHAR(255) NOT_NULL,
-    desc3 DECIMAL(5,2), NOT_NULL, --5 digits tota, 2 after the period.
+    desc3 DECIMAL(5,2), NOT_NULL, --5 digits total, 2 after the period.
     qty INT
 );
 
@@ -24,8 +23,6 @@ AND desc2 LIKE 'f%' -- Starts with an f.
 LIMIT 2;
 
 ```
-
-
 
 # Database
 

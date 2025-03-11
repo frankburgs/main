@@ -1,4 +1,7 @@
-
+# Process
+- 3rd sink with rack
+- Hood range
+- Under-style counters
 # Materials
 - Glass (mason jars, storage containers with rubber tops)
 - Cast iron pans (no nonstick bullshit, use water to avoid sticking, drying, burn low & slow)
@@ -7,8 +10,7 @@
 
 # Garden
 - Pepper tree
-- Leafy weed
-
+- Leafy weed, mint, oregano
 
 # Safety
 - Handle raw meats last.
@@ -31,12 +33,15 @@
 - Pepper, onion, garlic, s&p, cooked.
 - Add vinegar, lime juice, avocados, and mix.
 - Use a wooden masher ❔
+
 ## Tortilla
 - Try milk instead of water.
 - Try oil on pan instead of kneading into mix.
+
 ## Pasta
 - Add water and a chopped tomatoe, let heat (~10 mins)
 - Add pasta, ground beef, allow to boil & turn off.
+
 ## Pickling
 
 ## Tea

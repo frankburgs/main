@@ -1,16 +1,3 @@
-
-# Table of contents
-- Setup from repo
-- Setup from 'scratch'
-- if else
-
-How to to use React with babel and webpack.
-
-- /dist contains an index.html with a script to bundle.js, which is generated on build.
-- I don't know why the index.js is in there also.
-- Try using server.js to avoid downloading server programs.
-- React app is stored in /src
-
 # Setup from repo
 ``` shell
 $ git clone repoName
@@ -26,13 +13,11 @@ $ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babe
 $ npm install --save-dev webpack webpack-cli
 $ npm install --save-dev babel-loader
 ```
-
-
+## Package
 ``` json
 {
   "scripts": {
     "build": "webpack",
-    // "start": "http-server ./dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -44,21 +29,20 @@ $ npm install --save-dev babel-loader
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^8.4.1",
-    // "http-server": "^14.1.1",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1"
   }
 }
 ```
 
-### Create .babelrc in root directory.
+## Create .babelrc in root directory.
 ``` js
 {
     "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
 
-### Create webpack.config.js in root directory.
+## Create webpack.config.js in root directory.
 ``` js 
 const path = require('path');
 
@@ -83,58 +67,7 @@ module.exports = {
 };
 ```
 
-### Create server.js in root and open with node to avoid downloading server programs.
-``` js
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-const distPath = path.join(__dirname, 'dist');
-
-const server = http.createServer((req, res) => {
-  let filePath = path.join(distPath, req.url === '/' ? 'index.html' : req.url);
-  const ext = path.extname(filePath);
-
-  // MIME types for different file extensions
-  const mimeTypes = {
-    '.html': 'text/html',
-    '.js': 'application/javascript',
-    '.css': 'text/css',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.jpg': 'image/jpeg',
-    '.gif': 'image/gif',
-    '.svg': 'image/svg+xml'
-  };
-
-  // Set default content type to HTML
-  let contentType = mimeTypes[ext] || 'application/octet-stream';
-
-  fs.readFile(filePath, (err, content) => {
-    if (err) {
-      if (err.code === 'ENOENT') {
-        res.writeHead(404, { 'Content-Type': 'text/html' });
-        res.end('<h1>404 Not Found</h1>');
-      } else {
-        res.writeHead(500);
-        res.end(`Server Error: ${err.code}`);
-      }
-    } else {
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
-    }
-  });
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
-
-```
-# if else
-
+# Snippets
 ``` jsx
 return (
   <li className="item">

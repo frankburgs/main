@@ -1,0 +1,6 @@
+- Homeless in wheelchair wanting his phone charged
+- Kid trying to print from the wi-fi
+- Helping senior in spanish with password retrieval to multiple accounts due to lost phone (hours)
+- Trying to use translate with guest.
+- Blank stare when asking lib employee what resources are available for homeless patron.
+- A little less concrete in the front.
