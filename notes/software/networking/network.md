@@ -1,3 +1,9 @@
+# sync or async
+- RAM, ns, sync.
+- Disk, 1 ms, async/sync.
+- Network, 100 ms - 2 sec, async.
+
+# Notes
 - Pinging an IP address with no port specified defaults to port 80 ❔
 
 Obtain an IP address automatically: When a device is configured to obtain an IP address automatically, it will use the Dynamic Host Configuration Protocol (DHCP) to obtain an IP address from a DHCP server on the network.  

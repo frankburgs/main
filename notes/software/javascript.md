@@ -4,7 +4,7 @@
 - [Timer to keep track of elapsed time in seconds](#timer-to-keep-track-of-elapsed-time-in-seconds)
 - [Importing & exporting](#importing-&-exporting)
 # Modal
-
+- Using TWCSS
 ``` html
 <button class="open-modal-btn">Open Modal</button>
 <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden" id="modal">
@@ -108,7 +108,7 @@ function counting() {
 ```
 
 # Importing & exporting
-
+- Images in React may need to be imported as default imports ❔
 ``` js
 // Named import, multiple exports in one file
 import { moduleScopedVariable } from './exampleModule.js';

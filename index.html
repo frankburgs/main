@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Reactify</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
-  <body class="bg-black text-white">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-
   </body>
-</html>
+  <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </html>
+  <!-- type = module on line 14 not shown in bootstrap docs. Bundle includes popper for dropdowns -->

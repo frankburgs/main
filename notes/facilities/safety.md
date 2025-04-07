@@ -1,10 +1,12 @@
-[Dementia](#dementia)<br/>
-[Vocabulary](#vocabulary)<br/>
-[Kitchen](#kitchen)<br/>
+# Daily
+- PPE check
+- Environment check
+- Personnel check (x2 or x3 including lunch)
+- Always keep gloves, head, eye, and earpro handy.
 
 # Weekly
 - OSHA fatality reports (All & by state)
-
+- Other Reports
 
 # Dementia
 - 4 main types

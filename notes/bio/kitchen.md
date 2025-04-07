@@ -2,6 +2,7 @@
 - 3rd sink with rack
 - Hood range
 - Under-style counters
+
 # Materials
 - Glass (mason jars, storage containers with rubber tops)
 - Cast iron pans (no nonstick bullshit, use water to avoid sticking, drying, burn low & slow)
@@ -20,7 +21,7 @@
 
 
 ## Knives
-- Use back of knife to scrape surfaces 🦺
+- Use back of knife to scrape surfaces and storage.
 
 
 # Practices
@@ -59,3 +60,15 @@
 - Add mate sticks after boils for energy drink.
 - Liquid will adhere to surfaces more while hot and drip, as well as deteriorate strainers so best wait til cool to drink.
 - Mix half mason jar with water & honey.
+
+# Morn
+- Breath, H2O, 2x towelettes, open vents
+- Food prep
+- Prep compost
+- End food prep.
+- Prep Ltr, bowls, pick (x2).
+- Conserve topgrass, keep ending mound low.
+- Final ltr rinse @ rear for noise abatement.
+- Bowls
+- PT/ yard time
+- Brush + wipe
