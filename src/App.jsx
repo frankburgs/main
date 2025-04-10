@@ -1,38 +1,37 @@
-import myArray from "./observations.js"
-import MyCell from "./MyCell.jsx"
+import myArray from "./observations.js";
+import MyCell from "./MyCell.jsx";
+import sortObservations from "./sort.js";
 
 function App() {
 
-  // Creates a list item.
-  const listItems = myArray.map((obs, index) =>
+  const sortedObservations = sortObservations(myArray);
+
+  const addUniqueId = (thing1) => {
+    return thing1.map((item, index) => {
+      return {
+        ...item,
+        id: `${index + 1}`,
+      };
+    });
+  };
+
+  const updatedObjects = addUniqueId(sortedObservations);
+
+  function FirstCell(props){
+    const x = props.props;
+    if(x.imgFileName){
+      return <td>{ x.id } image here</td>
+    }
+    return <td>{ x.id }</td>
+  }
+  const listItems = updatedObjects.map((obs, index) =>
+    
     <tr key={index}>
-      <td className="text-info">
-        { obs.authorityType }
-        { obs.imgFileName }
-      </td>
 
-      <td>
-        <ul className="list-unstyled">
-          {obs.references.map((aReference, index) => {
-
-            if (aReference.referenceURL) {
-              return "hello";
-            }
-            return <li>{aReference.referenceText}</li>;
-
-          })}
-        </ul>
-      </td>
-
-      <td>
-        <ul className="list-unstyled">
-          {obs.observations.map((anObservation, index) =>
-            <li>{anObservation.observationText}</li>
-          )}
-        </ul>
-      </td>
-      
-      <MyCell />
+      <FirstCell props={obs} />
+      <MyCell props={obs.references}/>
+      <MyCell props={obs.observations}/>
+      <MyCell props={obs.recommendations}/>
     </tr>
   );
 
@@ -40,10 +39,10 @@ function App() {
     <table className="table table-striped">
       <thead>
         <tr>
-          <td><h2>hi</h2></td>
-          <td>Reference</td>
-          <td>Observation</td>
-          <td>Recommendation</td>
+          <td></td>
+          <td><h4>Reference</h4></td>
+          <td><h4>Observation</h4></td>
+          <td><h4>Recommendation</h4></td>
         </tr>
       </thead>
       <tbody>
@@ -53,4 +52,4 @@ function App() {
   </>)
 }
 
-export default App
+export default App;

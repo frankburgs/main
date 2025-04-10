@@ -1,87 +1,108 @@
 // 35 observations
 const myArray = [
   {
-    authorityType: "OSHA",
+    authType: "osha",
     imgFileName: "frayedSling",
 
     observations: [
-      {observationText: "Sling is frayed"},
-      {observationText: "Manufacturer's label is illegible"}
+      {text: "Sling is frayed"},
+      {text: "Manufacturer's label is illegible"}
     ],
 
     recommendations: [
-      {recommendationText: "Tag & isolate sling"},
+      {text: "Tag & isolate sling"},
       {
-        recommendationText: "Replace sling",
-        recommendationURL: "https://www.uline.com/BL_4023/Slings"
+        text: "Replace sling",
+        url: "https://www.uline.com/BL_4023/Slings"
       },
     ],
 
     references: [
       {
-        referenceText: "29 CFR 1910.184(c)(1)",
-        referenceURL: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(1)"
+        text: "29 CFR 1910.184(c)(1)",
+        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(1)"
       },
       {
-        referenceText: "29 CFR 1910.184(c)(14)",
-        referenceURL: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(14)"
+        text: "29 CFR 1910.184(c)(14)",
+        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(14)"
       },
     ]
   },
 
   {
-    authorityType: "OSHA",
+    authType: "osha",
     imgFileName: "flammableCabinet",
 
     observations: [
-      {observationText: "Flammable cabinet not labeled"},
+      {text: "Flammable cabinet not labeled"},
     ],
     recommendations: [
       {
-        recommendationText: "Purchase label",
-        recommendationURL: "https://www.amazon.com/SmartSign-Magnetic-Legend-Flammable-Yellow/dp/B00HK9XMH2?th=1"
+        text: "Purchase label",
+        url: "https://www.amazon.com/SmartSign-Magnetic-Legend-Flammable-Yellow/dp/B00HK9XMH2?th=1"
       },
       {
-        recommendationText: "DIY with stencils and red paint",
-        recommendationURL: "https://www.uline.com/BL_2659/Brass-Stencils"
+        text: "DIY with stencils and red paint",
+        url: "https://www.uline.com/BL_2659/Brass-Stencils"
       }
     ],
     references: [
       {
-        referenceText: "29 CFR 1910.106(d)(3)(ii)",
-        referenceURL: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.106#p-1910.106(d)(3)(ii)",
+        text: "29 CFR 1910.106(d)(3)(ii)",
+        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.106#p-1910.106(d)(3)(ii)",
       }
     ]
   },
-]
-export default myArray;
-  // {
-  //   type: "fed",
-  //   observation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.osha.gov/laws-regs/standardinterpretations/1998-12-31-0">Oxy-fuel cylider carts do not have a fire barrier installed</a>',
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.253#p-1910.253(b)(4)(iii)">29 CFR 1910.253(b)(4)(iii)</a>',
-  //   recommendation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.airgas.com/product/Gas-Equipment/Cylinder-Carts-and-Storage/Cylinder-Carts/p/STCFW-12">Purchase</a> or DIY',
-  //   media: "cartCylinders",
-  // },
+
+  {
+    authType: "osha",
+    imgFileName: "cartCylinders",
+
+    observations: [{
+      text: "Oxy-fuel cylider carts do not have a fire barrier installed",
+      url: "https://www.osha.gov/laws-regs/standardinterpretations/1998-12-31-0"
+    }],
+    references: [
+      {
+        text: "29 CFR 1910.253(b)(4)(iii)",
+        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.253#p-1910.253(b)(4)(iii)",
+      }],
+
+      recommendations: [
+        {
+          text: "Purchase or DIY",
+          url: "https://www.airgas.com/product/Gas-Equipment/Cylinder-Carts-and-Storage/Cylinder-Carts/p/STCFW-12"
+        }],
+    },
+
+  {
+    authType: "osha",
+    imgFileName: "electricalSurface",
+    observations: [
+      { text: "Electrical box used as a storage surface"}
+    ],
+    references: [
+      {
+        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.303#p-1910.303(g)(1)(ii)",
+        text: "29 CFR 1910.303(g)(1)(ii)"
+      }
+    ],
+    recommendations: [
+      { text: 'Keep space about electrical equipment clear'}
+    ]
+  },
 
   // {
-  //   type: "fed",
-  //   observation: "Electrical box used as a storage surface",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.303#p-1910.303(g)(1)(ii)">29 CFR 1910.303(g)(1)(ii)</a>',
-  //   recommendation: 'Keep space about electrical equipment clear',
-  //   media: "electricalSurface",
-  // },
-
-  // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: "Space around fire extinguishers is cluttered",
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(c)(1)">29 CFR 1910.157(c)(1)</a>',
   //   recommendation: 'Maintain clearance around fire extinguishers',
-  //   media: "fireExtinguisherClearance1",
-  //   media2: "fireExtinguisherClearance2"
+  //   imgFileName: "fireExtinguisherClearance1",
+  //   imgFileName2: "fireExtinguisherClearance2"
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: "Forklift forks have been cut through",
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.178#p-1910.178(q)(6)">29 CFR 1910.178(q)(6)</a>',
   //   recommendation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.grainger.com/product/19ND78?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI4o3wlaKGhAMVGx6tBh1vEAJOEAQYAiABEgJM6PD_BwE&gclsrc=aw.ds">Replace forks</a>',
@@ -89,7 +110,7 @@ export default myArray;
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: "Manufacturer's label on ladder is illegible",
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.23#p-1910.23(b)(9)">29 CFR 1910.23(b)(9)</a>',
   //   recommendation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.grainger.com/product/24HW02?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI1feopZ7qgwMVrtXCBB2VLAXsEAQYASABEgKQYPD_BwE&gclsrc=aw.ds">Replace worn labels</a>',
@@ -97,7 +118,7 @@ export default myArray;
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: "Exposed conducting cable in SMAW area",
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.254#p-1910.254(d)(9)(iii)">29 CFR 1910.254(d)(9)(iii)</a><br><a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.305#p-1910.305(f)(1)">29 CFR 1910.305(f)(1)</a>',
   //   recommendation: "Insulate conductors",
@@ -106,7 +127,7 @@ export default myArray;
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.osha.gov/laws-regs/standardinterpretations/1998-12-16">Power tool cable has electrical tape covering</a>',
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1926/section-1926.403#p-1926.403(b)(1)(iii)">29 CFR 1926.403(b)(1)(iii)</a>',
   //   recommendation: "Tag and isolate tool until repaired",
@@ -114,7 +135,7 @@ export default myArray;
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: "Fire extinguisher inspection tag not filled out for December, January, February",
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(e)(2)">29 CFR 1910.157(e)(2)</a>',
   //   recommendation: '',
@@ -123,7 +144,7 @@ export default myArray;
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   observation: "Student uses personal Milwaukee<br/>angle grinder with guard removed",
   //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/subpart-P#p-1910.243(c)(4)">29 CFR 1910.243(c)(4)</a>',
   //   recommendation: "Tool-specific student safety training checklist",
@@ -137,11 +158,17 @@ export default myArray;
   // },
 
   // {
-  //   type: "ANSI",
-  //   observation: "&quot;My girlfriend's pants caught on fire&quot", // Needs innerHTML to set.
-  //   recommendation: "Discuss clothing flammability",
+  //   authType: "ANSI",
+  //   observations: [
+  //  "&quot;My girlfriend's pants caught on fire&quot", // Needs innerHTML to set.
+  //   
+  //    recommendation: "Discuss clothing flammability",
+  // 
   //   reference: "<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='https://www.aws.org/Standards-and-Publications/Free-Resources/'>ANSI Z49.1 4.3</a>",
   // },
+
+]
+export default myArray;
 
   // {
   //   type: "anecdote",
@@ -241,7 +268,7 @@ export default myArray;
   // },
 
   // {
-  //   type: "fed",
+  //   type: "osha",
   //   reference: "<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(a)(3)(i)'>29 CFR 1910.147(a)(3)(i)</a>",
   //   observation: "Duct tape and paper used to mark malfunctioning equipment",
   //   recommendation: "Document LOTO procedures",
