@@ -1,46 +1,60 @@
 // 35 observations
 const myArray = [
   {
-    source: "OSHA",
+    authorityType: "OSHA",
+    imgFileName: "frayedSling",
 
     observations: [
-      {observation: "Sling is frayed"},
-      {observation: "Manufacturer's label is illegible"}
+      {observationText: "Sling is frayed"},
+      {observationText: "Manufacturer's label is illegible"}
     ],
 
     recommendations: [
-      {recommendation: "Tag & isolate sling"},
+      {recommendationText: "Tag & isolate sling"},
       {
-        recommendation: "Replace sling",
-        url: "https://www.uline.com/BL_4023/Slings"
+        recommendationText: "Replace sling",
+        recommendationURL: "https://www.uline.com/BL_4023/Slings"
       },
     ],
 
     references: [
       {
-        reference: "29 CFR 1910.184(c)(1)",
-        link: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(1)"
+        referenceText: "29 CFR 1910.184(c)(1)",
+        referenceURL: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(1)"
       },
       {
-        reference: "29 CFR 1910.184(c)(14)",
-        link: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(14)"
+        referenceText: "29 CFR 1910.184(c)(14)",
+        referenceURL: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.184#p-1910.184(c)(14)"
       },
+    ]
+  },
+
+  {
+    authorityType: "OSHA",
+    imgFileName: "flammableCabinet",
+
+    observations: [
+      {observationText: "Flammable cabinet not labeled"},
     ],
-    
-    media: "frayedSling",
-  }
+    recommendations: [
+      {
+        recommendationText: "Purchase label",
+        recommendationURL: "https://www.amazon.com/SmartSign-Magnetic-Legend-Flammable-Yellow/dp/B00HK9XMH2?th=1"
+      },
+      {
+        recommendationText: "DIY with stencils and red paint",
+        recommendationURL: "https://www.uline.com/BL_2659/Brass-Stencils"
+      }
+    ],
+    references: [
+      {
+        referenceText: "29 CFR 1910.106(d)(3)(ii)",
+        referenceURL: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.106#p-1910.106(d)(3)(ii)",
+      }
+    ]
+  },
 ]
-
 export default myArray;
-
-  // {
-  //   type: "fed",
-  //   observation: "Flammable cabinet not labeled",
-  //   recommendation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.amazon.com/SmartSign-Magnetic-Legend-Flammable-Yellow/dp/B00HK9XMH2?th=1">Purchase label</a> or<br><a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.uline.com/BL_2659/Brass-Stencils">DIY with stencils and red paint</a>',
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.106#p-1910.106(d)(3)(ii)">29 CFR 1910.106(d)(3)(ii)</a>',
-  //   media: "flammableCabinet",
-  // },
-
   // {
   //   type: "fed",
   //   observation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.osha.gov/laws-regs/standardinterpretations/1998-12-31-0">Oxy-fuel cylider carts do not have a fire barrier installed</a>',

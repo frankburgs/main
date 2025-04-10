@@ -1,37 +1,56 @@
 import myArray from "./observations.js"
-import MyRow from "./MyRow.jsx";
+import MyCell from "./MyCell.jsx"
+
 function App() {
 
-  // resources.links.forEach(link => {
-  //   console.log(`${link.text}: ${link.url}`);
-  // });
+  // Creates a list item.
+  const listItems = myArray.map((obs, index) =>
+    <tr key={index}>
+      <td className="text-info">
+        { obs.authorityType }
+        { obs.imgFileName }
+      </td>
 
-  // console.log(myArray);
+      <td>
+        <ul className="list-unstyled">
+          {obs.references.map((aReference, index) => {
 
-  // myArray.forEach(thing => {
-  //   console.log(thing.source);
-  // });
+            if (aReference.referenceURL) {
+              return "hello";
+            }
+            return <li>{aReference.referenceText}</li>;
 
-  const listItems = myArray.map((obs, index) => <li key={index}>{obs.source}</li>);
+          })}
+        </ul>
+      </td>
 
-  // console.log(listItems);
+      <td>
+        <ul className="list-unstyled">
+          {obs.observations.map((anObservation, index) =>
+            <li>{anObservation.observationText}</li>
+          )}
+        </ul>
+      </td>
+      
+      <MyCell />
+    </tr>
+  );
 
   return (<>
-    <table>
+    <table className="table table-striped">
       <thead>
         <tr>
-          <td>hi</td>
+          <td><h2>hi</h2></td>
           <td>Reference</td>
           <td>Observation</td>
           <td>Recommendation</td>
         </tr>
       </thead>
       <tbody>
-        <MyRow />
+        {listItems}
       </tbody>
     </table>
-    <div>{listItems}</div>
-    </>)
+  </>)
 }
 
 export default App
