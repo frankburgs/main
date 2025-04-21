@@ -92,14 +92,17 @@ const myArray = [
     ]
   },
 
-  // {
-  //   type: "osha",
-  //   observation: "Space around fire extinguishers is cluttered",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(c)(1)">29 CFR 1910.157(c)(1)</a>',
-  //   recommendation: 'Maintain clearance around fire extinguishers',
-  //   imgFileName: "fireExtinguisherClearance1",
-  //   imgFileName2: "fireExtinguisherClearance2"
-  // },
+  {
+    authType: "osha",
+    imgFileName: "fireExtinguisherClearance1",
+    imgFileName2: "fireExtinguisherClearance2",
+    observations: [{text: "Space around fire extinguishers is cluttered"}],
+    references: [{
+      text: "29 CFR 1910.157(c)(1)",
+      url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(c)(1)",
+    }],
+    recommendations: [{text:'Maintain clearance around fire extinguishers'}],
+  },
 
   // {
   //   type: "osha",

@@ -5,9 +5,9 @@ export default function MyCell(props) {
             <ul className="list-unstyled mb-0">
             {x.map((entry, index) => {
                 if (entry.url) {
-                return <li key={index}><a href={entry.url}>{entry.text}</a></li>;
+                    return <li key={index}><a href={entry.url}>{entry.text}</a></li>;
                 }
-                return <li key={index}>{entry.text}</li>;
+                    return <li key={index}>{entry.text}</li>;
             })}
             </ul>
         </td>

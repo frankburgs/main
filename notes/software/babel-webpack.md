@@ -1,31 +1,17 @@
-[Notes](#notes)
-[Setup](#setup)
-[Snippets](#snippets)
-
-# Notes
-- fcc min 25
-
-# Setup
-## Setup from repo
-``` she
+# Setup from repo
+``` js
 $ git clone repoName
 $ npm i
 $ npm run build
 $ node server
 ```
 
-
-## Setup from 'scratch'
-- Webpack consolidates .js, babel transpiles .jsx to .js
-``` sh
-$ npm i react react-dom
-$ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/cli
-$ npm install --save-dev webpack webpack-cli
-$ npm install --save-dev babel-loader
+# Setup from 'scratch'
+``` css
+$ npm i react react-dom @babel/cli @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli
 ```
 
-
-## Package
+# Package
 ``` json
 {
   "scripts": {
@@ -47,21 +33,33 @@ $ npm install --save-dev babel-loader
 }
 ```
 
-
-## Create .babelrc in root directory.
-``` js
+``` json
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1"
+  }
 }
 ```
 
-
-## Create webpack.config.js in root directory.
+# Create webpack.config.js in root directory.
 ``` js 
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -69,14 +67,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react', '@babel/preset-env'],
+          },
         },
       },
     ],
   },
-  mode: 'development'
+  mode: 'development',
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  }
 };
+
 ```
