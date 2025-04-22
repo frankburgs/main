@@ -94,31 +94,38 @@ const myArray = [
 
   {
     authType: "osha",
-    imgFileName: "fireExtinguisherClearance1",
-    imgFileName2: "fireExtinguisherClearance2",
+    imgFileName: "fireExtinguisherClearance",
     observations: [{text: "Space around fire extinguishers is cluttered"}],
     references: [{
-      text: "29 CFR 1910.157(c)(1)",
       url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(c)(1)",
+      text: "29 CFR 1910.157(c)(1)"
     }],
     recommendations: [{text:'Maintain clearance around fire extinguishers'}],
   },
 
-  // {
-  //   type: "osha",
-  //   observation: "Forklift forks have been cut through",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.178#p-1910.178(q)(6)">29 CFR 1910.178(q)(6)</a>',
-  //   recommendation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.grainger.com/product/19ND78?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI4o3wlaKGhAMVGx6tBh1vEAJOEAQYAiABEgJM6PD_BwE&gclsrc=aw.ds">Replace forks</a>',
-  //   media: "forkliftForks",
-  // },
+  {
+    authType: "osha",
+    imgFileName: "forkliftForks",
+    observations: [{text:"Forklift forks have been cut through"}],
+    references: [{
+      url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.178#p-1910.178(q)(6)",
+      text: "29 CFR 1910.178(q)(6)"
+    }],
+    recommendations: [{
+      url: "https://www.grainger.com/product/19ND78?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI4o3wlaKGhAMVGx6tBh1vEAJOEAQYAiABEgJM6PD_BwE&gclsrc=aw.ds",
+      text: "Replace forks",
+    }]
+  },
 
-  // {
-  //   type: "osha",
-  //   observation: "Manufacturer's label on ladder is illegible",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.23#p-1910.23(b)(9)">29 CFR 1910.23(b)(9)</a>',
-  //   recommendation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.grainger.com/product/24HW02?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI1feopZ7qgwMVrtXCBB2VLAXsEAQYASABEgKQYPD_BwE&gclsrc=aw.ds">Replace worn labels</a>',
-  //   media: "ladderLabel",
-  // },
+  {
+    authType: "osha",
+    imgFileName: "ladderLabel",
+    observations: [{text:"Manufacturer's label on ladder is illegible"}],
+    references: [{url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.23#p-1910.23(b)(9)",
+      text: "29 CFR 1910.23(b)(9)",}],
+    recommendations: [{url: "https://www.grainger.com/product/24HW02?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI1feopZ7qgwMVrtXCBB2VLAXsEAQYASABEgKQYPD_BwE&gclsrc=aw.ds",
+      text: "Replace worn labels"}]
+  },
 
   // {
   //   type: "osha",
@@ -169,9 +176,6 @@ const myArray = [
   // 
   //   reference: "<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='https://www.aws.org/Standards-and-Publications/Free-Resources/'>ANSI Z49.1 4.3</a>",
   // },
-
-]
-export default myArray;
 
   // {
   //   type: "anecdote",
@@ -329,10 +333,11 @@ export default myArray;
   //   recommendation: "Document consumible life cycle"
   // },
 
-  // {
-  //   type: "anecdote",
-  //   observation: "&quot;What am I supposed to do, just fix everything?&quot;",
-  //   recommendation: "Empower teaching staff with confidence<br/>to implement a safety education system",
-  //   reference: "Anecdote",
-  // },
-//]
+  {
+    authType: "anecdote",
+    observations: [{text:'"What am I supposed to do, just fix everything?"'}],
+    recommendations: [{text:"Empower teaching staff with confidence<br/>to implement a safety education system"}],
+    references: [{text:"Anecdote"}],
+  },
+]
+export default myArray;
