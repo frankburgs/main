@@ -1,6 +1,6 @@
 import myArray from "./observations.js";
 import MyCell from "./MyCell.jsx";
-import MyIcon from "./MyIcon.jsx";
+import CellIcon from "./CellIcon.jsx";
 import sortObservations from "./sort.js";
 import { useState, useEffect, useRef } from 'react';
 
@@ -78,7 +78,7 @@ function App() {
     setShowModal(true);
   }
 
-  const addUniqueId = (thing1) => {
+  const addUniqueId = (thing1) => { // Add a unique # ID to each row.
     return thing1.map((item, index) => {
       return {
         ...item,
@@ -89,7 +89,7 @@ function App() {
 
   const updatedObjects = addUniqueId(sortedObservations);
 
-  function FirstCell(props) {
+  function CellImg(props) {
     const x = props.props;
     if (x.imgFileName) {
       return (
@@ -98,26 +98,54 @@ function App() {
         </button>
       )
     }
-    return null
+  }
+
+  function FirstCell(props, index){
+    const x = props.props;
+    const y = x.obs;
+    if (y.serious){
+      return <td className="bg-danger rounded">{x.index+1}</td>
+    }
+    return <td> {x.index+1} </td>
   }
 
   const listItems = updatedObjects.map((obs, index) =>
+    
     <tr key={index} className="align-middle">
-      <td>{index + 1}</td>
-      <td><FirstCell props={obs} /></td>
-      <td className="d-flex text-nowrap"><MyIcon props={obs.authType}/><MyCell props={obs.references}/></td>
-      <td><MyCell props={obs.observations} /></td>
-      <td><MyCell props={obs.recommendations} /></td>
+
+      <FirstCell props={{obs, index}} />
+
+      <td>
+        <CellImg props={obs} />
+      </td>
+
+      <td>
+        <CellIcon props={obs.authType}/>
+      </td>
+
+      <td>
+        <MyCell props={obs.references}/>
+      </td>
+
+      <td>
+        <MyCell props={obs.observations} />
+      </td>
+
+      <td>
+        <MyCell props={obs.recommendations} />
+      </td>
+
     </tr>
   );
 
   // Begin final <App/> return statement.
   return (<>
-    <table className="table table-striped">
+    <table className="table table-hover">
       <thead>
         <tr>
-          <th>#</th>
-          <th>img</th>
+          <th></th>
+          <th></th>
+          <th></th>
           <th>Reference</th>
           <th>Observation</th>
           <th>Recommendation</th>
@@ -151,7 +179,6 @@ function App() {
 
               <div className="modal-body">
                 <img src={ images[currImg] } className="w-100" alt="safety image" />
-                {currImg}
               </div>
               
               <div className="modal-footer">
