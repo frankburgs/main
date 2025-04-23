@@ -29,142 +29,161 @@ const myArray = [
     ]
   },
 
-  {
-    authType: "osha",
-    imgFileName: "flammableCabinet",
-
-    observations: [
-      {text: "Flammable cabinet not labeled"},
-    ],
-    recommendations: [
-      {
-        text: "Purchase label",
-        url: "https://www.amazon.com/SmartSign-Magnetic-Legend-Flammable-Yellow/dp/B00HK9XMH2?th=1"
-      },
-      {
-        text: "DIY with stencils and red paint",
-        url: "https://www.uline.com/BL_2659/Brass-Stencils"
-      }
-    ],
-    references: [
-      {
-        text: "29 CFR 1910.106(d)(3)(ii)",
-        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.106#p-1910.106(d)(3)(ii)",
-      }
-    ]
-  },
-
-  {
-    authType: "osha",
-    imgFileName: "cartCylinders",
-
-    observations: [{
-      text: "Oxy-fuel cylider carts do not have a fire barrier installed",
-      url: "https://www.osha.gov/laws-regs/standardinterpretations/1998-12-31-0"
-    }],
-    references: [
-      {
-        text: "29 CFR 1910.253(b)(4)(iii)",
-        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.253#p-1910.253(b)(4)(iii)",
-      }],
-
-      recommendations: [
-        {
-          text: "Purchase or DIY",
-          url: "https://www.airgas.com/product/Gas-Equipment/Cylinder-Carts-and-Storage/Cylinder-Carts/p/STCFW-12"
-        }],
-    },
-
-  {
-    authType: "osha",
-    imgFileName: "electricalSurface",
-    observations: [
-      { text: "Electrical box used as a storage surface"}
-    ],
-    references: [
-      {
-        url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.303#p-1910.303(g)(1)(ii)",
-        text: "29 CFR 1910.303(g)(1)(ii)"
-      }
-    ],
-    recommendations: [
-      { text: 'Keep space about electrical equipment clear'}
-    ]
-  },
-
-  {
-    authType: "osha",
-    imgFileName: "fireExtinguisherClearance",
-    observations: [{text: "Space around fire extinguishers is cluttered"}],
-    references: [{
-      url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(c)(1)",
-      text: "29 CFR 1910.157(c)(1)"
-    }],
-    recommendations: [{text:'Maintain clearance around fire extinguishers'}],
-  },
-
-  {
-    authType: "osha",
-    imgFileName: "forkliftForks",
-    observations: [{text:"Forklift forks have been cut through"}],
-    references: [{
-      url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.178#p-1910.178(q)(6)",
-      text: "29 CFR 1910.178(q)(6)"
-    }],
-    recommendations: [{
-      url: "https://www.grainger.com/product/19ND78?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI4o3wlaKGhAMVGx6tBh1vEAJOEAQYAiABEgJM6PD_BwE&gclsrc=aw.ds",
-      text: "Replace forks",
-    }]
-  },
-
-  {
-    authType: "osha",
-    imgFileName: "ladderLabel",
-    observations: [{text:"Manufacturer's label on ladder is illegible"}],
-    references: [{url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.23#p-1910.23(b)(9)",
-      text: "29 CFR 1910.23(b)(9)",}],
-    recommendations: [{url: "https://www.grainger.com/product/24HW02?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI1feopZ7qgwMVrtXCBB2VLAXsEAQYASABEgKQYPD_BwE&gclsrc=aw.ds",
-      text: "Replace worn labels"}]
-  },
-
   // {
-  //   type: "osha",
-  //   observation: "Exposed conducting cable in SMAW area",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.254#p-1910.254(d)(9)(iii)">29 CFR 1910.254(d)(9)(iii)</a><br><a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.305#p-1910.305(f)(1)">29 CFR 1910.305(f)(1)</a>',
-  //   recommendation: "Insulate conductors",
-  //   media:'exposedWire1',
-  //   media2: 'exposedWire2'
+  //   authType: "osha",
+  //   imgFileName: "flammableCabinet",
+
+  //   observations: [
+  //     {text: "Flammable cabinet not labeled"},
+  //   ],
+  //   recommendations: [
+  //     {
+  //       text: "Purchase label",
+  //       url: "https://www.amazon.com/SmartSign-Magnetic-Legend-Flammable-Yellow/dp/B00HK9XMH2?th=1"
+  //     },
+  //     {
+  //       text: "DIY with stencils and red paint",
+  //       url: "https://www.uline.com/BL_2659/Brass-Stencils"
+  //     }
+  //   ],
+  //   references: [
+  //     {
+  //       text: "29 CFR 1910.106(d)(3)(ii)",
+  //       url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.106#p-1910.106(d)(3)(ii)",
+  //     }
+  //   ]
   // },
 
   // {
-  //   type: "osha",
-  //   observation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.osha.gov/laws-regs/standardinterpretations/1998-12-16">Power tool cable has electrical tape covering</a>',
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1926/section-1926.403#p-1926.403(b)(1)(iii)">29 CFR 1926.403(b)(1)(iii)</a>',
-  //   recommendation: "Tag and isolate tool until repaired",
-  //   media: 'tapedTool'
+  //   authType: "osha",
+  //   imgFileName: "cartCylinders",
+
+  //   observations: [{
+  //     text: "Oxy-fuel cylider carts do not have a fire barrier installed",
+  //     url: "https://www.osha.gov/laws-regs/standardinterpretations/1998-12-31-0"
+  //   }],
+  //   references: [
+  //     {
+  //       text: "29 CFR 1910.253(b)(4)(iii)",
+  //       url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.253#p-1910.253(b)(4)(iii)",
+  //     }],
+
+  //     recommendations: [
+  //       {
+  //         text: "Purchase or DIY",
+  //         url: "https://www.airgas.com/product/Gas-Equipment/Cylinder-Carts-and-Storage/Cylinder-Carts/p/STCFW-12"
+  //       }],
+  //   },
+
+  // {
+  //   authType: "osha",
+  //   imgFileName: "electricalSurface",
+  //   observations: [
+  //     { text: "Electrical box used as a storage surface"}
+  //   ],
+  //   references: [
+  //     {
+  //       url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.303#p-1910.303(g)(1)(ii)",
+  //       text: "29 CFR 1910.303(g)(1)(ii)"
+  //     }
+  //   ],
+  //   recommendations: [
+  //     { text: 'Keep space about electrical equipment clear'}
+  //   ]
   // },
 
   // {
-  //   type: "osha",
-  //   observation: "Fire extinguisher inspection tag not filled out for December, January, February",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(e)(2)">29 CFR 1910.157(e)(2)</a>',
-  //   recommendation: '',
-  //   media: 'fireExtinguisherTag1',
-  //   media2: 'fireExtinguisherTag2'
+  //   authType: "osha",
+  //   imgFileName: "fireExtinguisherClearance",
+  //   observations: [{text: "Space around fire extinguishers is cluttered"}],
+  //   references: [{
+  //     url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(c)(1)",
+  //     text: "29 CFR 1910.157(c)(1)"
+  //   }],
+  //   recommendations: [{text:'Maintain clearance around fire extinguishers'}],
   // },
 
   // {
-  //   type: "osha",
-  //   observation: "Student uses personal Milwaukee<br/>angle grinder with guard removed",
-  //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/subpart-P#p-1910.243(c)(4)">29 CFR 1910.243(c)(4)</a>',
-  //   recommendation: "Tool-specific student safety training checklist",
+  //   authType: "osha",
+  //   imgFileName: "forkliftForks",
+  //   observations: [{text:"Forklift forks have been cut through"}],
+  //   references: [{
+  //     url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.178#p-1910.178(q)(6)",
+  //     text: "29 CFR 1910.178(q)(6)"
+  //   }],
+  //   recommendations: [{
+  //     url: "https://www.grainger.com/product/19ND78?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI4o3wlaKGhAMVGx6tBh1vEAJOEAQYAiABEgJM6PD_BwE&gclsrc=aw.ds",
+  //     text: "Replace forks",
+  //   }]
   // },
 
-  // {type: "state",
-  //   observation: "<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='https://oag.ca.gov/sites/all/files/agweb/pdfs/cci/safety/eyewashes.pdf'>Eyewash station inspection tag not filled out</a>",
-  //   reference: "<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='https://www.dir.ca.gov/title8/5162.html'>Ca Labor code Title 8<br>Article 109 &sect;5162</a>",
-  //   media: "eyewashStationTag",
-  //   recommendation: "<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='https://webstore.ansi.org/standards/isea/ansiiseaz3582014r2020'>Purchase copy of ANSI Z358.1</a>",
+  // {
+  //   authType: "osha",
+  //   imgFileName: "ladderLabel",
+  //   observations: [{text:"Manufacturer's label on ladder is illegible"}],
+  //   references: [{url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.23#p-1910.23(b)(9)",
+  //     text: "29 CFR 1910.23(b)(9)",}],
+  //   recommendations: [{url: "https://www.grainger.com/product/24HW02?gucid=N:N:PS:Paid:GGL:CSM-2295:4P7A1P:20501231&gad_source=1&gclid=EAIaIQobChMI1feopZ7qgwMVrtXCBB2VLAXsEAQYASABEgKQYPD_BwE&gclsrc=aw.ds",
+  //     text: "Replace worn labels"}]
+  // },
+
+  // // {
+  // //   type: "osha",
+  // //   observation: "Exposed conducting cable in SMAW area",
+  // //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.254#p-1910.254(d)(9)(iii)">29 CFR 1910.254(d)(9)(iii)</a><br><a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.305#p-1910.305(f)(1)">29 CFR 1910.305(f)(1)</a>',
+  // //   recommendation: "Insulate conductors",
+  // //   media:'exposedWire1',
+  // //   media2: 'exposedWire2'
+  // // },
+
+  // // {
+  // //   type: "osha",
+  // //   observation: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.osha.gov/laws-regs/standardinterpretations/1998-12-16">Power tool cable has electrical tape covering</a>',
+  // //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1926/section-1926.403#p-1926.403(b)(1)(iii)">29 CFR 1926.403(b)(1)(iii)</a>',
+  // //   recommendation: "Tag and isolate tool until repaired",
+  // //   media: 'tapedTool'
+  // // },
+
+  // // {
+  // //   type: "osha",
+  // //   observation: "Fire extinguisher inspection tag not filled out for December, January, February",
+  // //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/section-1910.157#p-1910.157(e)(2)">29 CFR 1910.157(e)(2)</a>',
+  // //   recommendation: '',
+  // //   media: 'fireExtinguisherTag1',
+  // //   media2: 'fireExtinguisherTag2'
+  // // },
+
+  // // {
+  // //   type: "osha",
+  // //   observation: "Student uses personal Milwaukee<br/>angle grinder with guard removed",
+  // //   reference: '<a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.ecfr.gov/current/title-29/part-1910/subpart-P#p-1910.243(c)(4)">29 CFR 1910.243(c)(4)</a>',
+  // //   recommendation: "Tool-specific student safety training checklist",
+  // // },
+
+  // { 
+  //   authType: "state",
+  //   imgFileName: "eyewashStationTag",
+
+  //   observations: [
+  //     {
+  //       text: "Eyewash station inspection tag not filled out",
+  //       url: "https://oag.ca.gov/sites/all/files/agweb/pdfs/cci/safety/eyewashes.pdf"
+  //     }
+  //   ],
+
+  //   references: [
+  //     {
+  //       text:"Ca Labor code Title 8 Article 109 &sect;5162",
+  //       url: "https://www.dir.ca.gov/title8/5162.html"
+  //     }
+  //   ],
+
+  //   recommendations: [
+  //     {
+  //       url: "https://webstore.ansi.org/standards/isea/ansiiseaz3582014r2020",
+  //       text: "Purchase copy of ANSI Z358.1",
+  //     }
+  //   ]
   // },
 
   // {
@@ -336,7 +355,7 @@ const myArray = [
   {
     authType: "anecdote",
     observations: [{text:'"What am I supposed to do, just fix everything?"'}],
-    recommendations: [{text:"Empower teaching staff with confidence<br/>to implement a safety education system"}],
+    recommendations: [{text:"Empower teaching staff with confidence to implement a safety education system"}],
     references: [{text:"Anecdote"}],
   },
 ]
