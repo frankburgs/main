@@ -282,19 +282,19 @@ const myArray = [
     serious: "yes",
   },
 
-  // {
-  //   authType: "observation",
-  //   references: "Observation",
-  //   observations: "&ge;3 students show up to class on a school holiday",
-  //   recommendations:"Use e-mail notification for days off"
-  // },
+  {
+    authType: "observation",
+    references: [{text: "Observation"}],
+    observations: [{text: "3 students show up to class on a school holiday"}],
+    recommendations:[{text: "Use e-mail notification for days off"}]
+  },
 
-  // {
-  //   type: "textbook",
-  //   references: '"Modern Welding" 12th ed. G.W., Section 1.2 page 6',
-  //   observations: "Textbook mentions welder&apos;s ability to douse entire body using emergency shower",
-  //   recommendations: "Consider emergency shower Discuss fire blanket usage", 
-  // },
+  {
+    authType: "textbook",
+    references: [{text: '"Modern Welding" 12th ed. G.W., Section 1.2 page 6'}],
+    observations: [{text: "Textbook mentions welder&apos;s ability to douse entire body using emergency shower"}],
+    recommendations: [{text: "Consider emergency shower Discuss fire blanket usage"}], 
+  },
 
   {
     authType: "textbook",
@@ -308,87 +308,104 @@ const myArray = [
     recommendations: [{text: 'Add signage "Danger: High Voltage"'}]
   },
 
-  // {
-  //   type: "ANSI",
-  //   references: "'https://www.aws.org/Standards-and-Publications/Free-Resources/'>ANSI Z49.1 E4.3</a>",
-  //   observations: "Students trousers do not overlap with boot top",
-  //   recommendations: "PPE signage",
-  // },
+  {
+    authType: "ANSI",
+    references: [{
+      url: "https://www.aws.org/Standards-and-Publications/Free-Resources/",
+      text: "ANSI Z49.1 E4.3"}],
+    observations: [{text:"Students trousers do not overlap with boot top"}],
+    recommendations: [{text: "PPE signage"}]
+  },
 
-  // {
-  //   type: "ANSI",
-  //   reference: "'https://www.aws.org/Standards-and-Publications/Free-Resources/'>ANSI Z49.1 11.4.9.4</a>",
-  //   observation: "Electrode holders are not in good repair",
-  //   recommendation: "Replace electrode holders",
-  //   media: "electrodeHolder"
-  // },
+  {
+    authType: "ANSI",
+    references: [{
+      url: "https://www.aws.org/Standards-and-Publications/Free-Resources/",
+      text: "ANSI Z49.1 11.4.9.4"}],
+    observations: [{text: "Electrode holders are not in good repair"}],
+    recommendations: [{text: "Replace electrode holders"}],
+    imgFileName: "electrodeHolder"
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: "Observation",
-  //   observation: "Signage deteriorated",
-  //   recommendation: "Replace signage",
-  //   media: "deterioratedSignage"
-  // },
+  {
+    authType: "observation",
+    references: [{text: "Observation"}],
+    observations: [{text: "Signage deteriorated"}],
+    recommendations: [{text: "Replace signage"}],
+    imgFileName: "deterioratedSignage"
+  },
 
-  // {
-  //   type: "osha",
-  //   reference: "'https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(a)(3)(i)'>29 CFR 1910.147(a)(3)(i)</a>",
-  //   observation: "Duct tape and paper used to mark malfunctioning equipment",
-  //   recommendation: "Document LOTO procedures",
-  //   media: "SMAWmachineLOTO"
-  // },
+  {
+    authType: "osha",
+    references: [{
+      url: "https://www.ecfr.gov/current/title-29/part-1910/section-1910.147#p-1910.147(a)(3)(i)",
+      text: "29 CFR 1910.147(a)(3)(i)"}],
+    observations: [{
+      text: "Duct tape and paper used to mark malfunctioning equipment"}],
+    recommendations: [{text: "Document LOTO procedures"}],
+    imgFileName: "SMAWmachineLOTO"
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: "Observation",
-  //   observation: "Leather jackets dumped in container develop smell during wet weather",
-  //   recommendation: "DIY coat rack for leather jacket storage",
-  //   media: "leatherJacketDump"
-  // },
+  {
+    authType: "observation",
+    references: [{text: "Observation"}],
+    observations: [{
+      text: "Leather jackets dumped in container develop smell during wet weather"
+    }],
+    recommendations: [{
+      text: "DIY coat rack for leather jacket storage"}],
+    imgFileName: "leatherJacketDump"
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: "Observation",
-  //   observation: "Students eat in the shop and near metal cutting areas",
-  //   recommendation: "",
-  // },
+  {
+    authType: "observation",
+    references: [{text: "Observation"}],
+    observations: [{text: "Students eat in the shop and near metal cutting areas"}],
+    recommendations: [{text: ""}],
+  },
 
-  // {
+  {
 
-  //   type: "ANSI",
-  //   reference: "'https://www.aws.org/Standards-and-Publications/Free-Resources/'>ANSI Z49.1 4.2.1.4</a>",
-  //   observation: "College administrative staff perform media & walkthrough in working area during hot work without PPE",
-  //   recommendation: "",
-  // },
+    authType: "ANSI",
+    references: [{
+      url: "https://www.aws.org/Standards-and-Publications/Free-Resources/",
+      text: "ANSI Z49.1 4.2.1.4"
+    }],
+    observations: [{
+      text:"College administrative staff perform media & walkthrough in working area during hot work without PPE"
+    }],
+    recommendations: [{text: ""}],
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: "Observation",
-  //   observation: "Curriculum does not include coverage of AWS ANSI standards, OSHA standards, safety data sheets, technical data sheets, user manuals",
-  //   recommendation: "",
-  // },
+  {
+    authType: "observation",
+    references: [{text: "Observation"}],
+    observations: [{
+      text: "Curriculum does not include coverage of AWS ANSI standards, OSHA standards, safety data sheets, technical data sheets, user manuals"
+    }],
+    recommendations: [{text:""}],
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: "Observation",
-  //   observation: "No anonymous institutional feedback mechanism promoted",
-  //   recommendation: "",
-  // },
+  {
+    authType: "observation",
+    references: [{text: "Observation"}],
+    observations: [{text: "No anonymous institutional feedback mechanism promoted"}],
+    recommendations: [{text: ""}],
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: 'Observation',
-  //   observation: "Majority of new students fail safety quiz",
-  //   recommendation: "Add to controlled documents: safety exam, safety exam answer key",
-  // },
+  {
+    authType: "observation",
+    references: [{text: 'Observation'}],
+    observations: [{text: "Majority of new students fail safety quiz"}],
+    recommendations: [{text: "Add to controlled documents: safety exam, safety exam answer key"}],
+  },
 
-  // {
-  //   type: "observation",
-  //   reference: 'Observation',
-  //   observation: "Introductory class using mixed metal stock",
-  //   recommendation: "Document consumible life cycle"
-  // },
+  {
+    authType: "observation",
+    references: [{text: 'Observation'}],
+    observations: [{text: "Introductory class using mixed metal stock"}],
+    recommendations: [{text: "Document consumible life cycle"}]
+  },
 
   {
     authType: "anecdote",
