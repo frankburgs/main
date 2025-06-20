@@ -1,5 +1,4 @@
 CompTIA 3 hour video | min : 33
-- Netacad : cisc181Pearson@!
 
 # Questions
 - Can instructor see each student module progress.
