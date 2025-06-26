@@ -36,17 +36,21 @@ LIMIT 2;
 ## Backups
 - Performed by Relational Database Management System (RDMS) or database manager.
 - 3 2 1 rule, 3 backups of all critical data, 1 primary and 2 more, on premises with 2 storage types, 1 offsite backup.
+
 ### Full
 - All files typically on a preset schedule.
 - May need large file support.
 - Fastest type because recovery is from one archive file (includes many files and metadata).
+
 ### Incremental
 - Saves storage, fastest to perform.
 - Longest to recover from due to large number of archive files.
+
 ### Differential
 - Requires last full backup.
 - Includes last full and last differential backup.
 - Recovery only pulls from last full and last differential backup.
+
 ### Virtual
 - Uses database to track & maintain data.
 
@@ -99,6 +103,7 @@ LIMIT 2;
 
 ## Column-oriented databases
 - Rows & cols divided into column families, with each set of columns consisting of logically-related entities that are generally retrieved as a unit.
+
 ## Graph databases
 - Edges (relationships) & nodes (the data).
 - Be able to quickly traverse looking at relationships (edges)
@@ -108,26 +113,33 @@ LIMIT 2;
 
 - Only a DBA or object owner can provide or remove permissions.
 - Public role is automatically assigned to user.
+
 ## Database
 - Right to execute a specific SQL statement.
 - Access second persons's object.
 - Control computing resources.
 - Does not apply to DBA.
+
 ## System
 - Right to perform any activity.
 - Ability to add or delete columns or rows.
+
 ## Object
 - Right to perform specific actions.
 - Allows users to UPDATE, DELETE, INSERT, or SELECT data.
 - Object's owner has permissions for that object.
 
+
 # Types of data
+
 ## Structured
 - Tabular data, rows & cols.
 - These are relational databases.
 - Formed set of data.
+
 ## Semi-structured
 - Like JSON, also contain graph databases.
+
 ## Unstructured
 - Not in predefined model or data structure.
 - Text heavy files, but may contain numbers and dates.

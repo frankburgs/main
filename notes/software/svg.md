@@ -1,30 +1,30 @@
 - [To-do](#to-do)
 - [First-time](#first-time)
 
-# To-do
-- Use svg in jsx
-- mousetrap
-- Cat in worn flowing robes (console)
-- elbow tendon extension stretch
 
-# First-time
+
+# Everytime
 - -> Edit - Preferences - Interface (main)
 - User Interface handle size to max.
 - -> Toolbars
 - 2x icon sizes to max.
+- Resize page to selection @ end of editing.
+- Using a default font size 9 and matching to drawing with units of pixels (px) may work.
 
 ## Dark mode
-- -> File - Document Properties - Display
+- -> File - Document Properties - Display.
 - Both Page & Desk -> choose black (L) from HSL.
-- File -> Save Template & set as default
+- File -> Save Template & set as default.
 
 ## First shape
 - Select text and a shape, -> Text -> Flow into frame.
 - Set a fill color and an opacity to zero to make it clickable.
 - C&P the SVG element into your HTML, no img, or object, etc.
 
+
 # FX
 - Stack multiple differently blurred lines with center white top for neon.
+
 ``` css
 filter: blur(5px);
 ```
@@ -52,3 +52,9 @@ filter: blur(5px);
 ## Sanitization
 - Delete ?xml element before the svg element.
 - Delete sodipodi:nameview element.
+
+# To-do
+- Use svg in jsx
+- mousetrap
+- Cat in worn flowing robes (console)
+- elbow tendon extension stretch
