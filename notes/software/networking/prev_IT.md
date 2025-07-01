@@ -1,10 +1,4 @@
 
-[Software](#software)  
-[Computer](#computer)  
-[Operating System](#os)  
-[Bureaucracies](#bureaucracies)  
-[Information-Technology-Basics](#information-technology-basics)
-
 # Software
 - Desktop, web-based, and mobile.
 - major change.minor change.path or minor bug fix.build number, date or less significant change.
@@ -14,13 +8,16 @@
 ## Scripting
 - Programs that take interpret & execute command-line command and returns output is a "shell" or "command line interpreter".
 - Gather info, choose the script, write, test, schedule, include logging/error reporting.
+
 ### Bourne Again Shell (Bash)
 - Scripting language commonly used on Linux & Unix operating systems.
 - Used for  shell scripting, command line management, and system administration.
 - Automation & system config.
+
 ### PowerShell
 - Microsoft command-line shell and scripting language developed for Windows systems.
 - Automation & system config.
+
 ### Batch
 - Automates tasks and processes on Windows systems.
 - Used with Powershell or VBscript to do complex or added functionality.
@@ -37,6 +34,7 @@ netstat # Current network connections, info about local & remote addresses and t
 ### Python
 - Extensive libraries.
 - Bash, PowerShell, & Batch are better suited for command-line tasks, sysAdmin, & automation.
+
 ## Browser
 - Plug-ins provide specific added functionality.
 - Extensions customize menus, buttons, toolsbars, cookies, block pop-ups.
@@ -44,13 +42,17 @@ netstat # Current network connections, info about local & remote addresses and t
 ## SDLC
 - Traditional whole product developed and shipped, research and planning done at start.
 - Agile is short quick bursts and research & planning occur during dev.
+
 ### Requirements analysis and planning
 - Purpose, resources, users, i/o, QA, legal & regulatory, risk, schedule.
 - Software requirements specification document (SRS)
+
 ### Design
 - Creates design document from the SRS.
+
 ### Coding
 - Longest step
+
 ### Testing
 - Unit, regression, integration, and stress tests.
 ### Deployment
@@ -83,15 +85,20 @@ Verification & validation model, coding and testing are concurrent.
 - Create knowledge.
 - Deliver fast, respect people, optimize the whole.
 - DevOps methodology comes from agile and lean. 
+
 ## Browser
 - Has a UI, browser engine, rendering engine with networking, javascript interpreter, UI backend, data persistence.
 - A plug-in is for a specific website, extension is more general tooling.
+
 ## Business
 - Database, project, business-specific, accounting.
+
 ## Collaboration
 - Email client, conferencing, instant messaging, online workspace, document sharing.
+
 ## Utility
 - Anti-malware, firewall, preventative maintenance.
+
 ## Productivity
 - Word processing, spreadsheet, presentation, web browser, visual diagramming.
 
@@ -99,15 +106,19 @@ Verification & validation model, coding and testing are concurrent.
 - Written for a particular OS or OS version, specific programming language, operates only in that OS.
 - Are faster, smaller and more focused, easier to use. 
 - Higher cost of development, updates and maintenance cost more. Longer dev time.
+
 ## Cross-platform
 - Generalized programming expertise, wider user base, market reach, lower dev cost.
 - Design challenges, performance and experience variability across platforms.
+
 ## Commercial (proprietary, closed source)
 - Copyrighted, identified in the EULA.
 - Product key or serial number certifies software's originality.
+
 ## Open source (free & open source FOSS)
 - Different from freeware, which can be closed source.
 - Can be freely copied modified, & distributed.
+
 ## Licenses
 - Single-use allows one install.
 - Group, corporate, campus, or site.
@@ -129,12 +140,15 @@ Verification & validation model, coding and testing are concurrent.
 - Popular server OS's are microsoft windows server, Linux, UNIX, macOS X, freeBSD
 - 3 types of peripherals, input, output, and storage devices.
 - SATA or PATA drives, RAM or ROM.
+
 ## Memory
+
 ### Hybrid disk array
 - Performance concerns, complex to manage and maintain.
 - Small, fast, lower setup cost.
 - Combined multiple SSD & HDD into one array of drives.
 - Best for when high speeds and capacity are ideal.
+
 ### Direct attached software (DAS)
 - Can contain hard, solid-state, and optical disc drives.
 - Best for small to medium networks with moderately high storage needs.
@@ -334,21 +348,6 @@ $ bootrec /rebuild bcd # Correct missing installations in boot configurations da
 - ISP to modem (digitizes signal) to router to NIC.
 - Modem transforms digital information from NIC to analog signal to be transmitted to a network.
 
-# OS
-- Operating system.
-
-## Windows
-- Before installing, confirm base Windows OS is available on the computer's hard drive.
-- Power computer.
-- Custom advanced install.
-- Generally use FAT32, NTFS, or HPFS configuration.
-- All files are either binary or text.
-- Virtual memory is a thing and might run low.
-- Memory diagnostics, performance monitor, event viewer, registry editor, task manager.
-
-### User
-- Edit group policy, user config settings.
-
 
 ## Linux
 - Open-source OS, uses EXT 4.
@@ -443,7 +442,6 @@ Symbol	Stands for:<br/>
 - IT Fundamentals (ITF+)
 - A+ (Hardware, software, networking, OS's, device & network troubleshooting, device & network security, virtualization & cloud computing, operational procedures)
 - Networks
-
 ### CompTIA troubleshooting model
 - Identify the problem
 - Research.
@@ -453,20 +451,14 @@ Symbol	Stands for:<br/>
 - Implement solution or escalate.
 - Verify full system functionality & implement preventative measures.
 - Document findings, lessons learned, actions, outcomes.
-
 ## Cybersecurity and Infrastructure Security Ageny (CISA)
-
 ## IBM X-Force Exchange
-
 ## Microsoft
 - 365 Certified: Fundamentals
 - Role-based & specialty based certifications (💵 products).
-
 ## Apple
 - Apple Certified Support Professional (ACSP), for macOS.
-
 ## Infraguard
-
 ## ITIL foundation (Information Technology Infrastructure Library)
 - Can start at a support center courses.
 - Standardized set of detailed practices and processes.
@@ -568,15 +560,6 @@ Symbol	Stands for:<br/>
 - Communicate with clients on updates & solutions.
 - Document and maintain service desk processes.
 - Perform system installations & updates.
-
-## Software
-CMS, CRM, ERP, collaboration, productivity, & business-specific apps, web servers, OS's.
-
-## Technical tools
-VM's, VPN's, Network security, IT infrastructure monitoring software, enterprise hardware
-
-## Soft skills
-Customer service mindset, communication, organization, leadership, problem solving, flexible & adaptable.
 
 ## Other tools
 Programming, OS's, application logs, servers, database management, passwords, support ticket workflow, knowledge bases.

@@ -1,33 +1,5 @@
-``` sql
-CREATE DATABASE mydb; -- Create db.
-
-USE mydb; -- Semicolon optional on USE.
-
-CREATE TABLE Fasteners(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    desc1 VARCHAR(255) NOT_NULL UNIQUE, -- TEXT.
-    desc2 VARCHAR(255) NOT_NULL,
-    desc3 DECIMAL(5,2), NOT_NULL, --5 digits total, 2 after the period.
-    qty INT
-);
-
-SHOW DATABASES; -- Show
-
-INSERT INTO Fasteners(desc1, desc2, qty)
-VALUES("1/4-20", "HH", 3.5, 100)
-
-SELECT desc1, qty FROM Fasteners
-ORDER BY id ASC; -- Ascending.
-WHERE desc1 = '1/4-20'
-AND desc2 LIKE 'f%' -- Starts with an f.
-LIMIT 2;
-
-```
-
 # Database
-
 - 1 KB = 1024 bytes, 1 MB = 1024 KB, 1 GB = 1024 mb, 1 TB = 1024 GB
-
 - Secure, removes redundancy, program-data independence, shares data multi user transactions, adheres to ACID concept, self describing, multiple view support, allows table formation, multi-user environment.
 
 ## Policies

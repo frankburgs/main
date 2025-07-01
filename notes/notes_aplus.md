@@ -1,9 +1,29 @@
-- [Safety](#safety)
-- [Computer Parts](#computer-parts)
-- [Media](#media)
-- [Questions](#questions)
 
-!
+# Questions !1x
+## ez
+- Can instructor see each student module progress & long-term lessons learned ?
+- Computer plugged during work for ground but not power, component in path?
+- Ultra HD : 3840 x 2160>, 16 : 9, alias 4k.
+- How integrate YT vids into curriculum ?
+
+## technical
+- If a power supply does not have this switch, it automatically detects and sets the correct voltage ?
+- 5.1.1.4 vlan setup pseudocode
+
+## bureau
+- itf before a+
+- ITIL 
+- Module 1 of the ITE 8.0 curriculum
+- iso 9000:2001
+- Student e-mails not used
+- College IT admin
+- Weld fiasco
+
+## long
+- Some application layer protocols use only UDP. true
+- Some application layer protocols can use both TCP and UDP. true
+- Some application layer protocols use neither TCP nor UDP. false
+
 
 # Safety
 - 1.3.2 Lab Safety & disassembly
@@ -131,7 +151,7 @@
 ## Adapter cards
 - Increase functionality of a computer by adding controllers for specific devices or by replacing malfunctioning ports.
 - Sound adapter, Network Interface Card (NIC), eSATA card adds additional internal and external SATA ports to a computer through a single PCI express slot, & video adapter.
-- Wireless NIC, capture cards send a video signal to a computer so so the video can be recorded to storage using video capture software.
+- Wireless NIC (can be built-in), capture cards send a video signal to a computer so so the video can be recorded to storage using video capture software.
 - TV tuner, USB, Accelerated Graphics Port (AGP, high speed slot for attaching an AGP video card, superceded by PCI), SCSI adapter etc.
 
 ## Sound card
@@ -412,22 +432,6 @@ Version --- GB/s for x1 --- GB/s for x8
 # Assembly
 - Wires to ports on the front case panel, 
 
-
-# Questions
-## ez
-- Can instructor see each student module progress.
-- Computer plugged during work for ground but not power
-- Ultra HD : 3840 x 2160>, 16 : 9, alias 4k.
-
-## technical
-- If a power supply does not have this switch, it automatically detects and sets the correct voltage ?
-
-### bureau
-- Module 1 of the ITE 8.0 curriculum
-- iso 9000:2001
-- Student e-mails not used
-- College IT admin
-- Weld fiasco
 
 <table> <tr> <th> <b>Optical Device</b> </th> <th> <b>Read CD</b> </th> <th> <b>Write CD</b> </th> <th> <b>Read DVD</b> </th> <th> <b>Write DVD</b> </th> <th> <b>Read<br>Blu-ray</b> </th> <th> <b>Write<br>Blu-ray</b> </th> <th> <b>Rewrite<br>Blu-ray</b> </th> </tr> <tr> <td> CD-ROM </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> CD-RW </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> DVD-ROM </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> DVD-RW </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> BD-ROM </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> BD-R </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> BD-RE </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> </tr> </table>
 <table> <tr> <th> <b>RAID Level</b> </th> <th> <b>Minimum Number of Drives</b> </th> <th> <b>Features</b> </th> <th> <b>Advantages</b> </th> <th> <b>Disadvantages</b> </th> </tr> <tr> <td> 0 </td> <td> 2 </td> <td> Striping </td> <td> Performance and Capacity. </td> <td> All data is lost if one drive fails. </td> </tr> <tr> <td> 1 </td> <td> 2 </td> <td> Mirroring </td> <td> Performance and Reliability. </td> <td> Capacity is half of total drive size. </td> </tr> <tr> <td> 5 </td> <td> 3 </td> <td> Striping with parity </td> <td> Performance, Reliability, and Capacity. </td> <td> It takes time to rebuild array if a drive fails. </td> </tr> <tr> <td> 6 </td> <td> 4 </td> <td> Striping with double parity </td> <td> Same as RAID 5 but can tolerate the loss of two drives. </td> <td> It takes time to rebuild array if one or more drives fails. </td> </tr> <tr> <td> 10<br>(0+1) </td> <td> 4 </td> <td> Mirroring and Striping </td> <td> Performance, Capacity, and High Reliability. </td> <td> Capacity is half of total drive size. </td> </tr> </table>
