@@ -22,10 +22,13 @@
 - A device that accesses the server is known as a client.
 - A node that accesses the server to get on the network is known as a client.
 - All devices that can send, receive, & create info on a network are nodes.
-
+# FTP (File Transfer Protocol)
+- tcp/20 active mode data, tcp/21 control
+- Authenticates with username & password, some systems use generic logins.
+- 
 
 # Connection types
-- Hybrid Fiber Coaial (HFC) : Broadband network architecture.
+- Hybrid Fiber Coaxial (HFC) : Broadband network architecture.
 - Fiber to the curb (FTTC) : HFC network where fiber runs last mile to home then network switches back to coax.
 - Splitter in street cabinet has Optical Line Terminal (OLT)
 - Building is connected to Optical Network Terminal (ONT), optical signals converted to electrical then connect to router through ethernet patch chord.
@@ -163,6 +166,7 @@
 - Network, 100 ms - 2 sec, async.
 
 # Notes
+- Non-ephemeral ports (usually 0 - 1023) are permanent port numbers for a server or service
 - Pinging an IP address with no port specified defaults to port 80 ❔
 
 - Obtain an IP address automatically: When a device is configured to obtain an IP address automatically, it will use the Dynamic Host Configuration Protocol (DHCP) to obtain an IP address from a DHCP server on the network.  
@@ -208,14 +212,6 @@ tracert
 - DHCP servers use IP addresses to provide network hosts.
 - NAT maps a public IPv4 address to private IP addresses.
 
-
-
-## Transmission control protocol (TCP)
-- Guarantees data gets sent to intended recipient.
-- Slower and requires more resources.
-- FTP, web browsing, e-mail.
-## User datagram protocol (UDP)
-- Fast, fewer resources, does not guarantee every packet arrives (calls, live streaming).
 ## Bitcoin protocol
 - P2p network operating ona cryptogrpahic protocol used for bitcoin transactions and internet transactions.
 ## Blockchain protocol
@@ -225,9 +221,6 @@ tracert
 - Describes architecture, components, and design of communication.
 - Open system interconnection (OCI) is a conceptual framework to describe functions of a networking system.
 - TCP/IP (based on OSI)
-
-### Layer TCP IP
-- Application, transport, network, data link, physical.
 
 ## Subnet
 - Subnetting is the process of taking a large, single network and splitting it up into many individual smaller subnetworks (subnets).
@@ -308,7 +301,7 @@ tracert
 - Switches and hubs connect to modems.
 - If a switch or a hub fails it brings the entire network down.
 - Utilizes Application Specific Integrated Circuit (ASIC) chip.
-- 
+
 
 ## Physical topology
 - Star : Features a central computer that acts as a hub.
@@ -378,17 +371,6 @@ tracert
 # Protocols
 - Internet Protocol (IP) adds addressing so data can be routed to intended destination.
 
-## UDP
-- Fast with loss tolerance.
-- Low overhead, does not require acknowledgements.
-- Does not resend lost data, delivers data as it arrives.
-
-## Transmission Control Protocol (TCP)
-- Reliable guaranteed delivery, proper order of data assembly.
-- Responsible for tracking all the network connections between a user’s device and multiple destinations.
-- HTTP via TCP uses sequence numbers is segments of information to know if data is missing.
-- Delivers data in sequenced order and resends lost data. 
-
 ## IP addresses
 - Static are manually assigned.
 - Network servers or devices that have specific protocol settings often use static.
@@ -397,7 +379,9 @@ tracert
 - Private is uesd to connect securely to an internal private network.
 - Loopback is the range of IP addresses reserved for the local host.
 - Reserved have been reserved by the IETF and the IANA.
-## IPv4
+## IPv4 Sockets
+- Server IP address, protocol, server application port #.
+- Client IP address, protocol, client port #.
 - Core protocol for the internet.
 - Developed to provide identification for every network device.
 - Only allows ~4.3B IP addresses.
@@ -406,6 +390,43 @@ tracert
 - Newest internet protocol version.
 - Allows for 340UD IP addressses.
 - 128-bit binary value broken into 8 fields each separated by a colon.
+
+
+## Transmission Control Protocol (TCP)
+- HTTPS, SSH, 
+- Connection oriented, reliable delivery.
+- Flow control, receiver manages how much data is sent.
+- Guarantees data gets sent to intended recipient.
+- Slower and requires more resources.
+- FTP, web browsing, e-mail.
+- Reliable guaranteed delivery, proper order of data assembly.
+- Responsible for tracking all the network connections between a user’s device and multiple destinations.
+- HTTP via TCP uses sequence numbers is segments of information to know if data is missing.
+- Delivers data in sequenced order and resends lost data.
+
+## Secure Shell (SSH)
+- tcp/22 encrypted communication link
+- Looks and acts same as Telnet (tcp/23 no encryption)
+
+## Secure Mail Transfer Protocol (tcp/25 SMTP)
+- 
+
+
+## User datagram protocol (UDP)
+- No flow control, sender determines data transmit amount.
+- Connectionless, no formal open or close to connection.
+- Fewer resources, does not guarantee every packet arrives (calls, live streaming).
+- Fast with loss tolerance.
+- Low overhead, does not require acknowledgements.
+- Unreliable delivery, does not resend lost data, delivers data as it arrives.
+
+## TCP & UDP
+- Ports can be any # between 0 & 65,535.
+- Multiplex : send and receive unrelated data, across multiple devices.
+
+### Connectionless
+- DHCP, TFTP
+
 
 
 # Bureaucracies
