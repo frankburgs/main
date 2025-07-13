@@ -1,0 +1,12 @@
+{
+  "1" : {
+  "desc1" : "Velcro",
+  "desc2" : "strip",
+  "size" : "1",
+  "qty" : "Roll",
+  "consumible" : "yes"
+  },
+  "2" : {
+    "desc1" : "Bolt"
+  }
+}

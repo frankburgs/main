@@ -1,5 +1,4 @@
 # Notes x1!
-- Domain name system (DNS) : Phonebook of the internet, DNS cache is a record of all the queries made to a DNS server by a browser.
 - Interfaces need IP addresses, subnets, security groups, ACL's, VLAN's, VPC's, & VPN's.
 - Firewalls, load balancers, gateways, and traffic analyzers can be virtualized.
 
@@ -11,7 +10,6 @@
 - A device can have up to 65,536 ports.
 
 - Host (end) devices : Located at end or edge of network. Typically host network applications (web, e-mail)
-- Network protocols : There are thousands but they all do the same 3 things,security, encryption, authentication, transportation.
 
 - Network management: connection, link aggregation, troubleshooting.
 - Lower Ghz better over longer distance for wifi.
@@ -22,6 +20,21 @@
 - A device that accesses the server is known as a client.
 - A node that accesses the server to get on the network is known as a client.
 - All devices that can send, receive, & create info on a network are nodes.
+
+
+# Network protocols
+- There are thousands but they all do the same 3 things,security, encryption, authentication, transportation.
+- Early languages IPX, SPX, Appletalk
+- Modern NetBIOS, NetBEUI, TCP/IP
+
+
+# Domain name system (DNS, tcp/53, udp/53, zone transfers)
+- Phonebook of the internet, DNS cache is a record of all the queries made to a DNS server by a browser.
+- UDP most common for queries. 
+- udp/67 BOOTP/DHCP bootstrap protocol
+- DNS server, adding a TXT record verifies domain ownership, canonical name record (C-record) specifies name.
+
+
 # FTP (File Transfer Protocol)
 - tcp/20 active mode data, tcp/21 control
 - Authenticates with username & password, some systems use generic logins.
@@ -71,7 +84,7 @@
 - Product release instruction (PRI) device network configuration settings.
 - Preferred roaming list (PRL) sets which cell towers to use whilst roaming.
 - Radio firmware is softwre that manages wireless connections.
-- E-mail on mobile is POP3 (removes downloaded emails from server) or IMAP4 (saves emails on server).
+- E-mail on mobile is POP3 (tcp/110) removes downloaded emails from server, or IMAP4 (tcp/143 saves emails on server).
 - Use SSL or S/MIME to encrypt emails for security & authentication.
 - International Mobile Equipment Identity (IMEI, unique # for phones on GSM, UMTS, LTE, and iDEN networks) and international mobile subscriber identity (IMSI, stored on device's sim card) are used to identify cell devices and users.
 
@@ -365,11 +378,13 @@ tracert
 - Group of devices within a VLAN communicate as if each device was attached to the same switch.
 - Network made up of locations from other networks.
 - Separate networks into smaller groups, users can be located anywhere.
-- Helps reduce eksessive broadcast traffic and implement access and security policies between groups of users.
+- Helps reduce exessive broadcast traffic and implement access and security policies between groups of users.
 
 
 # Protocols
 - Internet Protocol (IP) adds addressing so data can be routed to intended destination.
+- Some application layer protocols can use both TCP and UDP.
+- TCP & UDP can have a same port # but different thing.
 
 ## IP addresses
 - Static are manually assigned.
@@ -380,20 +395,21 @@ tracert
 - Loopback is the range of IP addresses reserved for the local host.
 - Reserved have been reserved by the IETF and the IANA.
 ## IPv4 Sockets
+- Will either have TCP or UDP ports.
 - Server IP address, protocol, server application port #.
 - Client IP address, protocol, client port #.
 - Core protocol for the internet.
 - Developed to provide identification for every network device.
 - Only allows ~4.3B IP addresses.
 - IP addresses are 32 bit (4 bytes) binary value, separated into 4 8-character binary values called octets. Each octet has a value between 0 and 255. An octet with a value over 255 does not constitute a valid IP address.
-## IPv6
+
+## IPv6 (Standardized 2017)
 - Newest internet protocol version.
 - Allows for 340UD IP addressses.
 - 128-bit binary value broken into 8 fields each separated by a colon.
 
-
 ## Transmission Control Protocol (TCP)
-- HTTPS, SSH, 
+- Ports , HTTPS tcp/443, SSH, FTP, Telnet, SMTP, DNS, POP3, IMAP4.
 - Connection oriented, reliable delivery.
 - Flow control, receiver manages how much data is sent.
 - Guarantees data gets sent to intended recipient.
@@ -404,6 +420,8 @@ tracert
 - HTTP via TCP uses sequence numbers is segments of information to know if data is missing.
 - Delivers data in sequenced order and resends lost data.
 
+## HTTP (tcp/80)
+
 ## Secure Shell (SSH)
 - tcp/22 encrypted communication link
 - Looks and acts same as Telnet (tcp/23 no encryption)
@@ -413,6 +431,7 @@ tracert
 
 
 ## User datagram protocol (UDP)
+- Ports TFTP, DNS, BOOTP/DHCP, Simple Network Management Protocol (SNMP, udp/161) Network Time Protocol (NTP, udp/123)
 - No flow control, sender determines data transmit amount.
 - Connectionless, no formal open or close to connection.
 - Fewer resources, does not guarantee every packet arrives (calls, live streaming).
@@ -425,7 +444,8 @@ tracert
 - Multiplex : send and receive unrelated data, across multiple devices.
 
 ### Connectionless
-- DHCP, TFTP
+- DHCP, 
+- Trivial File Transfer Protocol (TFTP, udp/69)
 
 
 
@@ -434,3 +454,5 @@ tracert
 - Examples are HTTP, HTML, IP, ethernet 802.3d, publicly available documentation.
 - De-facto standards are accepted in practice i.e. MS windows or qwerty keyboard.
 - ITU set international telecom and fair use in radio frequency, DARPA did TCP/IP,  
+
+<table> <tr> <th> <b>Port</b> </th> <th> <b>Transport Protocol</b> </th> <th> <b>Application Protocol</b> </th> <th> <b>Description</b> </th> </tr> <tr> <td> 53 </td> <td> TCP, UDP </td> <td> DNS </td> <td> The Domain Name Service (DNS) protocol finds the IP address associated with a registered Internet domain for Web, Email, and other Internet services. It uses UDP for requests and information transfer between DNS servers. TCP will be used for DNS responses if required. </td> </tr> <tr> <td> 80 </td> <td> TCP </td> <td> HTTP </td> <td> Hypertext Transfer Protocol (HTTP) provides a set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the World Wide Web </td> </tr> <tr> <td> 443 </td> <td> TCP, UDP </td> <td> HTTPS </td> <td> The browser uses encryption and authenticates your connection with webserver. </td> </tr> </table>

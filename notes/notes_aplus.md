@@ -1,75 +1,35 @@
+- !1x, cd, mb, hd, ps ff sizes, connectors
+- exam objectives
+- combined vids & other tasks (drawing, diagramming...)
 
-https://www.youtube.com/watch?v=2eLe7uz-7CM : 1:10
+# Tips
+- Specific search engine functionality such as only results from dell.com
 
-# Computer parts
-## Expansion slots
-## Video cards
+# ----- Computer parts -----
+## Video ports & cables
 
-# Memory
+## Adapter Expansion
+### io
+### Sound
+### Storage controller
+### Expansion slots
+### PCIe
+### Video
 
-# Connectors
-
-# Motherboard
-
-# Storage
-
-# Questions !1x
-## ez
-- Can instructor see each student module progress & long-term lessons learned ?
-- Computer plugged during work for ground but not power, component in path?
-- Ultra HD : 3840 x 2160>, 16 : 9, alias 4k.
-- How integrate YT vids into curriculum ?
-
-## technical
-- If a power supply does not have this switch, it automatically detects and sets the correct voltage ?
-- 5.1.1.4 vlan setup pseudocode
-
-## bureau
-- itf before a+
-- ITIL 
-- Module 1 of the ITE 8.0 curriculum
-- iso 9000:2001
-- Student e-mails not used
-- College IT admin
-- Weld fiasco
-
-## long
-- Some application layer protocols use only UDP. true
-- Some application layer protocols can use both TCP and UDP. true
-- Some application layer protocols use neither TCP nor UDP. false
-
-
-# Safety
-- 1.3.2 Lab Safety & disassembly
-- Tape sharp corners.
-- CRT monitors potential residual high voltage.
-- ID problem, theorize, test, plan & implement sln, verify & implement PM, document.
-
-## Electrostatic discharge (ESD)
-- 3 kV, a person feels, 10 kV, makes a sound.
-- < 30 V can damage computer component.
-- Use floor mats, bench mats, anti-static bags, anti-static wrist-straps.
-
-## Temperature
-- Cooling systems : Active solutions (case fan) require power while passive (reducing speeds, adding heat sinks) do not.
-- Case fan : case size, fan speed, qty components, physical environment, mounting spaces (qty & locations), connections.
-- Intel max heat 185 F 85 C, Good processor 90-110 F (32-43 C)
-
-# Security
-- Execute Disable Bit (EDB) : alias NX or XD bit, hardware-based security feature in Intel processors that prevents malicious code from executing in certain areas of memory.
-## Access levels
-- Full access : all screens & settings, except supervisor password setting.
-- Limited access : certain settings, ie time & date.
-- View only access : all screens, no change allowed.
-- No access : no access to the BIOS utility.
-- Hard drive encryption changes the data into code, without correct password computer cannot boot and hard drive cannot be understood.
-- LoJack : Consists of Persistence Module (embedded in bios) & Application Agent (installed by user). When installed this activates the Persistence Module which does not turn off and contacts a monitoring center routinely over internet with device info (location, can lock & delete remotely)
-
-# Bullshit
-- RAM, SSD, CPU most common upgrades.
+---
+# ----- Memory -----
+---
+# ----- Connectors -----
+---
+# ----- Motherboard -----
+---
+# ----- Misc / questions -----
+---
 
 
 # Computer Parts
+- COM2 serial controller
+- RAM, SSD, CPU most common upgrades.
 - Serial bus : transmits data one bit at a time.
 - RAID 5 : data storage configuration using disk striping with parity.
 - System bus : connects CPU to main memory.
@@ -152,12 +112,15 @@ https://www.youtube.com/watch?v=2eLe7uz-7CM : 1:10
 
 ## Video ports & cables
 - Digital or analog or both. Computers are digital devices that create digital signals that are sent to the grfx card where they are transmitted through a cable to a display.
-- DisplayPort : interface tech designed to connect high-end grfx-capable PCs, displays, & home theaters. Replaces both DVI & VGA for computer monitors. 20-pin connector for high-bandwidth video & audio. The mini is used in Apple. 20 Gbps on V2.0. Can connect multiple monitors to single source with 1 cable.
+
+- DisplayPort (2006, Video Electronics Standards Association VESA) interface tech designed to connect high-end grfx-capable PCs, displays, & home theaters. High performance, replaces both DVI & VGA for computer monitors. 20-pin connector for high-bandwidth video & audio. The mini is used in Apple. 20 Gbps on V2.0. Can connect multiple monitors to single source with 1 cable, in addition to video can carry USB & audio data also.
+
 - Thunderbolt 1 or 2 : high-speed connection of peripherals such as hard drives, RAID arrays, network interfaces, can transmit HD video using DisplayPort protocol.
 - Thunderbolt 3 : Same connector as USB-C, twice bandwidth as 2, less power, can provide 2x 4x monitors with video.
 - Radio Corporation of America (RCA) : connectors have central plug with ring around it used to carry video or audio. (yellow video, red & white are L & R audio channels)
 
-### High-Definition Multimedia Interface (HDMI)
+### High-Definition Multimedia Interface (HDMI, 2002)
+- Uncompressed video & audio data through single cable.
 - 1 : standard
 - 2 : high-speed, 19-pin (can be smaller 19-pin Mini-HDMI port), developed for HDTV, digital features make it good for computers. Capable of high resolutions & capable of changing refresh rate to match the rate of source device input. 2.0 Premium High Speed 18 Gbps and 2.1 Ultri High Speed up to 48 Gbps. 1.4 required for 4k (& 8 k ?) signals. Type A standard, C mini, D micro.
 
@@ -169,64 +132,65 @@ https://www.youtube.com/watch?v=2eLe7uz-7CM : 1:10
 - DVI-A analog only
 - DVI-I (integrated) supports digital outputs & analog devices (disappearing), single-link connections use a single Transition Minimized Differential Signaling (TMDS) transmitter, and dual-link that uses 2 TMDS transmitters (higher res to larger monitors)
 
-## Printers
-- Non-impact : laser, inkjet, thermal.
-- Inkjet : places small dots, can smudge.
-- Laser : toner in a drum adheres to where laser touches it and is passed on to paper.
-- Thermal : another non-impact printer, uses thermal paper with wax based ink, turns black with heat (used for barcodes due to high tolerances)
-- Dot matrix : old tech, impact printer, can print multi-copy (carbon-copy) documents, very durable.
-
-### Troubleshooting
-- Paper jam could be caused by debris or faulty pickup rollers (older printers, get worn out, inspect)
-- Check printer display for error msg
-- Streaks could be ink cartridges
-- Use printer sotware to try to troubleshoot streaks (clean printheads)
-- May need to manually clean with a lint-free cloth.
-- Faded or blank images, may be low ink or something else.
-- Ghosting : faint image of previously printed page (drum or fuser, has a lifespan)
-
-## Adapter cards
-- Increase functionality of a computer by adding controllers for specific devices or by replacing malfunctioning ports.
-- Sound adapter, eSATA card adds additional internal and external SATA ports to a computer through a single PCI express slot, & video adapter.
-- Wireless NIC (can be built-in), capture cards send a video signal to a computer so so the video can be recorded to storage using video capture software.
-- TV tuner, USB, Accelerated Graphics Port (AGP, high speed slot for attaching an AGP video card, superceded by PCI), SCSI adapter etc.
-- Network Interface Card (NIC) designed for ethernet cable with RJ-45 connector, has its own unique identifier (MAC address)
-
-## Sound card
-- Slot type, Digital signal processor, SNR.
-
-## Storage controller card
-- Connector quantity, internal or external connectors, card size, card RAM, card processor, RAID type.
-
-## Expansion slots
-- Riser card : provides additional expansion slots.
+## Adapter cards / Expansion slots / bus architectures
+- Audio-Modem Riser (AMR) : Specialized expansion slot.
+- Communications & Networking Riser (CNR) : Replaced AMR, networking, modem, audio, etc.
 - Peripheral Component Interconnect (PCI) is an obsolete 32 or 64-bit expansion slot.
 - Mini-PCI (smaller version of PCI found in laptops) has form factors Type I, II, III.
 - PCI-X (PCI eXtended) : Updated version of standard PCI, uses 32-bit bus with higher bandwidth than PCI bus. 4x faster than PCI, mostly obsolete.
+- Increase functionality of a computer by adding controllers for specific devices or by replacing malfunctioning ports.
+- eSATA card adds additional internal and external SATA ports to a computer through a single PCI express slot.
+- Wireless NIC (can be built-in), capture cards send a video signal to a computer so so the video can be recorded to storage using video capture software.
+- TV tuner, USB, Accelerated Graphics Port (AGP, high speed slot for attaching an AGP video card, superceded by PCI), SCSI adapter etc.
+- Alot of tv tuner cards also act as video capture cards.
+- Personal Computer Memory Card International Association (PCMCIA)
 
-### PCIe (Express)
-- 64-bit parallel interface that is backwards compatible with 32-bit PCI devices. Serial point-to-point connection with different physical interface designed to supersede PCI & PCI-X. PCIe x1, x4, x8, x16 (x qty of data lanes). Modern high-speed bus commonly used for expansion cards.
+### Network Interface Card (NIC) 
+- Usually ethernet based, 10, 100, 1000 Mbps
+- RJ-11
+- designed for ethernet cable with RJ-45 connector(8-pin), has its own unique identifier (MAC address)
+- Converts serial data into parallel data.
+
+### io cards
+- Firewire / IEEE 1394
+- USB
+
+### Sound card
+- 3.5 mm Tip/Ring/Sleeve (TRS) plugs. Color standard not always followed.
+- Slot type, Digital signal processor, SNR.
+- Audio output port for speakers, input port for microphone.
+- Extra ports for subwoofers, surround sound, digital audio equipment.
+
+### Storage controller card
+- Connector quantity, internal or external connectors, card size, card RAM, card processor, RAID type.
+- RAID card, implement a hardware RAID array, OS not aware of RAID implementation.
+
+### PCIe (Express, 2003)
+- Modern high-speed bus commonly used for expansion cards.
+- 64-bit parallel interface that is backwards compatible with 32-bit PCI devices. Serial point-to-point connection with different physical interface designed to supersede PCI & PCI-X. 
+- PCIe x1 250 MB/s, x2 500 MB/s, x4 1 GB/s, x8 2 GB/s, x16 4 GB/s, x32 8 GB/s(x qty of data lanes).
 - Every version of PCIe is backwards compatible. Up to 25 W per slot, 75 for a grfx card, additional 75 W for very powerful grfx card.
 - Sends one data bit @ a time @ a much faster rate than older PCI that uses parallel bus.
+- Versions 2.0 (< 16 GB/s), 2.1, 3.0
 
 Version --- GB/s for x1 --- GB/s for x8
-2 .5 8
-3 .985 8
-4 1.969 31.508
-5 3.938 63.015
+2 | .5 | 8
+3 | .985 | 8
+4 | 1.969 | 31.508
+5 | 3.938 | 63.015
 
-## Video cards (graphics cards/adapters)
+### Video cards (graphics cards/adapters)
 - Consider slot type, max resolution, speed & VRAM, GPU.
 - Video ports, memory, GPU, bus type.
 - Generates images from the computer to the monitor.
 - S-video (Separate or Super), analog transmit 2 signals (color & brightness) over 1 cable.
+- Video capture card allows capture of analog video and conversion to digital form and then to store it.
 
-# Memory
+# ----- Memory -----
+
 - embedded Multi-Media Controller (eMMC, 16 GB) embedded memory in smartphones & tablets.
 - Primary memory is temporary, secondary memory is permanent.
 - Tape drive : sequentially backup data via USB.
-- Dynamic RAM (DRAM) : Popular until mid 1990's, used for main memory, gradually discharges energy so must be constantly charged to maintain stored data in the chip.
-- Static RAM : Requires constant (lower) power, often used for cache memory, much faster & more $ than DRAM. Typically fastest memory, useful for storing the most recently used data and instructions by the CPU. Provides processor with faster access to the data than retrieving it from the slower DRAM or main memory.
 - L1 cache is internal and integrated into CPU, different models can have different amounts.
 - L2 cache is external cache originally mounted onto the motherboard near the CPU, now is integrated into CPU.
 - L3 cache is used on high-end workstations and server CPU's.
@@ -236,15 +200,6 @@ Version --- GB/s for x1 --- GB/s for x8
 - Programmable Read-Only Memory Chip (PROM) : written after manufacture, generally cannot be erased and can only be programmed once.
 - EPROM (erasable) : non-volatile but can be erased by strong UV light exposure. Usually has transparent quartz window on top of chip. Constant erasing & reprogramming can render chip useless
 - EEPROM (electrically erasable) : information is written to a EEPROM chip after manufacture without removing it from the device. Also called Flash ROMS since contents can be flashed for deletion. Often used to store a computer system's BIOS
-- Random Access Memory (RAM) : Temporary working storage for data and programs that are being accessed by the CPU. Volatile. Increases memory capacity of the computer to hold and process programs and files. Less RAM means computer must swap data between RAM and much slower hard drive
-- SDRAM is DRAM that operates synchronously with the memory bus, is able to process overlapping instructions in // (ie can process a read before a write has been completed) and has higher transfer rates.
-- Double Data Rate Synchronous Dynamic RAM (DDR SDRAM) : double data rate transfer as SDRAM, able to support 2 writes & reads per CPU clock cycle, connector has 184 pins and 1 notch, uses lower voltage (2.5 V), family DDR2,3,4.
-- DDR2 SDRAM runs @ higher clock speeds than DDR (533 MHz vs DDR @ 200 MHz), decreases noise & crosstalk between signal wires, connector has 240 pins, 1.8 V.
-- DDR3 SDRAM doubles clock rate of DDR2, 1.5 V, less heat, up to 800 MHz, 240-pin connector.
-- DDR4 SDRAM quadruples DDR3 max storage capacity, 1.2 V, up to 1600 MHz, 288-pin connector, advanced error correction features such as error-correcting code (ECC) memory to detect multiple bit errors.
-- Graphics (G)DDR Synchronous Dynamic RAM : specifically designed for graphix, used with a dedicated GPU, family GDDR, GDDR2, GDDR3, GDDR4, GDDR5, each improves performance and lowers power consumption.
-- GDDR SDRAM processes massive amounts of data but not necessarily at the fastest speeds.
-- DDR5 more than double speed of DDR4 modules. Quadruples DDR4 max storage capacity. 1.1 V, 288-pin connector different pattern than DDR4. Max module size is 128 GB.
 
 ## Media, portable ?
 - Secure Digital (SD card, 2-512 GB, 2 TB, flash) popular, used in digital cameras for images & video, designed for use in portable devices such as cameras, MP3 players, and laptops.
@@ -268,21 +223,44 @@ Version --- GB/s for x1 --- GB/s for x8
 - Parity memory contains 8 bits for data and one (parity bit) for error checking.
 - Error correction code (ECC) can detect multiple bit errors in memory and correct single bit errors in memory. On servers of financial or data analytics ECC memory modules may be required.
 
-## RAM modules
+## Random Access Memory (RAM)
+- Dynamic RAM (DRAM) : Popular until mid 1990's, used for main memory, gradually discharges energy (capacitors) so must be constantly charged to maintain stored data in the chip.
+- Static RAM : Requires constant (lower) power, transistors, often used for cache memory, much faster & more $ than DRAM. Typically fastest memory, useful for storing the most recently used data and instructions by the CPU. Provides processor with faster access to the data than retrieving it from the slower DRAM or main memory (example is level 1 & 2 CPU memory cache)
+
+- Temporary working storage for data and programs that are being accessed by the CPU. Volatile. Increases memory capacity of the computer to hold and process programs and files. Less RAM means computer must swap data between RAM and much slower hard drive
+
+- SDRAM is DRAM that operates synchronously with the memory bus, is able to process overlapping instructions in // (ie can process a read before a write has been completed) and has higher transfer rates.
+- Double Data Rate Synchronous Dynamic RAM (DDR SDRAM) : double data rate transfer as SDRAM, able to support 2 writes & reads per CPU clock cycle, connector has 184 pins and 1 notch, uses lower voltage (2.5 V), family DDR2,3,4.
+- DDR2 SDRAM runs @ higher clock speeds than DDR (533 MHz vs DDR @ 200 MHz), decreases noise & crosstalk between signal wires, connector has 240 pins, 1.8 V.
+- DDR3 SDRAM doubles clock rate of DDR2, 1.5 V, less heat, up to 800 MHz, 240-pin connector.
+- DDR4 SDRAM quadruples DDR3 max storage capacity, 1.2 V, up to 1600 MHz, 288-pin connector, advanced error correction features such as error-correcting code (ECC) memory to detect multiple bit errors.
+- Graphics (G)DDR Synchronous Dynamic RAM : specifically designed for graphix, used with a dedicated GPU, family GDDR, GDDR2, GDDR3, GDDR4, GDDR5, each improves performance and lowers power consumption.
+- GDDR SDRAM processes massive amounts of data but not necessarily at the fastest speeds.
+- DDR5 more than double speed of DDR4 modules. Quadruples DDR4 max storage capacity. 1.1 V, 288-pin connector different pattern than DDR4. Max module size is 128 GB.
+
+
+- In order for programs to run they must be loaded into RAM first (HD -> RAM -> CPU)
 - Unbuffered memory : regular memory read directly from memory banks making it faster than buffered memory. There is a limit to how much can be installed.
 - Buffered memory : specialized memory for servers and high-end workstations that use large amount of RAM. A control chip is built into the module of these memory chips. Control chip assists memory controller in managing large quantities of RAM. Avoid buffered RAM for gaming computer and average workstation due to reduced RAM speed from controller chip.
 - Open slot lever, orient stick to slot, insert, lock.
-- Early computers had RAM installed on motherboard as individual chips. Dual inline package (DIP) chips were difficult to install and often become loose.
-- Single Inline Memory Module (SIMM) is a small circuit board that holds several memory chips, 30-pin or 72-pin configs.
-- Dual Inline Memory Module (DIMM) holds SDRAM, DDR SDRAM, DDR2 SDRAM, DDR3 SDRAM, and DDR4 SDRAM chips. There are 168-pin SDRAM DIMMs, 184-pin DDR DIMMs, 240-pin DDR2 and DDR3 DIMMs, and 288-pin DDR4 DIMMs.
+- Early computers had RAM installed on motherboard as individual chips. Dual inline package (DIP) chips were difficult to install and often become loose, CPU were DIP as well.
+- Single Inline Memory Module (SIMM, 32 bit data path, redundant pins on both sides) small circuit board that holds several memory chips, 30-pin (32 ?) or 72-pin configs.
+
+- Dual Inline Memory Module (DIMM, 2 independent rows of pins, 1/side, 64-bit data path) holds SDRAM, DDR SDRAM, DDR2 SDRAM, DDR3 SDRAM, and DDR4 SDRAM chips. There are 168-pin SDRAM DIMMs, 184-pin DDR DIMMs, 240-pin DDR2 and DDR3 DIMMs, and 288-pin DDR4 DIMMs.
+
+- Rambus Inline Memory Module (RIMM, 184 pins) resembles DIMM, 1999 was speed breakthrough but did not keep up with DIMM. 133mm x 35mm. 16-bit 184 pin (Continuity C-RIMM) & 32-bit 232 pin modules (Continuity & Termination CT-RIMM). Contains Rambus DRAM.
+
 - Small Outline (SO)DIMM has a 72-pin and 100-pin configurations for support of 32-bit transfers or a 144-pin, 200-pin, 204-pin, and 260-pin configurations for support of 64-bit transfers. This smaller, more condensed version of DIMM provides random access data storage that is ideal for use in laptops, printers, and other devices where conserving space is desirable.
 - Single-sided memory modules contain RAM only on one side of the module. Double-sided on both.
 - Speed of memory affects how much data a processor can process in a given amount of time. As processor speed increases memory speed must also increase. Multichannel technology increases memory throughput.
 - Standard RAM is a single channel, all RAM slots are accessed simultaneously. Dual channel RAM adds a 2nd channel to be able to access a 2nd module simultaneously.
 - Triple channel technology does the same, quadruple channel adds channel for memory controller for higher bandwidth. Chipset architecture must support it and is only able to use as many channels as memory slots populated.
 
-## Hard disk drive (HDD)
-- Storage from GB's to TB's 
+## Floppy
+- Magnetic, 1.44 MB on 3.5" 90mm disk.
+
+## Hard disk drive (HDD, GB's - TB's)
+- Master Boot Record (MBR) : First sector of a boot drive, table of primary partitions, directions for starting OS.
 - FF's come in 1.8" (portable media players et al. but seldom used in new), 2.5" (mobile devices), 3.5" (standard for PC)
 - Traditional magnetic disks typically @ 5400, 7200(desktops), 10k, 15k RPM
 - Non-volatile (can retain & store data when not connected to a power source)
@@ -312,8 +290,9 @@ Version --- GB/s for x1 --- GB/s for x8
 - BD, 25 GB SL, 50 GB DL, -ROM, -R, -RE (erase & overwrite)
 
 
-# Connectors
-- I/O ports : 
+# ----- Connectors -----
+
+- 9 & 25-pin serial port, legacy,  
 - Audio & game port : analog ports typically include a line in port to connect to an external source (stereo system), mic port, line out ports, game port connects to joystick or MIDI-interfaced device.
 - Audio card has an amplifier to power headphones & external speakers.
 - Network port (RJ-45 (replaces RJ-11, smaller) or 8P8C port) has 8 pins, max length of ethernet network cable is 100 m (328 ft)
@@ -333,8 +312,10 @@ Version --- GB/s for x1 --- GB/s for x8
 - PATA, IDE is 8.3 Mb/s and EIDE is 16.6 Mb/s
 - external (eSATA) connect external hard drives, key feature to prevent USB connection which is similar.
 - eSATA adapter/expansion card installed to provide eSATA ports, requires separate power plug. eSATAp combines power.
+- AT Attachment with Packet Interface (ATAPI)
 
-## Integrated Drive Electronics (IDE)
+## Integrated Drive Electronics (IDE, Western Digital)
+- Original PATA format
 - Older interface for connecting disk drives to the motherboard, uses a 40-pin connector for hard & optical drives.
 - Supports maximum 2 devices. Ribbon cable 34-pin cable for floppy drives.
 - Used to connect some hard dives and optical drives to each other and to the motherboard.
@@ -345,18 +326,20 @@ Version --- GB/s for x1 --- GB/s for x8
 - Hot swappable, connects peripherals.
 - Can have 4 or 5 pins.
 - 1.0 (1996, 1.5 Mbps) for keyboards & mice and a full-speed channel @ 2 Mbps (1.1 in 1998)
-- 2.0 (2001, High Speed at 480 Mbps) 3.0 SuperSpeed 5 Gbps, 3.1 10 Gbps, 3.2 (USB-C) 20 Gbps.
+- 2.0 (2001, High Speed at 480 Mbps) 3.0 SuperSpeed 4.8, 5 Gbps, 3.1 10 Gbps, 3.2 (USB-C) 20 Gbps.
 - Supplies power as well.
+- Mini-B plug, Type B plug, Type A receptacle, Type A plug.
 
 ## Small Computer System Interface (SCSI)
 - Another interface between motherboards and storage device, connecting peripherals.
 - bus technology, all devices connected to a central bus are daisy-chained together.
 - Older standard that used parallel instead of serial data transfers.
-- Serially Attached SCSI (SAS) supercedes this, popular interface for server storage.
+- Serially Attached SCSI (SAS) supercedes this, popular interface for server storage, buffer memory ?.
 - Centronics connector used for older SCSI devices such as scanners or printers. 36 or 50-pin versions, pins in 2 rows with plastic bar thru center holding contact pins, uses squeeze latches or bail locks.
 
 ## Adapters & converters
 - Adapter : component that physically connects one tech to another (ie DVI to HDMI adapter)
+- Adapter card is a type of expansion card.
 - Converter : Same as adapter + translates the signals (ie USB 3.0 to SATA converter enables a hard disk drive to be used as a flash drive)
 - DVI to VGA adapter, USB to ethernet converter, USB to PS/2 adapter, DVI to HDMI adapter, Molex to SATA adapter, HDMI to VGA converter. 
 
@@ -375,9 +358,12 @@ Version --- GB/s for x1 --- GB/s for x8
 # Motherboard
 - Trusted Platform Module (TPM) : chip designed to secure hardware by storing encryption keys, digital certificates, passwords, & data. Used by Windows to support BitLock full-disk encryption.
 - If it has a video adapter alias integrated video (has a video port)
-- IEEE 1394 Firewire, 400 Mb/s, D-shape, digital cameras and printers, replaced by USB.
+- IEEE 1394 Firewire (Apple, 400 Mb/s, D-shape) digital cameras and printers, replaced by USB. V 400 has 100, 200, 400 Mb/s half-duplex, 800 has 800 Mb/s full-duplex. 6-circuit is powered, 4 is unpowered. Has its own way of doing it unlike USB which uses CPU.
 
+- Average between 2 & 4 memory slots.
 - Video Graphics Array (VGA, 640x480, 4:3, 1987, legacy) : analog video connector, 3 rows & 15 pins, (alias DE-15 or HD-15 connector, blue), direct to motherboard.
+- Single Edge Cartridge fits into Slot 1.
+
 
 ## Chipsets
 - Consists of integrated circuits (IC) on the motherboard that control how system hardware interacts with CPU & motherboard, how much memory can be added and type of connects used.
@@ -386,14 +372,15 @@ Version --- GB/s for x1 --- GB/s for x8
 
 ## Form factors
 - AT 12" x 13.8" is deprecated.
-- Advanced Technology eXtended (ATX) 12" x 9.6" : most common ff, ATX power supply connects to motherboard via a single 20-pin (P1 ?) connector.
+- Advanced Technology eXtended (ATX, 1995, Intel) 12" x 9.6" : most common ff, ATX power supply connects to motherboard via a single 20-pin (P1 ?) connector (older, now 24 pin with additional 4/8 pin connector).
 - Micro-ATX 9.6" x 9.6" : Smaller ff backwards compatible with ATX. Often have same NB & SB chipsets & power connectors as full sized ATX. Much smaller and have fewer expansion slots & less features, consume less power.
 - ITX (2001, VIA Technologies, 8.5" x 7.5") popular due to small size, there are many types but mini-ITX (6.7" x 6.7") is most popular, it uses very little power thus no fans needed, only heatsinks, only one PCI slot for expansion card, also Nano-ITX (2005), Pico-ITX,Mobile-ITX (6cm x 6cm)
 - Align motherboard in correct direction facing adapters out back of case, locate standoffs, remove motherboard and screw in standoffs, align/install i/o plate, place motherboard, install screws loosely into standoffs.
-- BTX, Intel, improved ATX, more in-line air flow.
-- NLX (Intel) low-end low-profile, uses riser cards. Slim-line computer cases.
+- Balanced Technology Extended (BTX, Intel, improved ATX, discontinued) more in-line air flow, smaller, lower profile but wider.
+- New Low Profile Extended (NLX, Intel, legacy) standardized LPX, low-end low-profile, uses riser cards. Slim-line computer cases, AGP support.
 
 ## Central Processing Unit (CPU)
+- bit data path refers to number of bits of data that are transferred in 1 cycle.
 - CPU virtualization is sometimes disabled by default in the BIOS.
 - CPU powered measured by speed and amount of data processed.
 - Amount of data depends on size of the front side bus (FSB, also called CPU bus or processor data bus)
@@ -415,7 +402,7 @@ Version --- GB/s for x1 --- GB/s for x8
 
 ### Socket
 - Each CPU package requires a particular socket on the motherboard.
-- Pin Grid Array (PGA) : Pins are on underside of processor package and are inserted using Zero Insertion Force (ZIF)
+- Pin Grid Array (PGA) : Pins are on underside of processor package and are inserted using Zero Insertion Force (ZIF). Socket 370.
 - Land Grid Array (LGA) : Pins are in the socket instead of on the processor.
 - Intel LGA sockets 775, 1155, 1156, 1150, 1366, 2011
 - AMD PGA sockets AM3, AM3+, FM1, FM2, FM2+
@@ -461,13 +448,6 @@ Version --- GB/s for x1 --- GB/s for x8
 - Secure Boot : UEFI security standard that ensures only OS trusted by motherboard manufacturer boots.
 
 
-# Storage
-## Raid types
-- Striping : Enables data to be distributed across multiple drives. This provides a significant performance increase. However, since the data is distributed across multiple drives, the failure of a single drive means that all data is lost.
-- Mirroring : Stores duplicate data on one or more other drives. This provides redundancy so that the failure of a drive does not cause the loss of data. The Mirror can be recreated by replacing the drive and restoring the data from the good drive.
-- Parity : Provides basic error checking and fault tolerance by storing checksums separately from data. This enables the reconstruction of lost data without sacrificing speed and capacity, like mirroring.
-- Double parity provides fault tolerance up to two failed drives.
-
 # Disassembly
 - Press & hold power button for 3 seconds (drains PS, excess system power)
 - Disconnect power cable
@@ -479,3 +459,70 @@ Version --- GB/s for x1 --- GB/s for x8
 
 <table> <tr> <th> <b>Optical Device</b> </th> <th> <b>Read CD</b> </th> <th> <b>Write CD</b> </th> <th> <b>Read DVD</b> </th> <th> <b>Write DVD</b> </th> <th> <b>Read<br>Blu-ray</b> </th> <th> <b>Write<br>Blu-ray</b> </th> <th> <b>Rewrite<br>Blu-ray</b> </th> </tr> <tr> <td> CD-ROM </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> CD-RW </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> DVD-ROM </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> DVD-RW </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> BD-ROM </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> BD-R </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>No</p> </td> </tr> <tr> <td> BD-RE </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> <td> <p>Yes</p> </td> </tr> </table>
 <table> <tr> <th> <b>RAID Level</b> </th> <th> <b>Minimum Number of Drives</b> </th> <th> <b>Features</b> </th> <th> <b>Advantages</b> </th> <th> <b>Disadvantages</b> </th> </tr> <tr> <td> 0 </td> <td> 2 </td> <td> Striping </td> <td> Performance and Capacity. </td> <td> All data is lost if one drive fails. </td> </tr> <tr> <td> 1 </td> <td> 2 </td> <td> Mirroring </td> <td> Performance and Reliability. </td> <td> Capacity is half of total drive size. </td> </tr> <tr> <td> 5 </td> <td> 3 </td> <td> Striping with parity </td> <td> Performance, Reliability, and Capacity. </td> <td> It takes time to rebuild array if a drive fails. </td> </tr> <tr> <td> 6 </td> <td> 4 </td> <td> Striping with double parity </td> <td> Same as RAID 5 but can tolerate the loss of two drives. </td> <td> It takes time to rebuild array if one or more drives fails. </td> </tr> <tr> <td> 10<br>(0+1) </td> <td> 4 </td> <td> Mirroring and Striping </td> <td> Performance, Capacity, and High Reliability. </td> <td> Capacity is half of total drive size. </td> </tr> </table>
+
+
+
+# Questions 
+## ez
+- Can instructor see each student module progress & long-term lessons learned ?
+- Computer plugged during work for ground but not power, component in path?
+- Ultra HD : 3840 x 2160>, 16 : 9, alias 4k.
+- How integrate YT vids into curriculum ?
+
+## technical
+- If a power supply does not have this switch, it automatically detects and sets the correct voltage ?
+- 5.1.1.4 vlan setup pseudocode
+- bus & clock speed
+
+## bureau
+- Intel & Microsoft PC System Design Guide
+- ITIL 
+- Module 1 of the ITE 8.0 curriculum
+- iso 9000:2001
+- Student e-mails not used
+- College IT admin
+- Weld fiasco
+- messer, ai
+
+## long
+- Some application layer protocols use only UDP. true
+- Some application layer protocols can use both TCP and UDP. true
+- Some application layer protocols use neither TCP nor UDP. false
+
+
+# Safety / security / data retention
+- 1.3.2 Lab Safety & disassembly
+- Tape sharp corners.
+- CRT monitors potential residual high voltage.
+- ID problem, theorize, test, plan & implement sln, verify & implement PM, document.
+
+## Electrostatic discharge (ESD)
+- 3 kV, a person feels, 10 kV, makes a sound.
+- < 30 V can damage computer component.
+- Use floor mats, bench mats, anti-static bags, anti-static wrist-straps.
+
+## Temperature
+- Heat primarily generated by CPU & video card.
+- Cooling systems : Active solutions (case fan) require power while passive (reducing speeds, adding heat sinks) do not.
+- Case fan : case size, fan speed, qty components, physical environment, mounting spaces (qty & locations), connections.
+- Intel max heat 185 F 85 C, Good processor 90-110 F (32-43 C)
+
+# Security
+- Execute Disable Bit (EDB) : alias NX or XD bit, hardware-based security feature in Intel processors that prevents malicious code from executing in certain areas of memory.
+## Access levels
+- Full access : all screens & settings, except supervisor password setting.
+- Limited access : certain settings, ie time & date.
+- View only access : all screens, no change allowed.
+- No access : no access to the BIOS utility.
+- Hard drive encryption changes the data into code, without correct password computer cannot boot and hard drive cannot be understood.
+- LoJack : Consists of Persistence Module (embedded in bios) & Application Agent (installed by user). When installed this activates the Persistence Module which does not turn off and contacts a monitoring center routinely over internet with device info (location, can lock & delete remotely)
+
+# Storage
+## Raid types
+- Striping : Enables data to be distributed across multiple drives. This provides a significant performance increase. However, since the data is distributed across multiple drives, the failure of a single drive means that all data is lost.
+- Mirroring : Stores duplicate data on one or more other drives. This provides redundancy so that the failure of a drive does not cause the loss of data. The Mirror can be recreated by replacing the drive and restoring the data from the good drive.
+- Parity : Provides basic error checking and fault tolerance by storing checksums separately from data. This enables the reconstruction of lost data without sacrificing speed and capacity, like mirroring.
+- Double parity provides fault tolerance up to two failed drives.
+
+# Vocab
+- DIN : Deutsches Institut fur Normung (Standardization)

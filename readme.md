@@ -1,13 +1,23 @@
+# Web
+- notes imgs -> svg
+- Battery process flowchart
+- Convert to TW
+- shelver, 11/16" & 1-7/16" widths, lengths : 
+- Weld safety pics, original in main, altered in prod (callouts, circles etc.)
+- Add NFPA purchasing to Weld safety list & fix spelling
+- Implement NFPA NEC
+- 2x SVG generation cleanup document
+- Avatars 2x (prod & dev diff)
+- Node program convert .md to .html
+
 # Practices !1x
-- Always include callouts in diagrams.
+- Always include callouts (leged, title) in diagrams.
 - Never use verbal or handwritten, printed or virtual only.
 - Always include temporary bracing.
-
 - Use periods in large notes text files not in shorter lists
 - Text nowrap for legibility
 - Comment every line of code
 - Flowchart processes
-
 - 5-why, 5-s, kaizen, Toyota production systems
 - JHA per title
 - "Consumer products" safety issue
@@ -24,7 +34,6 @@
 - h1 end before next newline, bool off
 - Double hashtags -> h2 start
 - h2 end -> before next newline
-- 
 
 ``` js
 const fs = require('fs');
@@ -62,23 +71,3 @@ fs.readFile(sourcePath, 'utf8', (err, data) => {
 });
 
 ```
-
-# Incorporate
-- NFPA NEC
-
-# Web
-- Battery process flowchart
-- Convert to TW
-- shelver, 11/16" & 1-7/16"
-
-- Add NFPA purchasing to Weld safety list & fix spelling
-
-- 2x SVG generation cleanup document
-
-- Avatars 2x
-
-- Node program convert .md to .html
-
-## Backup
-- Weld safety pics
-- Contains all notes

@@ -8,3 +8,6 @@
 
 ## Wireless
 - Interference, out of range, drivers
+
+# Terms
+- Company Owned Personally Enabled (COPE) : so employees can have one phone for work & personal.

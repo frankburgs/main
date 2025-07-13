@@ -1,7 +1,7 @@
 
 # Software
 - Desktop, web-based, and mobile.
-- major change.minor change.path or minor bug fix.build number, date or less significant change.
+- major_change.minor_change.path_or_minor_bug_fix.build_number, date or less significant change.
 - Flowchart start (terminal, circle), process (rectangle), decision (diamond), data (IO, parallelogram).
 - Use pseudocode, identifiers, queries, constraints, records.
 
